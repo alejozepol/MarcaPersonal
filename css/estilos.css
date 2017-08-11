@@ -86,22 +86,35 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 a {
- background-color: #D3D3D3;   
+ background-color: #D3D3D3;
+    
+    text-decoration: none;
+}
+.navbar-header{
+ background-color: aqua;   
 }
 #foto{
     width: 300px;
     height: 300px;
     
 }
-nav {
-    background-image: url(../img/fondo.png);
-    padding: 0 !important;
-    
+.breadCrumArea {
+    margin-top: 10px;
+    width: 100%;
+    background: url(../img/fondo.jpg) no-repeat;
+    background-size: 100% 35%;
+    padding: 20px 14px 19%;
+    background-position: 10px;
 }
 #menu{
-    padding-top: 25px;
-    padding-bottom: 200px;
-    background-image: url(../img/fondo.png);
+    padding-top: -20px;
+    padding-bottom: auto;
     text-align: center;
+    margin: 20px;
+    background-color: transparent;
     
+    
+}
+#conteiner{
+    background-color: transparent;
 }
