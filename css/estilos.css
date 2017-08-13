@@ -1,7 +1,31 @@
 *{
-    font-family: cursive;
-    color: #DAF7A6;
+    margin: 0;
+    font-family: 'Sedgwick Ave', cursive;
+
+    
 }
+h1, h2, h3,h4, h5{
+    margin: 0;
+}
+
+#traslado{
+    padding: 300px 0 400px 0;
+    background-image: url(../img/fondo.jpg); 
+    text-align: center;
+}
+#contenido{
+    display: none;
+}
+#portada{
+    background-image: url(../img/fondo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1366px;
+    height: 332px;    
+    position: relative;
+    color: aliceblue;
+}
+
 
 /*=========================
   Icons
@@ -59,10 +83,12 @@ a.socialIcon:hover, .socialHoverClass {
 	height: 50px;
 	font-size:20px;
 }
+
 .social-circle li i {
 	margin:0;
 	line-height:50px;
 	text-align: center;
+    
 }
 
 .social-circle li a:hover i, .triggeredHover {
@@ -85,36 +111,69 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-a {
- background-color: #D3D3D3;
+
+#portada-titulo{
+    background: azure;
+    color: black;
+    border-bottom-color: red;
+    border-bottom: 10px;
+    width: 1150px;
+    height: 400px;
+    padding: 0;
+    margin-top: 35px;
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    background: url(../img/diagonal.png);
+    box-shadow: 20px 20px 50px #999;    
+}
+#box-foto{
+   padding: 0;
+    width:  400px;
+    height: 400px;
     
-    text-decoration: none;
 }
-.navbar-header{
- background-color: aqua;   
-}
-#foto{
-    width: 300px;
-    height: 300px;
-    
-}
-.breadCrumArea {
-    margin-top: 10px;
-    width: 100%;
-    background: url(../img/fondo.jpg) no-repeat;
-    background-size: 100% 35%;
-    padding: 20px 14px 19%;
-    background-position: 10px;
-}
-#menu{
-    padding-top: -20px;
-    padding-bottom: auto;
+#saludo{
+    margin-top: 2px;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    background: #0b9e8a;
+    color: #bcea05;
     text-align: center;
-    margin: 20px;
-    background-color: transparent;
-    
+        
+}
+#saludo:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    bottom: -8px;
+    right: 0;
+    border: 10px solid #0b9e8a;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#portada-top{
+}
+
+#infBasica{
+    padding: 10px 200px 50px 13px;
     
 }
-#conteiner{
-    background-color: transparent;
+
+#foto{
+    width:  400px;
+    height: 400px;
+    
 }
+

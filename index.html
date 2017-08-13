@@ -6,48 +6,97 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Indie+Flower|Just+Another+Hand|Sedgwick+Ave" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script>
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $("#traslado").fadeOut(1500);
+                },3000)
+            });
+         
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $("#contenido").fadeIn(1000);
+                },2500)
+            });
+          </script> 
 </head>
-<body>
-  <section id ="breadCrumArea" class="breadCrumArea"/>
-   <div class="row" id="conteiner">
-    <div id="menu" class="col-md-3">
-           <img src="img/foto-carnet.jpg" alt="" id="foto" class="foto">
-             
-                   <h2>Alejandro López Ramírez</h2>
-                   <h3>Desarrollador web y <br/> Consultor de Nomina y Gestión Humana</h3>
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>	
-       </div>
-    <nav class="col-md-9 navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Brand</a>
+<body onload="inicio()">   <!--Translado-->
+    <div id="traslado">
+                <div id="box-translado" class="col-md-5 col-md-offset-3">
+                   <div id="guella" >
+                    <i class="material-icons" style="font-size: 60px;">fingerprint</i>
+                </div>
+                <!-- NAME & STATUS -->
+              <div id="box-titulo">
+                    <h1 id="box-nombre">Alejandro López Ramírez</h1><br>
+                    <h5  id="box-rol">Consultor de Nómina y Gestión Humana<br> &  <br> Desarrollador Web</h5>
+               </div>
+               </div>
     </div>
+    <div id="contenido">
+    <!--Portada-->
+      <div id="portada">
+       <div id="superior" class="col-md-12">
+           <br>
+            <!--Nombre derecha-->
+            <div id="derecha" class="col-md-5 text-center">
+               <h1>Alejandro López Ramírez</h1><br>
+                <h5 id="portada-rol">Consultor de Nómina y Gestión Humana <br>& <br> Desarrollador Web</h5>
+            </div>
+            <!--Redes Sociales-->
+            <div id="redesSociales" class="col-md-6 text-right">
+               <ul class="social-network social-circle">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+               </ul>
+            </div>
+        </div>
+        <br>
+        <!--Box Portada-->
+        <div id="portada-titulo" class="col-md-12">
+            <div id="box-foto" class="col-md-4" >
+                <img id="foto" src="img/foto-carnet.jpg" alt="Foto">
+            </div>
+            <div id="portada-top" class="text-left col-md-7">
+                <br>   
+                  <div id="saludo" class="col-md-3 col-offset-9">
+                       <span>Hola y Bienvenid@</span>
+                   </div>
+                   <br>
+                   <br>
+                   <div id="infBasica" class="col-md-12 text-center">
+                        <h3 id="portada-nombre">Soy <span style="color: #0b9e8a;">Alejandro López Ramírez</span></h3>
+                        <br>
+                        <h4>Consultor de Nómina y Gestión Humana <br>&<br>  Desarrollador Web</h4>
+                   </div>
+                   <br>
+            </div>
+            <div class="text-left col-md-7">
+                       <div class="col-md-6 text-right" >Edad:</div> <div class="col-md-6 text-left">28 años</div>
+                       <div class="col-md-6 text-right" >E-mail:</div> <div class="col-md-6 text-left"><a href="mailto:contacto@alejozepol,com">contacto@alejozepol.com</a></div>
+                       <div class="col-md-6 text-right">Ciudad:</div> <div class="col-md-6 text-left">Bogotá D.C.</div>
+                       <div class="col-md-6 text-right" >WebSite:</div> <div class="col-md-6 text-left"><a target="_blank" href="https://www.alejozepol.com">www.alejozepol.com</a></div>
+                   </div>
+                               <div id="redesSociales" class="col-md-6 text-right">
+               <ul class="social-network social-circle">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+               </ul>
+            </div>
+        </div>
 
-  </div><!-- /.container-fluid -->
-</nav>
-    
-
-       <div class="col-md-9">
-      <p>ssds</p>
-  </div>
-   </div>
-    <scrip src="js/bootstrap.min.js"/>
-    
-    <script>
-    const breadCrumArea= document.getElementById("breadCrumArea")
-     window.addEventListener('scroll',function(e){
-        var position = 20 + window.scrollY 
-                
-        breadCrumArea.style.backgroundPosition = 'center ' + position +'px';
-               })
-    </script>
-    
+    </div>
+    </div>
+            <script src="js/index.js"></script>
 </body>
 </html>
