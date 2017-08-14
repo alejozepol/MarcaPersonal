@@ -15,7 +15,7 @@ h1, h2, h3,h4, h5{
 }
 #contenido{
     display: none;
-}
+    }
 #portada{
     background-image: url(../img/fondo.jpg);
     background-size: 100%;
@@ -24,8 +24,12 @@ h1, h2, h3,h4, h5{
     height: 332px;    
     position: relative;
     color: aliceblue;
+    margin-bottom: 260px;
 }
-
+span{
+    color: darkred;
+    font-weight: bold;
+}
 
 /*=========================
   Icons
@@ -111,8 +115,10 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-
 #portada-titulo{
+        background: url(../img/diagonal.png);
+}
+.box-contenido{
     background: azure;
     color: black;
     border-bottom-color: red;
@@ -124,7 +130,6 @@ a.socialIcon:hover, .socialHoverClass {
     margin-right: 100px;
     margin-bottom: 0;
     margin-left: 100px;
-    background: url(../img/diagonal.png);
     box-shadow: 20px 20px 50px #999;    
 }
 #box-foto{
