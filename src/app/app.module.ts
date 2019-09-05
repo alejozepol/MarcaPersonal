@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { Routes, RouterModule } from '@angular/router';
+import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 
 const appRoutes: Routes =[
   {path:'', component: InicioComponent},
@@ -15,6 +16,7 @@ const appRoutes: Routes =[
   declarations: [
     AppComponent,
     InicioComponent,
+    QuienSoyComponent,
   ],
   imports: [
     BrowserModule,
