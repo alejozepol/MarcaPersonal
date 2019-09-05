@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
+<nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#"> <img src="../../assets/LogoRedondo.svg" width="60px" height="60px" alt="Logo Alejandro Lopez Ramirez | AlejoZepol"></a>
     <ul id="navLista" class="nav navbar-nav align-self-center">
         <li class="nav-item" routerLinkActive="active">
@@ -25,7 +25,8 @@
     </ul>
 </nav>
 <router-outlet></router-outlet>
-<footer class="row">
+<footer>
+  <div class="row">
   <div class="col-5">
     <div class="container">
       <div class="row contenedorInscripcion">
@@ -51,11 +52,13 @@
       <br>
       <p><b>© AlejoZepol 2019</b></p>
 </div>
-  <div class="col-5" style="background-color: brown">
-      <input class="" type="text"  placeholder="Nombres">
-      <input class="" type="email" placeholder="Correo Electronico">
-      <input class="" type="text"  placeholder="Descripción">
-      <button class="btnIncripcionCorreo" type="button" id="inscripcionCorreo">Suscripbeme</button>
+  <div class="col-5 text-center">
+      <img src="../assets/Contactame.svg" width="60px" height="60px" alt="Contactame">
+      <p class="text-center"><b>Contactame</b> </p>
+      <input class="inputFormulario" type="text"  placeholder="Nombres">
+      <input class="inputFormulario" type="email" placeholder="Correo Electronico">
+      <input class="inputFormulario inputDescripcion" type="text"  placeholder="Descripción">
+      <button class="btn btnNegroGrande rounded-pill">Suscripción</button>
   </div>
-
+</div>
 </footer>
