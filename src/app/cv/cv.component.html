@@ -1,1 +1,23 @@
-<p>cv works!</p>
+<div style="margin: 10%">
+</div>
+<div class="container">
+  <div>
+    <h2 class="text-center textTituloAmarillo">Perfil Profesional</h2>
+    <p>Emprendedor, técnico contable, Desarrollador de software y con 10 años de experiencia en liquidación de Nómina, seguridad social y legislación laboral.
+        Desde hace 5 años me desempeño como consultor de nómina y gestión humana, prestando servicio de auditoria, liquidación de nómina, seguridad social y soporte, implementación y asesorías en el sistema Kactus HCM y en trámites de requerimientos de la UGPP
+    </p>
+  </div>
+  <div>
+      <h2 class="text-center textTituloAmarillo">Experiencia Laboral</h2>
+      <div class="row" *ngFor="let exp of experienciaLaboral">
+          <img src="{{exp.logo}}" class="rounded-circle img-fluid" alt="" width="90px" width="90px">
+          <h3>{{exp.cargo}}</h3>
+          <br/>
+          <h4>{{exp.empresa}}</h4>
+        <div class="col-2 border-left">
+        </div>
+        <div class="col-10"></div>
+      </div>
+  </div>
+
+</div>
