@@ -9,7 +9,8 @@ import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 
 const appRoutes: Routes =[
   {path:'', component: InicioComponent},
-  {path:'inicio', component: InicioComponent}
+  {path:'inicio', component: InicioComponent},
+  {path:'QuienSoy', component: QuienSoyComponent}
 ]
 
 @NgModule({
