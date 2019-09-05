@@ -7,6 +7,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { Routes, RouterModule } from '@angular/router';
 import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 import { CVComponent } from './cv/cv.component';
+import {AngularFireModule} from "@angular/fire"
 
 const appRoutes: Routes =[
   {path:'', component: InicioComponent},
@@ -14,6 +15,14 @@ const appRoutes: Routes =[
   {path:'QuienSoy', component: QuienSoyComponent},
   {path:'cv', component: CVComponent}
 ]
+const firebaseConfig= {
+  apiKey: "AIzaSyDaeQ73aB1tKkhnlpUtP2Jjz570ziwOhSI",
+  authDomain: "alejozepol-4d4f3.firebaseapp.com",
+  databaseURL: "https://alejozepol-4d4f3.firebaseio.com",
+  projectId: "alejozepol-4d4f3",
+  storageBucket: "",
+  messagingSenderId: "200049812777",
+}
 
 @NgModule({
   declarations: [
@@ -26,6 +35,7 @@ const appRoutes: Routes =[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
