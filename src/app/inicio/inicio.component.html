@@ -1,0 +1,69 @@
+<div class="row">
+  <!-- hero -->
+    <div class="col-12 contenedorImagenPortada">
+        <p class=" offset-6 text-center textoHero">¡Hola soy <b>Alejandro López!</b> <br> Desarrollador web <br>y <br> Consultor de Nómina y Gestión Humana <br><b>con pasión por aprender</b>
+        </p>
+    </div>
+ <!--    fin hero -->
+
+<!-- areas de conocimiento -->
+<div class="container pt-5">
+  <h2 class="text-center">Áreas de conocimiento</h2>
+  <div class="row">
+    <div class="text-center col-4 itemAreaInteres" *ngFor="let AreaInteres of areasConocimiento">
+        <img src="{{AreaInteres.imagen}}"  width="100px" height="100%" alt="..." class="img-thumbnail rounded-circle">
+        <h6>{{AreaInteres.nombre}}</h6>
+    </div>
+  </div>
+</div>
+<!-- Fin areas de conocimiento -->
+
+<!--  inicio pilares de conocimiento -->
+    <div class="container mt-3">
+      <h2 class="text-center">En que te puedo ayudar</h2>
+    <div class="row text-center">
+      <div class="col-4">
+        <div class="card"  style="width: 18rem;">
+            <img src="../../assets/auditoria.jpg" class="card-img-top" alt="imagen auditoria">
+            <div class="card-body">
+              <h5 class="card-title">Auditorias</h5>
+              <p class="card-text">Presto servicios de autorias en nómina, seguridad social, contabilización de nomina o verificacion de procesos Gestión Humana </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+          <div class="card"  style="width: 18rem;">
+              <img src="../../assets/auditoria.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nomina y seguridad social</h5>
+                <p class="card-text">administración y liquidación de nomina y/o seguridad social de pequeño y grande volumen con conocimientos en beneficios por convenciones colectivas o beneficios extralegales con la ley presente en 🇨🇴 Colombia </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-4">
+            <div class="card"  style="width: 18rem;">
+                <img src="../../assets/auditoria.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reportes y liquidación UGPP</h5>
+                  <p class="card-text">Presto servicios de informes, reportes, verificación y liquidación de requerimientos UGPP, generacion de planillas de correción</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-4">
+              <div class="card"  style="width: 18rem;">
+                  <img src="../../assets/auditoria.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Soporte, mantenimiento o implementación en KACTUS HCM</h5>
+                    <p class="card-text">Presto servicio como consultor o usuario lider del sistema KACTUS HCM desarrollado por DigitalWare en modulos de nomina y/o gestión humana</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+      </div>
+</div>
+
+    </div>
+<!--  inicio pilares de conocimiento -->
+</div>

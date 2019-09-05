@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+body{
+  font-family: 'Chilanka', cursive !important;
+}
+#navbar{
+  background-color: #232323 !important;
+  justify-content: space-between !important;
+}
+#navLista{
+  text-align: left !important;
+}
+.nav-link{
+  color: rgba(255,225,0,1) !important;
+}
+.nav-link:hover{
+  color: rgba(254,178,0,1) !important;
+  border-bottom: rgba(254,178,0,1);
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+
+}
+
+.btnAmarilloGrande:hover{
+  background: rgba(255,225,0,1);
+background: -moz-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,225,0,1)), color-stop(100%, rgba(254,178,0,1)));
+background: -webkit-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
+background: -o-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
+background: linear-gradient(to right, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe100', endColorstr='#feb200', GradientType=1 );
+color: #F6F4EB
+}
+.contenedorImagenPortada{
+  height: 24em;
+  background-color: #9c9797;
+}
+.textoHero{
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.itemAreaInteres:hover{
+  background-color: burlywood;
+  color: #232323;
+}
