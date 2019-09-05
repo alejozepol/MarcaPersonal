@@ -10,13 +10,35 @@
   <div>
       <h2 class="text-center textTituloAmarillo">Experiencia Laboral</h2>
       <div class="row" *ngFor="let exp of experienciaLaboral">
-          <img src="{{exp.logo}}" class="rounded-circle img-fluid" alt="" width="90px" width="90px">
-          <h3>{{exp.cargo}}</h3>
-          <br/>
-          <h4>{{exp.empresa}}</h4>
-        <div class="col-2 border-left">
+        <div class="col-12">
+          <div class="row">
+            <div class=" col-2 offset-4 text-right pr-0 ">
+                <img src="{{exp.logo}}" class="bg-white rounded-circle img-fluid border" alt="" width="90px" width="90px">
+            </div>
+            <div class="col-6 text-left pt-3">
+                <h3 class="cargo">{{exp.cargo}}</h3>
+                <h4>{{exp.empresa}}</h4>
+            </div>
+          </div>
         </div>
-        <div class="col-10"></div>
+        <div class="col-12 tarjetaExperiencia">
+            <div class="col-2 text-right h-100 ">
+              <div class="fechasExperiencia">
+                  {{exp.fechaFin}}
+                  {{exp.fechaInicio}}
+              </div>
+              <div class="puntoDivisor rounded-circle">
+              </div>
+            </div>
+            <div class="col-10 tarjetaExperienciaDetalle">
+              <br>
+              <br>
+              <div *ngFor="let act of exp.actividad">
+                  <p>{{act}}</p>
+              </div>
+
+            </div>
+        </div>
       </div>
   </div>
 

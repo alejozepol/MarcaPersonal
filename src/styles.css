@@ -157,3 +157,31 @@ text-shadow:
   -1px 1px 0 #000,
   1px 1px 0 #000;
 }
+.tarjetaExperiencia{
+  height: 34vh;
+  width: 80%;
+  display: flex;
+  top: -45px;
+  z-index: -1
+}
+.tarjetaExperienciaDetalle{
+  background-color: rgba(196, 196, 196, 0.534);
+  border-left: 2px solid #000
+}
+.fechasExperiencia{
+  display: flex;
+  right: 10%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.puntoDivisor{
+  background-color: #ffe100;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  right: -12px;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
