@@ -33,10 +33,7 @@
             <div class="col-10 tarjetaExperienciaDetalle">
               <br>
               <br>
-              <div *ngFor="let act of exp.actividad">
-                  <p>{{act}}</p>
-              </div>
-
+                  <p *ngFor="let act of exp.actividad" class="mb-1">{{act}}</p>
             </div>
         </div>
       </div>
