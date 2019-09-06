@@ -185,3 +185,23 @@ text-shadow:
   top: 40%;
   z-index: 1;
 }
+.tarjetaEducacion{
+  margin: 2%;
+  background-color: rgba(245, 229, 107, 0.37);
+  -webkit-box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+  -moz-box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+  box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+}
+.tarjetaEducacion:hover{
+  margin: 3%;
+  background-color: rgba(76, 142, 240, 0.37);
+  -webkit-box-shadow: 2px 18px 28px 12px rgba(76, 142, 240, 0.37);
+  -moz-box-shadow: 2px 18px 28px 12px rgba(76, 142, 240, 0.37);
+  box-shadow: 2px 18px 28px 12px rgba(76, 142, 240, 0.37);
+}
+.tarjetaEducacionContinuada:hover{
+  background-color: rgba(245, 229, 107, 0.37);
+  -webkit-box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+  -moz-box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+  box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+}

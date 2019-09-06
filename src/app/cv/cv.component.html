@@ -38,5 +38,93 @@
         </div>
       </div>
   </div>
-
+  <div class="container">
+      <h2 class="text-center textTituloAmarillo">Educación</h2>
+      <br>
+      <div class="container ">
+          <div class="row">
+              <div class="col-5 tarjetaEducacion">
+                <div class="row">
+                    <div class="col-3 text-right ">
+                        <img src="../../assets/SENA.png" alt="" class="img-fluid rounded-circle" width="100px" height="100px">
+                    </div>
+                    <div class="col-9 text-left mt-4">
+                        <h5>Técnico Contabilidad y Finanza</h5>
+                        <h6>Servicio Nacional de Aprendizaje SENA</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="col-5 offset-1 tarjetaEducacion">
+                  <div class="row">
+                      <div class="col-3 text-right ">
+                          <img src="../../assets/SENA.png" alt="" class="img-fluid rounded-circle" width="100px" height="100px">
+                      </div>
+                      <div class="col-9 text-left mt-4">
+                          <h5>Técnologo Analisis y desarrollo de software</h5>
+                          <h6>Servicio Nacional de Aprendizaje SENA</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-5 tarjetaEducacion">
+                  <div class="row">
+                      <div class="col-3 text-right ">
+                          <img src="../../assets/goldenBD.svg" alt="" class="img-fluid" width="100px" height="100px">
+                      </div>
+                      <div class="col-9 text-left mt-4">
+                          <h5>Carrera en Bases de Datos</h5>
+                          <h6>Platzi</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-5 offset-1 tarjetaEducacion">
+                  <div class="row">
+                      <div class="col-3 text-right ">
+                          <img src="../../assets/goldenEM.svg" alt="" class="img-fluid" width="100px" height="100px">
+                      </div>
+                      <div class="col-9 text-left mt-4">
+                          <h5>Carrera en Email Marketing</h5>
+                          <h6>Platzi</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-5 tarjetaEducacion">
+                  <div class="row">
+                      <div class="col-3 text-right ">
+                          <img src="../../assets/goldenPB.svg" alt="" class="img-fluid" width="100px" height="100px">
+                      </div>
+                      <div class="col-9 text-left mt-4">
+                          <h5>Carrera en Fundamentos de Programación</h5>
+                          <h6>Platzi</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-5 offset-1 tarjetaEducacion">
+                  <div class="row">
+                      <div class="col-3 text-right ">
+                          <img src="../../assets/goldenDG.svg" alt="" class="img-fluid" width="100px" height="100px">
+                      </div>
+                      <div class="col-9 text-left mt-4">
+                          <h5>Carrera en Diseño Grafico</h5>
+                          <h6>Platzi</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div>
+    <h2 class="text-center textTituloAmarillo">Educación Complementaria</h2>
+      <br>
+      <div class="row">
+    <div *ngFor="let curso of cursos" class="col-4 tarjetaEducacionContinuada text-center">
+      <img src="{{curso.badge}}" class="img-fluid" alt="{{curso.title}}" width="100px" height="100px">
+      <div class="card-body">
+        <h5 class="card-title">{{curso.title}}</h5>
+        <h6 *ngIf="!curso.instituto" >Platzi</h6>
+        <h6 *ngIf="curso.instituto" >{{curso.instituto}}</h6>
+        <a *ngIf="curso.diploma_link" target="_blank"  href="http://platzi.com/{{curso.diploma_link}} " class="rounded-pill btn btn-outline-warning  btnAmarilloGrande text-black-50">ver certificado</a>
+      </div>
+    </div>
+    </div>
+  </div>
 </div>
