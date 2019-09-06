@@ -1,5 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .textoHero{
+    font-size: 18px;
+    margin-top: 2em;
+  }
+
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .textoHero{
+    font-size: 18px;
+    margin-top: 2em;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .textoHero{
+    font-size: 28px;
+    margin-top: 2em;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .textoHero{
+    font-size: 28px;
+    margin-top: 2em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .textoHero{
+    font-size: 28px;
+    margin-top: 2em;
+  }
+ }
+
+
+
 body{
   font-family: 'Chilanka', cursive !important;
 }
@@ -20,9 +65,7 @@ body{
   border-bottom-width: 4px;
 
 }
-.row{
-  margin-right: 0% !important;
-}
+
 .btnNegroGrande{
   background-color: #232323 !important;
   color: rgb(211, 203, 203) !important;
@@ -57,10 +100,6 @@ color: #F6F4EB
   height: 22em;
   max-width: 100%;
   background-color: #9c9797;
-}
-.textoHero{
-  font-size: 2em;
-  margin-top: 2em;
 }
 
 .itemAreaInteres:hover{

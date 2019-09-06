@@ -5,7 +5,6 @@
         </p>
     </div>
  <!--    fin hero -->
-
 <!-- areas de conocimiento -->
 <div class="container mt-5">
   <h2 class="text-center">Áreas de conocimiento</h2>
@@ -19,60 +18,15 @@
 <!-- Fin areas de conocimiento -->
 
 <!--  inicio pilares de conocimiento -->
-    <div class="container mt-5">
+    <div class="container">
       <h2 class="text-center">En que te puedo ayudar</h2>
     <div class="row text-center">
-      <div class="col-4">
-        <div class="card">
-            <img src="../../assets/auditoria.jpg" class="card-img-top" alt="imagen auditoria">
-            <div class="card-body">
-              <h5 class="card-title">Auditorias</h5>
-              <p class="card-text">Presto servicios de autorias en nómina, seguridad social, contabilización de nomina o verificacion de procesos Gestión Humana </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" *ngFor="let servicio of servicios">
           <div class="card">
-              <img src="../../assets/Nomina.jpg" class="card-img-top" alt="Nómina, Seguridad social y legislación laboral">
+              <img src="{{servicio.imagen}}" class="card-img-top img-fluid" alt="{{servicio.titulo}}">
               <div class="card-body">
-                <h5 class="card-title">Nomina y seguridad social</h5>
-                <p class="card-text">administración y liquidación de nomina y/o seguridad social de pequeño y grande volumen con conocimientos en beneficios por convenciones colectivas o beneficios extralegales con la ley presente en 🇨🇴 Colombia </p>
-            </div>
-          </div>
-      </div>
-      <div class="col-4">
-            <div class="card">
-                <img src="../../assets/ugpp.png" class="card-img-top cuadrarImg" alt="Logo UGPP">
-                <div class="card-body mt-3">
-                  <h5 class="card-title">Reportes y liquidación UGPP</h5>
-                  <p class="card-text">Presto servicios de informes, reportes, verificación y liquidación de requerimientos UGPP, generacion de planillas de correción</p>
-              </div>
-            </div>
-      </div>
-      <div class="col-4">
-              <div class="card">
-                  <img src="../../assets/kactus.png" class="card-img-top cuadrarImg" alt="LOGO KACTUS HCM">
-                  <div class="card-body">
-                    <h5 class="card-title">Soporte, mantenimiento o implementación en KACTUS HCM</h5>
-                    <p class="card-text">Presto servicio como consultor o usuario lider del sistema KACTUS HCM desarrollado por DigitalWare en modulos de nomina y/o gestión humana</p>
-                </div>
-              </div>
-      </div>
-      <div class="col-4">
-          <div class="card">
-              <img src="../../assets/emailMarketing.png" class="card-img-top" alt="Email merketing">
-              <div class="card-body">
-                <h5 class="card-title">Campañas de Email marketing </h5>
-                <p class="card-text">Mediante campañas de e-mail marketing podemos comunicarnos con nuestros clientes</p>
-            </div>
-          </div>
-      </div>
-      <div class="col-4">
-          <div class="card">
-              <img src="../../assets/desarrolloWeb.jpg" class="card-img-top" alt="desarrollo web">
-              <div class="card-body">
-                <h5 class="card-title">Desarrollo Web </h5>
-                <p class="card-text">Elaboración de paginas web, presentaciones, e-commerce utilizando HTML5, CCS3, JavaScripts y framework como anguelar, bootstrap y otros mas</p>
+                <h5 class="card-title">{{servicio.titulo}}</h5>
+                <p class="card-text">{{servicio.descripcion}}</p>
             </div>
           </div>
       </div>
