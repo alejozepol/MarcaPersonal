@@ -14,7 +14,8 @@ const appRoutes: Routes =[
   {path:'', component: InicioComponent},
   {path:'inicio', component: InicioComponent},
   {path:'QuienSoy', component: QuienSoyComponent},
-  {path:'cv', component: CVComponent}
+  {path:'cv', component: CVComponent},
+  {path:'portafolio', component: PortafolioComponent}
 ]
 const firebaseConfig= {
   apiKey: "AIzaSyDaeQ73aB1tKkhnlpUtP2Jjz570ziwOhSI",
