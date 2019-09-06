@@ -7,7 +7,38 @@
     font-size: 18px;
     margin-top: 2em;
   }
+h3{
+  font-size: 18px !important;
 
+}
+h4{
+  font-size: 16px !important;
+
+}
+.fechaInicioExperiencia{
+  font-size: 12px !important;
+  display: flex;
+  right: 76%;
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+}
+.fechaFinExperiencia{
+  font-size: 12px !important;
+  display: flex;
+  right: 76%;
+  position: absolute;
+  top:5%;
+  z-index: 1;
+}
+.tarjetaExperiencia{
+  display: none
+}
+
+.logoExperiencia{
+  width: 30%;
+
+}
  }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -15,6 +46,33 @@
   .textoHero{
     font-size: 18px;
     margin-top: 2em;
+  }
+  h3{
+    font-size: 18px !important;
+
+  }
+  h4{
+    font-size: 16px !important;
+
+  }
+  .fechaInicioExperiencia{
+    font-size: 12px !important;
+    display: flex;
+    right: 76%;
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+  }
+  .fechaFinExperiencia{
+    font-size: 12px !important;
+    display: flex;
+    right: 76%;
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+  }
+  .tarjetaExperiencia{
+    display: none
   }
 
 }
@@ -25,6 +83,31 @@
     font-size: 28px;
     margin-top: 2em;
   }
+  .fechaInicioExperiencia{
+    display: flex;
+    right: 83%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+  }
+  .fechaFinExperiencia{
+    display: flex;
+    right: 83%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  .tarjetaExperiencia{
+    height: 34vh;
+    width: 80%;
+    display: flex;
+    top: -45px;
+    z-index: -1
+  }
+  .logoExperiencia{
+    width: 70%;
+
+  }
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -33,6 +116,31 @@
     font-size: 28px;
     margin-top: 2em;
   }
+  .fechaInicioExperiencia{
+    display: flex;
+    right: 83%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+  }
+  .fechaFinExperiencia{
+    display: flex;
+    right: 83%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  .tarjetaExperiencia{
+    height: 34vh;
+    width: 80%;
+    display: flex;
+    top: -45px;
+    z-index: -1
+  }
+  .logoExperiencia{
+    width: 70%;
+
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -40,6 +148,35 @@
   .textoHero{
     font-size: 28px;
     margin-top: 2em;
+  }
+  .fechaInicioExperiencia{
+    display: flex;
+    right: 83%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+  }
+  .fechaFinExperiencia{
+    display: flex;
+    right: 83%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  .tarjetaExperiencia{
+    height: 34vh;
+    width: 80%;
+    display: flex;
+    top: -45px;
+    z-index: -1
+  }
+  .logoExperiencia{
+    width: 70%;
+
+  }
+  .experienciaHeader{
+    left: 35%;
+    position: relative;
   }
  }
 
@@ -65,7 +202,9 @@ body{
   border-bottom-width: 4px;
 
 }
-
+.logoExperiencia{
+  border: 8px solid #dee2e6!important;
+}
 .btnNegroGrande{
   background-color: #232323 !important;
   color: rgb(211, 203, 203) !important;
@@ -196,24 +335,12 @@ text-shadow:
   -1px 1px 0 #000,
   1px 1px 0 #000;
 }
-.tarjetaExperiencia{
-  height: 34vh;
-  width: 80%;
-  display: flex;
-  top: -45px;
-  z-index: -1
-}
+
 .tarjetaExperienciaDetalle{
   background-color: rgba(196, 196, 196, 0.534);
   border-left: 2px solid #000
 }
-.fechasExperiencia{
-  display: flex;
-  right: 10%;
-  position: absolute;
-  top: 40%;
-  z-index: 1;
-}
+
 .puntoDivisor{
   background-color: #ffe100;
   height: 25px;
