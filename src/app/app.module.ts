@@ -7,7 +7,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { Routes, RouterModule } from '@angular/router';
 import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 import { CVComponent } from './cv/cv.component';
-import {AngularFireModule} from "@angular/fire"
+import {AngularFireModule} from "@angular/fire";
+import { PortafolioComponent } from './portafolio/portafolio.component'
 
 const appRoutes: Routes =[
   {path:'', component: InicioComponent},
@@ -30,6 +31,7 @@ const firebaseConfig= {
     InicioComponent,
     QuienSoyComponent,
     CVComponent,
+    PortafolioComponent,
   ],
   imports: [
     BrowserModule,
