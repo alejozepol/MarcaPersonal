@@ -1,1 +1,21 @@
-<p>portafolio works!</p>
+<div style="margin: 10%">
+  </div>
+  <div class="container">
+      <div  class="row">
+        <div class="card col-3 card col-3 p-0 mt-0 mr-5 sombraRoja" *ngFor="let pd of proyectosDesarrollo">
+     <div class="embed-responsive embed-responsive-16by9">
+<!--               <iframe class="embed-responsive-item card-img-top" [src]="{{pd.video}}" allowfullscreen></iframe>
+ -->          </div>
+          <div class="card-header bgTituloTarjeta">
+            <h5 class="text-center">{{pd.titulo}}</h5>
+          </div>
+          <div class="tabsTarjeta tabsTarjetaDer">
+            <h6 class="badge badge-danger">{{pd.lenguaje}}</h6>
+          </div>
+          <div class="card-body text-center">
+            <p>{{pd.descripcion}}</p>
+            <a target="_blank"  href="{{pd.urlCodigo}}" class="rounded-pill btn btn-outline-warning  btnAmarilloGrande text-black-50">ver codigo</a>
+          </div>
+      </div>
+    </div>
+  </div>
