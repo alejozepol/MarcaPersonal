@@ -3,12 +3,12 @@
 <div class="row">
   <div class="col-12 contenedorImagenPortada p-0">
       <p class=" offset-6 text-center textoHero">¡Hola soy
-        <b>Alejandro López!</b>
+        <b class="textTituloAmarillo">Alejandro López Ramírez!</b>
         <br>
         Desarrollador web
         <br>y<br>
         Consultor de Nómina y Gestión Humana<br>
-        <b>con pasión por aprender</b>
+        <b class="textTituloAmarillo">con pasión por aprender</b>
       </p>
   </div>
 </div>
@@ -21,19 +21,19 @@
           <div class="col-12">
               <h2 class="text-center textTituloAmarillo">Áreas de conocimiento</h2>
           </div>
-          <div class="text-center col-md-4 col-sm-4 col-xs-4 col-lg-4 col-xl-1 itemAreaInteres" *ngFor="let AreaInteres of areasConocimiento">
+          <div class="text-center col-4 col-xl-1 itemAreaInteres" *ngFor="let AreaInteres of areasConocimiento">
               <img src="{{AreaInteres.imagen}}"  width="100px" height="100%" alt="..." class="img-thumbnail rounded-circle">
               <h6>{{AreaInteres.nombre}}</h6>
           </div>
         </div>
         <!-- Fin areas de conocimiento -->
         <!--  inicio pilares de conocimiento -->
-        <div class="row text-center">
-          <div class="col-12 textTituloAmarillo">
-              <h2 class="text-center">En que te puedo ayudar</h2>
+        <div class="row justify-content-center">
+          <div class="col-12">
+              <h2 class="text-center textTituloAmarillo">En que te puedo ayudar</h2>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" *ngFor="let servicio of servicios">
-              <div class="card">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-3" *ngFor="let servicio of servicios">
+              <div class="card align-content-center">
                   <img src="{{servicio.imagen}}" class="card-img-top img-fluid" alt="{{servicio.titulo}}">
                   <div class="card-body">
                     <h5 class="card-title">{{servicio.titulo}}</h5>
