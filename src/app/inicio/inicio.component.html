@@ -1,37 +1,45 @@
+<div class="container-fluid">
+  <!--Inicio hero -->
 <div class="row">
-  <!-- hero -->
-    <div class="col-12 contenedorImagenPortada">
-        <p class=" offset-6 text-center textoHero">¡Hola soy <b>Alejandro López!</b> <br> Desarrollador web <br>y <br> Consultor de Nómina y Gestión Humana <br><b>con pasión por aprender</b>
-        </p>
-    </div>
- <!--    fin hero -->
+  <div class="col-12 contenedorImagenPortada">
+      <p class=" offset-6 text-center textoHero">¡Hola soy
+        <b>Alejandro López!</b>
+        <br>
+        Desarrollador web
+        <br>y<br>
+        Consultor de Nómina y Gestión Humana<br>
+        <b>con pasión por aprender</b>
+      </p>
+  </div>
+</div>
+<!--fin hero -->
+</div>
+<div class="container">
 <!-- areas de conocimiento -->
-<div class="container mt-5">
-  <h2 class="text-center">Áreas de conocimiento</h2>
-  <div class="row">
-    <div class="text-center col-4 itemAreaInteres" *ngFor="let AreaInteres of areasConocimiento">
-        <img src="{{AreaInteres.imagen}}"  width="100px" height="100%" alt="..." class="img-thumbnail rounded-circle">
-        <h6>{{AreaInteres.nombre}}</h6>
-    </div>
+<div class="row">
+  <div class="col-12">
+      <h2 class="text-center textTituloAmarillo">Áreas de conocimiento</h2>
+  </div>
+  <div class="text-center col-4 itemAreaInteres" *ngFor="let AreaInteres of areasConocimiento">
+      <img src="{{AreaInteres.imagen}}"  width="100px" height="100%" alt="..." class="img-thumbnail rounded-circle">
+      <h6>{{AreaInteres.nombre}}</h6>
   </div>
 </div>
 <!-- Fin areas de conocimiento -->
-
 <!--  inicio pilares de conocimiento -->
-    <div class="container">
+<div class="row text-center">
+  <div class="col-12 textTituloAmarillo">
       <h2 class="text-center">En que te puedo ayudar</h2>
-    <div class="row text-center">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" *ngFor="let servicio of servicios">
-          <div class="card">
-              <img src="{{servicio.imagen}}" class="card-img-top img-fluid" alt="{{servicio.titulo}}">
-              <div class="card-body">
-                <h5 class="card-title">{{servicio.titulo}}</h5>
-                <p class="card-text">{{servicio.descripcion}}</p>
-            </div>
-          </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" *ngFor="let servicio of servicios">
+      <div class="card">
+          <img src="{{servicio.imagen}}" class="card-img-top img-fluid" alt="{{servicio.titulo}}">
+          <div class="card-body">
+            <h5 class="card-title">{{servicio.titulo}}</h5>
+            <p class="card-text">{{servicio.descripcion}}</p>
+        </div>
       </div>
+  </div>
 </div>
-
-    </div>
 <!--  inicio pilares de conocimiento -->
 </div>
