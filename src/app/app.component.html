@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top col-12 col-md-12 col-sm-12">
+<!-- <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#"> <img src="../../assets/LogoRedondo.svg" width="60px" height="60px" alt="Logo Alejandro Lopez Ramirez | AlejoZepol"></a>
     <div class="collapse navbar-collapse">
       <ul id="navLista" class="navbar-nav mr-auto align-self-center">
@@ -26,8 +26,52 @@
       </ul>
 
     </div>
-</nav>
+</nav> -->
+<nav class="bg-navbar navbar fixed-top navbar-light">
+    <a routerLink="" >
+        <b class="borderText">
+            <img src="../assets/LogoRedondo.svg" alt="LogoAlejoZepol" width="70px;">
+            Alejandro López
+        </b>
+      </a>
+  <ul class="position-relative align-self-baseline m-0">
+    <li routerLinkActive="active">
+      <a routerLink="/inicio/">
+        <b class="borderText">
+            <img src="../assets/IconoInicio.svg" alt="IconoInicio" width="36px">
+          Inicio</b>
+      </a>
+    </li>
+    <li routerLinkActive="active">
+      <a href="#" routerLink="/QuienSoy/">
 
+         <b class="borderText">
+            <img src="../assets/IconoQuienSoy.svg" alt="IconoInicio" width="36px">
+          ¿Quién soy?
+        </b>
+      </a>
+    </li>
+    <li routerLinkActive="active">
+        <a href="#" routerLink="/cv/">
+        <b class="borderText">
+            <img src="../assets/IconoCV.svg" alt="IconoInicio" width="36px">
+            Curiculum Vitae
+          </b>
+        </a>
+      </li>
+    <li routerLinkActive="active">
+        <a href="#" routerLink="/portafolio/">
+        <b class="borderText">
+            <img src="../assets/IconoPortafolio.svg" alt="IconoInicio" width="36px">
+          Portafolio
+        </b>
+        </a>
+      </li>
+      <li>
+        <button class="btnGrandeAmarillo borderText">Trabajemos Juntos</button>
+      </li>
+  </ul>
+</nav>
 
 <router-outlet></router-outlet>
 <footer>

@@ -4,15 +4,14 @@
 <div class="container">
 <!--   inicio Perfil Profesional -->
   <div>
-    <h2 class="text-center textTituloAmarillo">Perfil Profesional</h2>
+    <h2 class="text-center textTituloAmarillo borderText">Perfil Profesional</h2>
     <p>Emprendedor, técnico contable, Desarrollador de software y con 10 años de experiencia en liquidación de Nómina, seguridad social y legislación laboral.
         Desde hace 5 años me desempeño como consultor de nómina y gestión humana, prestando servicio de auditoria, liquidación de nómina, seguridad social y soporte, implementación y asesorías en el sistema Kactus HCM y en trámites de requerimientos de la UGPP
     </p>
   </div>
 <!--   Fin Perfil Profesional -->
 <!--   Inicio Experiencia Laboral -->
-  <div>
-      <h2 class="text-center textTituloAmarillo">Experiencia Laboral</h2>
+      <h2 class="text-center textTituloAmarillo borderText">Experiencia Laboral</h2>
       <div class="row">
         <div class="col-12" *ngFor="let exp of experienciaLaboral">
 <!--inicio titulo y logo -->
@@ -52,90 +51,29 @@
 <!-- fin detalle experiencia -->
         </div>
       </div>
-  </div>
   <!--   Fin Experiencia Laboral -->
   <!--   Inicio Educación -->
-  <div class="container">
-      <h2 class="text-center textTituloAmarillo">Educación</h2>
+      <h2 class="text-center textTituloAmarillo borderText">Educación</h2>
       <br>
-      <div class="container ">
           <div class="row">
-              <div class="col-5 tarjetaEducacion">
-                <div class="row">
-                    <div class="col-3 text-right ">
-                        <img src="../../assets/SENA.png" alt="" class="img-fluid rounded-circle" width="100px" height="100px">
-                    </div>
-                    <div class="col-9 text-left mt-4">
-                        <h5>Técnico Contabilidad y Finanza</h5>
-                        <h6>Servicio Nacional de Aprendizaje SENA</h6>
-                    </div>
-                </div>
-              </div>
-              <div class="col-5 offset-1 tarjetaEducacion">
-                  <div class="row">
+              <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-2" *ngFor="let carrera of carreras">
+                  <div class="row tarjetaEducacion">
                       <div class="col-3 text-right ">
-                          <img src="../../assets/SENA.png" alt="" class="img-fluid rounded-circle" width="100px" height="100px">
+                          <img src="{{carrera.logo}}" alt="logo {{carrera.titulo}}" class="img-fluid logoExperiencia">
                       </div>
                       <div class="col-9 text-left mt-4">
-                          <h5>Técnologo Analisis y desarrollo de software</h5>
-                          <h6>Servicio Nacional de Aprendizaje SENA</h6>
+                          <h5>{{carrera.titulo}}</h5>
+                          <h6>{{carrera.entidad}}</h6>
                       </div>
                   </div>
               </div>
-              <div class="col-5 tarjetaEducacion">
-                  <div class="row">
-                      <div class="col-3 text-right ">
-                          <img src="../../assets/goldenBD.svg" alt="" class="img-fluid" width="100px" height="100px">
-                      </div>
-                      <div class="col-9 text-left mt-4">
-                          <h5>Carrera en Bases de Datos</h5>
-                          <h6>Platzi</h6>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-5 offset-1 tarjetaEducacion">
-                  <div class="row">
-                      <div class="col-3 text-right ">
-                          <img src="../../assets/goldenEM.svg" alt="" class="img-fluid" width="100px" height="100px">
-                      </div>
-                      <div class="col-9 text-left mt-4">
-                          <h5>Carrera en Email Marketing</h5>
-                          <h6>Platzi</h6>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-5 tarjetaEducacion">
-                  <div class="row">
-                      <div class="col-3 text-right ">
-                          <img src="../../assets/goldenPB.svg" alt="" class="img-fluid" width="100px" height="100px">
-                      </div>
-                      <div class="col-9 text-left mt-4">
-                          <h5>Carrera en Fundamentos de Programación</h5>
-                          <h6>Platzi</h6>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-5 offset-1 tarjetaEducacion">
-                  <div class="row">
-                      <div class="col-3 text-right ">
-                          <img src="../../assets/goldenDG.svg" alt="" class="img-fluid" width="100px" height="100px">
-                      </div>
-                      <div class="col-9 text-left mt-4">
-                          <h5>Carrera en Diseño Grafico</h5>
-                          <h6>Platzi</h6>
-                      </div>
-                  </div>
-              </div>
-          </div>
       </div>
-  </div>
     <!--   Fin Experiencia Educación -->
   <!--   Inicio Educación continuada-->
-  <div>
-    <h2 class="text-center textTituloAmarillo">Educación Complementaria</h2>
+    <h2 class="text-center textTituloAmarillo borderText">Educación Complementaria</h2>
       <br>
       <div class="row">
-    <div *ngFor="let curso of cursos" class="col-4 tarjetaEducacionContinuada text-center">
+    <div *ngFor="let curso of cursos" class="col-md-4 col-lg-4 col-xs-6 col-sm-6 tarjetaEducacionContinuada text-center">
       <img src="{{curso.badge}}" class="img-fluid" alt="{{curso.title}}" width="100px" height="100px">
       <div class="card-body">
         <h5 class="card-title">{{curso.title}}</h5>
@@ -145,6 +83,5 @@
       </div>
     </div>
     </div>
-  </div>
   <!--   Fin Educación continuada-->
 </div>

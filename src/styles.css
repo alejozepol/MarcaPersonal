@@ -15,6 +15,12 @@ h4{
   font-size: 16px !important;
 
 }
+h5{
+  font-size: 14px !important;
+}
+h6{
+  font-size: 12px !important;
+}
 .fechaInicioExperiencia{
   font-size: 12px !important;
   display: flex;
@@ -36,7 +42,7 @@ h4{
 }
 
 .logoExperiencia{
-  width: 30%;
+  width: 90px !important;
 
 }
  }
@@ -74,7 +80,10 @@ h4{
   .tarjetaExperiencia{
     display: none
   }
+  .logoExperiencia{
+    width: 90px !important;
 
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -105,7 +114,7 @@ h4{
     z-index: -1
   }
   .logoExperiencia{
-    width: 70%;
+    width: 90px !important;
 
   }
  }
@@ -138,7 +147,7 @@ h4{
     z-index: -1
   }
   .logoExperiencia{
-    width: 70%;
+    width: 90px !important;
 
   }
 }
@@ -171,7 +180,7 @@ h4{
     z-index: -1
   }
   .logoExperiencia{
-    width: 70%;
+    width: 100px !important;
 
   }
   .experienciaHeader{
@@ -180,13 +189,96 @@ h4{
   }
  }
 
+ header{
+  width: 100%;
+  height: 80px;
+  background-color: #232323;
+}
+nav {
+  display: flex !important;
+}
+
+nav img{
+   margin-left: 10px;
+ }
+
+nav ul {
+  color: #DCAC1C;
+  display: flex;
+  list-style: none;
+  margin-left: 10em;
+  margin-top: 1em;
+}
+
+nav ul li {
+  width: 12.5em;
+}
+
+nav ul li:hover{
+ border-bottom: #FFE100 solid 1px;
+}
+
+
+li a{
+  text-decoration: none;
+  color: #DCAC1C;
+}
+
+li a b {
+  position: fixed;
+  margin: 1em;
+}
+
+li a:hover{
+  color: #FFE100;
+}
+
+.btnGrandeAmarillo{
+  background-color: transparent;
+  border: 1px solid #F6F4EB;
+  margin: 1%;
+  position: absolute;
+  height: 45px;
+  width: 150px;
+  right: 0%;
+  top: 0%;
+  border-radius: 42.5px;
+  color: #FEB200;
+}
+.btnGrandeAmarillo:hover{
+  margin: 1%;
+  position: absolute;
+  height: 45px;
+  width: 150px;
+  right: 0%;
+  top: 0%;
+  background: linear-gradient(105.34deg, #FFE100 6.48%, #FEB200 91.95%);
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 42.5px;
+  color: #000000;
+}
+.imagenHero{
+
+  width: 100%;
+  height: 300px;
+  background-color: rgb(34, 71, 172);
+}
+
+.textoHero{
+  font-size: 2em;
+  margin-top: 2em;
+}
 
 
 body{
   font-family: 'Chilanka', cursive !important;
 }
-#navbar{
-  background-color: #232323 !important;
+.bg-navbar{
+  background-color: #23232371 !important;
   justify-content: space-between !important;
 }
 #navLista{
@@ -202,9 +294,9 @@ body{
   border-bottom-width: 4px;
 
 }
-.logoExperiencia{
-  border: 8px solid #dee2e6!important;
-}
+/* .logoExperiencia{
+  border: 1px solid #dee2e6!important;
+} */
 .btnNegroGrande{
   background-color: #232323 !important;
   color: rgb(211, 203, 203) !important;
@@ -324,18 +416,16 @@ font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 45px;
-/* identical to box height */
-
-color: #FFE100;
-
--webkit-text-stroke: 1px black;
-text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+-webkit-text-stroke: 0.5px black;
+stroke: 5px #000
 }
 
+.borderText{
+  color: #FFE100;
+-webkit-text-stroke: 0.5px black;
+
+
+}
 .tarjetaExperienciaDetalle{
   background-color: rgba(196, 196, 196, 0.534);
   border-left: 2px solid #000
@@ -369,14 +459,14 @@ text-shadow:
 
 }
 .tarjetaEducacion{
-  margin: 2%;
   background-color: rgba(245, 229, 107, 0.37);
   -webkit-box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
   -moz-box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
   box-shadow: 2px 18px 28px 12px rgba(156,151,151,0.39);
+  border: 0.1px solid #232323
 }
 .tarjetaEducacion:hover{
-  margin: 3%;
+  margin-top: 0.5%;
   background-color: rgba(76, 142, 240, 0.37);
   -webkit-box-shadow: 2px 18px 28px 12px rgba(76, 142, 240, 0.37);
   -moz-box-shadow: 2px 18px 28px 12px rgba(76, 142, 240, 0.37);

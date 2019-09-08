@@ -361,6 +361,32 @@ export class CVComponent implements OnInit {
   }
 ]
 
+carreras:any = [{
+  titulo:'Técnico Contabilidad y Finanza',
+  entidad: 'Servicio Nacional de Aprendizaje SENA',
+  logo: '../../assets/SENA.png'
+},
+{
+  titulo: 'Técnologo Analisis y desarrollo de software',
+  entidad: 'Servicio Nacional de Aprendizaje SENA',
+  logo: '../../assets/SENA.png'
+},
+{
+  titulo: 'Carrera en Email Marketing',
+  entidad: 'Platzi',
+  logo: '../../assets/goldenBD.svg'
+},
+{
+  titulo: 'Carrera en Fundamentos de Programación',
+  entidad: 'Platzi',
+  logo: '../../assets/goldenPB.svg'
+},
+{
+  titulo: 'Carrera en Diseño Grafico',
+  entidad: 'Platzi',
+  logo: '../../assets/goldenDG.svg'
+}]
+
   experienciaLaboral:any =[
     {empresa:'Undervisa Master Trade',
       fechaInicio: 'Agosto/2018',
