@@ -1,49 +1,132 @@
-<nav class="bg-navbar navbar fixed-top navbar-light p-0 row">
-    <a routerLink=""  class="col-lg-3 col-xl-3  col-md-12  col-sm-12 col-xs-12 m-0">
+<!-- <nav class="bg-navbar navbar fixed-top navbar-light p-0 row">
+    <a routerLink=""  class="col-lg-3 col-xl-3  col-md-10 col-sm-6 col-xs-6 m-0 logo">
         <b class="borderText">
             <img src="../assets/LogoRedondo.svg" alt="LogoAlejoZepol" width="70px;">
             Alejandro López
         </b>
       </a>
-  <ul class="col-9 m-0 itemMenu">
-    <li routerLinkActive="active">
-      <a routerLink="/inicio/">
-        <b class="borderText">
-            <img src="../assets/IconoInicio.svg" alt="IconoInicio" width="36px">
-          Inicio</b>
-      </a>
-    </li>
-    <li routerLinkActive="active">
-      <a href="#" routerLink="/QuienSoy/">
+      <button class="btn-hambuergesa navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <ul class="col-9 m-0 itemMenu">
+          <li routerLinkActive="active">
+            <a routerLink="/inicio/">
+              <b class="borderText">
+                  <img src="../assets/IconoInicio.svg" alt="IconoInicio" width="36px">
+                Inicio</b>
+            </a>
+          </li>
+          <li routerLinkActive="active">
+            <a href="#" routerLink="/QuienSoy/">
 
-         <b class="borderText">
-            <img src="../assets/IconoQuienSoy.svg" alt="IconoInicio" width="36px">
-          ¿Quién soy?
-        </b>
-      </a>
-    </li>
-    <li routerLinkActive="active">
-        <a href="#" routerLink="/cv/">
-        <b class="borderText">
+              <b class="borderText">
+                  <img src="../assets/IconoQuienSoy.svg" alt="IconoInicio" width="36px">
+                ¿Quién soy?
+              </b>
+            </a>
+          </li>
+          <li routerLinkActive="active">
+              <a href="#" routerLink="/cv/">
+              <b class="borderText">
+                  <img src="../assets/IconoCV.svg" alt="IconoInicio" width="36px">
+                  Curiculum Vitae
+                </b>
+              </a>
+            </li>
+          <li routerLinkActive="active">
+              <a href="#" routerLink="/portafolio/">
+              <b class="borderText">
+                  <img src="../assets/IconoPortafolio.svg" alt="IconoInicio" width="36px">
+                Portafolio
+              </b>
+              </a>
+            </li>
+            <li>
+              <button class="btnGrandeAmarillo borderText">Trabajemos Juntos</button>
+            </li>
+        </ul>
+
+</nav>
+ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top ">
+  <a routerLink="" class="navbar-brand" href="#">
+    <b class="borderText">
+        <img src="../assets/LogoRedondo.svg" alt="LogoAlejoZepol" width="70px;">
+        Alejandro López
+    </b>
+  </a>
+  <button class="navbar-toggler text-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/inicio/">
+          <img src="../assets/IconoInicio.svg" alt="IconoInicio" width="36px">
+          Inicio
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/QuienSoy/">
+          <img src="../assets/IconoQuienSoy.svg" alt="IconoInicio" width="36px">
+          ¿Quién soy?</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/cv/">
             <img src="../assets/IconoCV.svg" alt="IconoInicio" width="36px">
             Curiculum Vitae
-          </b>
-        </a>
-      </li>
-    <li routerLinkActive="active">
-        <a href="#" routerLink="/portafolio/">
-        <b class="borderText">
-            <img src="../assets/IconoPortafolio.svg" alt="IconoInicio" width="36px">
-          Portafolio
-        </b>
-        </a>
-      </li>
-      <li>
-        <button class="btnGrandeAmarillo borderText">Trabajemos Juntos</button>
-      </li>
-  </ul>
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/portafolio/">
+              <img src="../assets/IconoPortafolio.svg" alt="IconoInicio" width="36px">
+                Portafolio
+            </a>
+          </li>
+    </ul>
+    <button class="btn  my-2 my-sm-0 btnGrandeAmarillo rounded-pill" type="submit">Trabajemos Juntos</button>
+  </div>
 </nav>
 
+<!-- <ul class="itemMenuVertical">
+  <li routerLinkActive="active">
+    <a routerLink="/inicio/">
+      <b class="borderText">
+          <img src="../assets/IconoInicio.svg" alt="IconoInicio" width="36px">
+        Inicio</b>
+    </a>
+  </li>
+  <li routerLinkActive="active">
+    <a href="#" routerLink="/QuienSoy/">
+
+      <b class="borderText">
+          <img src="../assets/IconoQuienSoy.svg" alt="IconoInicio" width="36px">
+        ¿Quién soy?
+      </b>
+    </a>
+  </li>
+  <li routerLinkActive="active">
+      <a href="#" routerLink="/cv/">
+      <b class="borderText">
+          <img src="../assets/IconoCV.svg" alt="IconoInicio" width="36px">
+          Curiculum Vitae
+        </b>
+      </a>
+    </li>
+  <li routerLinkActive="active">
+      <a href="#" routerLink="/portafolio/">
+      <b class="borderText">
+          <img src="../assets/IconoPortafolio.svg" alt="IconoInicio" width="36px">
+        Portafolio
+      </b>
+      </a>
+    </li>
+    <li>
+      <button class="btnGrandeAmarillo borderText">Trabajemos Juntos</button>
+    </li>
+</ul> -->
 <router-outlet></router-outlet>
 <footer>
   <div class="container-fluid">

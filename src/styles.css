@@ -5,8 +5,25 @@
   .textTituloAmarillo{
     font-size: 16px !important;
   }
+  .navbar-brand{
+    font-size: 1rem !important;
+    }
+  .logo{
+    width: 80% !important;
+  }
   .itemMenu{
     display: none
+  }
+  .itemMenuVertical{
+    display: block !important;
+
+  }
+  .itemMenuVertical li{
+    display: block !important;
+
+  }
+  .btn-hambuergesa{
+    display: block;
   }
   .textoHero{
     font-size: 18px !important;
@@ -19,8 +36,18 @@
   .textTituloAmarillo{
     font-size: 22px !important;
   }
+  .logo{
+    width: 80% !important;
+  }
   .itemMenu{
     display: none
+  }
+  .itemMenuVertical{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-hambuergesa{
+    display: block;
   }
   .textoHero{
     font-size: 18px !important;
@@ -72,8 +99,22 @@ h6{
     font-size: 18px !important;
     margin-top: 2em;
   }
+  .logo{
+    width: 80% !important;
+  }
   .itemMenu{
     display: none
+  }
+  .itemMenuVertical{
+    display: block !important;
+
+  }
+  .itemMenuVertical li{
+    display: block !important;
+
+  }
+  .btn-hambuergesa{
+    display: block;
   }
   h3{
     font-size: 18px !important;
@@ -114,8 +155,20 @@ h6{
     font-size: 24px !important;
     margin-top: 2em;
   }
+
   .itemMenu{
     display: none
+  }
+  .itemMenuVertical{
+    display: block !important;
+
+  }
+  .itemMenuVertical li{
+    display: block !important;
+
+  }
+  .btn-hambuergesa{
+    display: block;
   }
   .fechaInicioExperiencia{
     display: flex;
@@ -150,8 +203,19 @@ h6{
     font-size: 28px !important;
     margin-top: 2em;
   }
+  .btn-hambuergesa{
+    display: none;
+  }
   .itemMenu{
     font-size: 14px !important;
+  }
+  .itemMenuVertical{
+    display: block !important;
+
+  }
+  .itemMenuVertical li{
+    display: block !important;
+
   }
   .fechaInicioExperiencia{
     display: flex;
@@ -186,6 +250,12 @@ h6{
     font-size: 28px !important;
     margin-top: 2em;
   }
+  .itemMenuVertical{
+    display: none
+  }
+  .btn-hambuergesa{
+    display: none;
+  }
   .fechaInicioExperiencia{
     display: flex;
     right: 83%;
@@ -218,11 +288,14 @@ h6{
 
  }
 
+
+ /* ======================================================================= */
  header{
   width: 100%;
   height: 80px;
   background-color: #232323;
 }
+
 nav {
   display: flex !important;
 }
@@ -235,8 +308,7 @@ nav ul {
   color: #DCAC1C;
   display: flex;
   list-style: none;
-  margin-left: 10em;
-  margin-top: 1em;
+
 }
 
 nav ul li {
@@ -264,25 +336,18 @@ li a:hover{
   color: #FFE100;
 }
 
-.btnGrandeAmarillo{
+/* .btnGrandeAmarillo{
   background-color: transparent;
   border: 1px solid #F6F4EB;
   margin: 1%;
-  position: absolute;
+
   height: 45px;
   width: 150px;
-  right: 0%;
-  top: 0%;
+
   border-radius: 42.5px;
   color: #FEB200;
-}
-.btnGrandeAmarillo:hover{
-  margin: 1%;
-  position: absolute;
-  height: 45px;
-  width: 150px;
-  right: 0%;
-  top: 0%;
+} */
+.btnGrandeAmarillo{
   background: linear-gradient(105.34deg, #FFE100 6.48%, #FEB200 91.95%);
   mix-blend-mode: normal;
   border: 1px solid #000000;
@@ -291,9 +356,22 @@ li a:hover{
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 42.5px;
   color: #000000;
+  border: 1px solid #000000
 }
-.imagenHero{
 
+.btnGrandeAmarillo:hover{
+  background: linear-gradient(80.34deg, #FFE100 10.48%, #FEB200 50.95%);
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 42.5px;
+  color: #000000;
+  border: 1px solid #000000
+}
+
+.imagenHero{
   width: 100%;
   height: 300px;
   background-color: rgb(34, 71, 172);
@@ -303,6 +381,10 @@ li a:hover{
   font-size: 2em;
   margin-top: 2em;
 }
+
+
+
+
 
 
 body{
@@ -348,8 +430,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe100', end
 color: #232323 !important;
 }
 .btnAmarilloGrande:hover{
-background: rgba(255,225,0,1);
-background: -moz-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
+background: #ffe100;
+background: -moz-linear-gradient(left, rgba(255,225,0,1) 0%, #feb200 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,225,0,1)), color-stop(100%, rgba(254,178,0,1)));
 background: -webkit-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
 background: -o-linear-gradient(left, rgba(255,225,0,1) 0%, rgba(254,178,0,1) 100%);
@@ -359,10 +441,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe100', end
 color: #F6F4EB
 }
 .contenedorImagenPortada{
-  margin-top: 70px;
+  margin-top: 96px;
   height: 22em;
   max-width: 100%;
-  background-color: #9c9797;
+  width:100%;
+  background: url('/../assets/FondoHero.png');
+  background-size: cover;
 }
 
 .itemAreaInteres:hover{

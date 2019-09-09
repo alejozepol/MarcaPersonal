@@ -29,6 +29,7 @@
 
             ],
             "scripts": [
+              "src/bootstrap/js/jquery-3.4.1.min.js",
               "src/bootstrap/js/bootstrap.js"
             ]
           },
