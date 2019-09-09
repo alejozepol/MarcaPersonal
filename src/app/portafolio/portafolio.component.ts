@@ -7,50 +7,59 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortafolioComponent implements OnInit {
 
-  public proyectosDesarrollo: any = [{
+  public proyectosDesarrollo: any = [
+    {
+      titulo:"Aplicacion Undervisa",
+      lenguaje: ['Angular', 'HTML', 'CSS', 'TypeScript'],
+      video:'bb',
+      descripcion:'Aplicacion realizada en PWA con Angular para enviar y administrar señales de forex',
+      urlCodigo:'https://github.com/alejozepol/interfaz/tree/master/firstPips',
+      urlProyecto:'https://fistpips.web.app/',
+      imagen: '../../assets/appUndervisa.PNG'
+    },
+    {
       titulo:"Calculadora",
-      lenguaje: 'Java',
+      lenguaje:[ 'Java'],
       video:'https://www.youtube.com/embed/NRfctAuYmaU',
       descripcion:'calculara desarollada en Java para converitr numeros enteros a base 2,8, 10 y 16',
-      urlCodigo:'https://github.com/alejozepol/calculadora'
+      urlCodigo:'https://github.com/alejozepol/calculadora',
+      imagen: '../../assets/calcularadora.PNG'
     },
     {
-      titulo:"granja Aleatoria",
-      lenguaje: 'JavaScript',
-      video:'',
-      descripcion:'Dando click en la imagen la cantidad de animales cambia',
-      urlCodigo:''
-    },
-    {
-      titulo:"Nuevo Curso de Email Marketing",
-      lenguaje: 'Email Marketing',
+      titulo:"Curso de Email Marketing",
+      lenguaje: ['Email Marketing', 'HTML', 'CSS', 'JavaScript', 'Adobe XD'],
       video:'',
       descripcion:'tres Camapañas dieñadas como proyecto personal para el envio de campaña del nuevo curso de platzi de Email Marketing',
       urlCodigo:'https://github.com/alejozepol/DisenoMaquetacionEmail',
-      urlProyecto:''
+      urlProyecto:'https://alejozepol.github.io/DisenoMaquetacionEmail/',
+      imagen: '../../assets/emailMarketing.png'
     },
     {
       titulo:"PlatziSquers",
-      lenguaje: 'Angular',
+      lenguaje: ['Angular'],
       video:'',
       descripcion:'Plataforma diseña da en angular como proyecto personal como directorio de sitios inscritos con utilizacion de ubicación de google Map y desplegado en FireBase',
-      urlCodigo:''
+      urlCodigo:'https://github.com/alejozepol/PlatziSqueare',
+      urlProyecto:'https://square-1554571264303.web.app',
+      imagen: '../../assets/platziSqueare.PNG'
     },
     {
       titulo:"Juego Memoria",
-      lenguaje: 'Angular',
+      lenguaje:[ 'Angular'],
       video:'',
-      descripcion:'',
+      descripcion:'Un juego de memoria de 10 niveles para recordar en que orden ilumina cada emogi',
       urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      urlProyecto:'https://juegoemogis.web.app/',
+      imagen: '../../assets/juegoMemoria.PNG'
     },
     {
       titulo:"Mockats aplicacion undervisa",
       lenguaje: ['html', 'css', 'javaScript'],
       video:'',
       descripcion:'diseño de posibles pantallas para la aplicacion de Undervisa',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      urlCodigo:'https://github.com/alejozepol/interfaz/settings',
+      urlProyecto:'https://alejozepol.github.io/interfaz/',
+      imagen: '../../assets/mockupsUndervisa.PNG'
     },
     {
       titulo:"Incripcion equipo fulboll",
@@ -58,72 +67,54 @@ export class PortafolioComponent implements OnInit {
       video:'',
       descripcion:'Interfaz para la creacion de equipos y sus jugadores de manera asincronica',
       urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
-    },
-        {
-      titulo:"Incripcion equipo fulboll",
-      lenguaje: ['angular'],
-      video:'',
-      descripcion:'Interfaz para la creacion de equipos y sus jugadores de manera asincronica',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      urlProyecto:'https://github.com/alejozepol/proyectoTypeScript',
+      imagen: '../../assets/inscripcionEquipoFutbol.PNG'
     },
     {
-      titulo:"formularios de incripcion",
-      lenguaje: ['Email Marketing', 'javaScript', 'CSS', 'HTML'],
-      video:'',
-      descripcion:'Mediante la utilizacion del archivo de javascript suministrado por mailchimnp se diseñar y conecto la informacion suministrada por el usuario en los dos funcionarios a las diferentes lista para envio de campañas de correo electronico.',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      titulo:"granja Aleatoria",
+      lenguaje: ['JavaScript'],
+      descripcion:'Por medio de javaScript cada vez ques e recarga la pagina muestra una cantidad diferentes de vacas',
+      urlCodigo:'https://github.com/alejozepol/villaPlatzi/settings',
+      imagen: '../../assets/villaPlatzi.PNG',
+      urlProyecto:'https://alejozepol.github.io/villaPlatzi/'
     },
     {
-      titulo:"Campaña undervisa 1",
+      titulo:"formularios de más informacion",
       lenguaje: ['Email Marketing', 'javaScript', 'CSS', 'HTML'],
       video:'',
-      descripcion:'Mediante la utilizacion del archivo de javascript suministrado por mailchimnp se diseñar y conecto la informacion suministrada por el usuario en los dos funcionarios a las diferentes lista para envio de campañas de correo electronico.',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      descripcion:'Mediante la utilizacion del archivo de javascript se captura la información para envio de campañas de marketing',
+      urlCodigo:'https://github.com/undervisa/FormularioInformacion',
+      urlProyecto:'https://undervisa.github.io/FormularioInformacion/',
+      imagen: '../../assets/formularioMasInformacion.PNG'
     },
     {
-      titulo:"Campaña undervisa 2",
+      titulo:"formularios de Incripcion",
       lenguaje: ['Email Marketing', 'javaScript', 'CSS', 'HTML'],
       video:'',
-      descripcion:'Mediante la utilizacion del archivo de javascript suministrado por mailchimnp se diseñar y conecto la informacion suministrada por el usuario en los dos funcionarios a las diferentes lista para envio de campañas de correo electronico.',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      descripcion:'Mediante una conexion con la base de datos de mailchimp se realiza la inscrion y redirecciona a la pasarela de pago .',
+      urlCodigo:'http://inscripcion.undervisa.ga/',
+      urlProyecto:'https://undervisa.github.io/FormularioInformacion/',
+      imagen: '../../assets/formularioInscripcion.PNG'
     },
     {
-      titulo:"Campaña undervisa 3",
+      titulo:"Campaña Email Undervisa",
       lenguaje: ['Email Marketing', 'javaScript', 'CSS', 'HTML'],
       video:'',
-      descripcion:'Mediante la utilizacion del archivo de javascript suministrado por mailchimnp se diseñar y conecto la informacion suministrada por el usuario en los dos funcionarios a las diferentes lista para envio de campañas de correo electronico.',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      descripcion:'mediante varias campañas de correo se comunico al cliente el proposito de cada una de ellas.',
+      urlCodigo:'https://github.com/undervisa/TemplateCorreos',
+      urlProyecto:'',
+      imagen: '../../assets/campañasEmail.PNG'
     },
     {
       titulo:"Presentacion de negocios Undervisa",
       lenguaje: ['javaScript', 'CSS', 'HTML'],
       video:'',
-      descripcion:'Mediante la utilizacion del archivo de javascript suministrado por mailchimnp se diseñar y conecto la informacion suministrada por el usuario en los dos funcionarios a las diferentes lista para envio de campañas de correo electronico.',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
-    },
-    {
-      titulo:"Parqueadero",
-      lenguaje: ['Java'],
-      video:'',
-      descripcion:'',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
-    },
-    {
-      titulo:"SIPRE",
-      lenguaje: ['Java'],
-      video:'',
-      descripcion:'Proyecto realizado en java como formacion academica el cual ayuda a administrar los auxilios por convencion colectiva de trabajo controlando presupuesto, otorgacion y requisitos',
-      urlCodigo:'https://github.com/alejozepol/PruebaTuMemoria',
-      urlProyecto:''
+      descripcion:'Presentacion de negocios para undervisa Master Trader',
+      urlCodigo:'https://github.com/undervisa/PresentacionDeNegocio',
+      urlProyecto:'https://undervisa.ga/',
+      imagen: '../../assets/PresentacionNegocioUndervisa.PNG'
     }
+
   ]
 
 
