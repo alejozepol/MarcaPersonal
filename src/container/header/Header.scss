@@ -5,31 +5,67 @@
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: 40% 60%;
   background-color: $color-oscuro;
   @extend .sombraOscura;
-  &__logo{
+  &__logo {
     display: grid;
+    grid-area: logo;
     grid-template-columns: 60px auto;
     justify-content: space-around;
     align-items: center;
-    &-img{
+    grid-area: logo;
+    &-img {
       width: 60px;
       height: 60px;
     }
-    &-title{
+    &-title {
       color: $color-primario;
     }
+    &-menu {
+      grid-area: bmenu;
+    }
   }
-  & > nav{
+  & > nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-area: nav;
     justify-self: center;
     color: $color-claro;
-    & > .TextIcon{
-      &:hover{
+    & > .TextIcon {
+      &:hover {
         border-bottom: 3px $color-primario solid;
       }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Header {
+    grid-template-columns: 90% 10%;
+    grid-template-areas: "logo bmenu"
+                          "nav nav";
+    & > nav {
+      justify-items: center;
+      background-color: $color-oscuro;
+      width: 100%;
+      z-index: 1;
+    }
+    &__nav701 {
+      display: none !important;
+    }
+  }
+}
+@media (min-width: 701px) {
+  .Header {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "logo nav";
+    &__nav701 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__nav700 {
+      display: none !important;
+    }
+    &__menu {
+      display: none;
     }
   }
 }

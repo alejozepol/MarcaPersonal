@@ -1,18 +1,43 @@
 @import "../../assets/styles/variables.scss";
 
+@media (max-width: 700px) {
+  .Footer {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "suscription"
+                          "brand";
+    &__brand{
+      margin-top: 5%;
+    }
+  }
+}
+@media (min-width: 701px) {
+  .Footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "suscription brand";
+  }
+}
+
 .Footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2%;
   align-content: center;
   justify-self: center;
   background-color: $color-segundario;
+  width: 100vw;
   &__suscription {
     display: grid;
+    grid-area: suscription;
     grid-template-columns: 80px repeat(2, 1fr);
     grid-template-rows: 80px 20px;
-    grid-template-areas: "icon text text" "input input buton";
+    grid-template-areas: "icon text text" "form form form";
     align-items: center;
+    justify-self: center;
+    max-width: 305px;
+    & > form{
+      display: grid;
+      grid-area: form ;
+      grid-template-columns: 80px repeat(2, 1fr);
+      grid-template-areas: "input input buton";
+    }
     &-img {
       grid-area: icon ;
       width: 80px;
@@ -45,6 +70,7 @@
   }
   &__brand{
     display: grid;
+    grid-area: brand;
     justify-content: center;
     justify-items: center;
     text-align: center;
