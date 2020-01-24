@@ -520,8 +520,12 @@ footer{
   align-items: flex-end;
   background-color: #B1B1AF;
   width: 100%;
-  height: 350px;
+
 }
+.input-group{
+  flex-wrap: initial !important;
+}
+
 .footerText{
 display: flex;
 align-items: center;
@@ -607,7 +611,6 @@ text-shadow:
   z-index: 1;
 }
 .sombraRoja{
-  margin: 2%;
   -webkit-box-shadow: 0px 11px 21px 4px #dc3545a6;
   -moz-box-shadow: 0px 11px 21px 4px #dc3545a6;
   box-shadow: 0px 11px 21px 4px #dc3545a6;
@@ -645,9 +648,9 @@ text-shadow:
 }
 .tabsTarjetaDer{
   display: flex;
-  left: 90%;
+  left: 13%;
   position: relative;
-  top: -4%;
+  top: 3%;
   z-index: 1;
 }
 .tabsTarjeta{

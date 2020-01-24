@@ -1,21 +1,57 @@
-<div style="margin: 10%">
-  </div>
   <div class="container">
-      <div  class="row">
-        <div class="card col-3 card col-3 p-0 mt-0 mr-5 sombraRoja" *ngFor="let pd of proyectosDesarrollo">
-     <div class="embed-responsive embed-responsive-16by9">
-<!--               <iframe class="embed-responsive-item card-img-top" [src]="{{pd.video}}" allowfullscreen></iframe>
- -->          </div>
-          <div class="card-header bgTituloTarjeta">
-            <h5 class="text-center">{{pd.titulo}}</h5>
+      <div  class="row" style="margin-top: 10%">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-3" *ngFor="let pd of proyectosDesarrollo">
+              <div class="card align-content-center text-center">
+                <div class="align-items-center">
+                    <img src="{{pd.imagen}}" style="height: 150px !important; width: 245.5px !important" class="card-img-top img-fluid text-center" alt="{{pd.titulo}}">
+                </div>
+                  <div class="card-header" >
+                      <h5 class="card-title">{{pd.titulo}}</h5>
+<!--                       <div *ngFor="let l of pd.lenguaje" >
+                          <span class="badge badge-danger" *ngIf="pd.lenguaje == 'Angular'">{{l}}</span>
+                          <span class="badge badge-primary" *ngIf="pd.lenguaje == 'Java'">{{l}}</span>
+                          <span class="badge badge-secondary" *ngIf="pd.lenguaje == 'HTML'">{{l}}</span>
+                          <span class="badge badge-success" *ngIf="pd.lenguaje == 'CSS'">{{l}}</span>
+                          <span class="badge badge-warning" *ngIf="pd.lenguaje == 'JavaScript'">{{l}}</span>
+                          <span class="badge badge-light" *ngIf="pd.lenguaje == 'Adobe XD'">{{l}}</span>
+                      </div> -->
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+                          <p class="card-text text-justify" style="font-size: 14px">{{pd.descripcion}}</p>
+                      </div>
+                      <div class="row justify-content-end">
+                          <div class="col-4 p-0">
+                              <a target="_blank" *ngIf="pd.urlCodigo"  href="{{pd.urlCodigo}}" class="btn itemAreaInteres">
+                                <img src="../../assets/icoGithub2.svg" width="50px">
+                                <small class="p-0 m-0">codigo</small> </a>
+                                <img *ngIf="!pd.urlCodigo" src="../../assets/icoGithub2Inactivo.svg" width="50px">
+
+                          </div>
+                          <div class="col-4 p-0">
+                              <a target="_blank"  *ngIf="pd.video" href="{{pd.video}}" class="btn itemAreaInteres">
+                                  <img src="../../assets/icoVideo.svg" width="50px">
+                                  <small class="p-0 m-0">Video</small>
+                              </a>
+                              <img *ngIf="!pd.video" src="../../assets/icoVideoInactivo.svg" width="50px">
+
+                          </div>
+                          <div class="col-4 p-0">
+                              <a target="_blank"  *ngIf="pd.urlProyecto" href="{{pd.urlProyecto}}" class="btn itemAreaInteres">
+                                  <img src="../../assets/www.svg" width="50px">
+                                  <small class="p-0 m-0">Proyecto</small>
+                              </a>
+                              <img  *ngIf="!pd.urlProyecto" src="../../assets/wwwInactivo.svg" width="50px">
+                          </div>
+                      </div>
+
+                    </div>
+
+
+
+                                   </div>
+              </div>
           </div>
-          <div class="tabsTarjeta tabsTarjetaDer">
-            <h6 class="badge badge-danger">{{pd.lenguaje}}</h6>
-          </div>
-          <div class="card-body text-center">
-            <p>{{pd.descripcion}}</p>
-            <a target="_blank"  href="{{pd.urlCodigo}}" class="rounded-pill btn btn-outline-warning  btnAmarilloGrande text-black-50">ver codigo</a>
-          </div>
-      </div>
     </div>
   </div>
