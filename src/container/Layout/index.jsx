@@ -17,7 +17,6 @@ const Layout = (props) => {
       <>
         <Footer />
       </>
-      <footer>footer</footer>
     </section>
   );
 };
