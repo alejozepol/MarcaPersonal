@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alejozepol/ProyectoBaseReact.git"
+    "url": "git+https://github.com/alejozepol/MarcaPersonal.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alejozepol/royectoBaseReact/issues"
+    "url": "https://github.com/alejozepol/MarcaPersonal/issues"
   },
-  "homepage": "https://github.com/alejozepol/royectoBaseReact#readme",
+  "homepage": "https://github.com/alejozepol/MarcaPersonal#readme",
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
