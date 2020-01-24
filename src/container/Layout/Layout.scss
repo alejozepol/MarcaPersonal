@@ -1,0 +1,41 @@
+@import '../../assets/styles/variables.scss';
+.Layout{
+    display: grid;
+    min-height: 100vh;
+ }
+
+@media (max-width: 768px) { 
+    .Layout{
+        grid-template-rows: 7% auto 8%;
+        grid-template-areas:    "header" 
+                                "main" 
+                                "footer";
+
+        & > header{
+          grid-area: header;
+        }
+        & > main {
+            grid-area: main; 
+        }
+        & > footer{
+            grid-area: footer;
+        }
+    }
+ }
+@media (min-width: 769px) { 
+    .Layout{
+        grid-template-rows: 60px auto 150px;
+        grid-template-areas:    "header"
+                                "main"
+                                "footer";
+        & > header{
+          grid-area: header;
+        }
+        & > main {
+            grid-area: main; 
+        }
+        & > footer{
+            grid-area: footer;
+        }
+    }
+ }

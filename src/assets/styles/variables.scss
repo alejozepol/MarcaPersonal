@@ -1,0 +1,103 @@
+$color-claro-primario: #fcfcfc;
+$color-claro-contraste: #f4f4f4;
+$color-oscuro: #000000;
+$color-primario: #ff6917;
+$color-segundario: #ff293e;
+$color-aceptar: #00D362;
+$color-cancelar: #DB0606;
+$color-info: #2DB6FF;
+$color-degradado: to bottom, $color-primario 0%, $color-segundario 100%;
+$size-sombra: 0px 0px 5px 1px;
+$opacity: 0.5;
+$font-primaria: 'Poppins', sans-serif;
+$font-size-primaria: 12px;
+
+.sombraOscura {
+  -webkit-box-shadow: $size-sombra fade-out($color-oscuro, $opacity);
+  -moz-box-shadow: $size-sombra fade-out($color-oscuro, $opacity);
+  box-shadow: $size-sombra fade-out($color-oscuro, $opacity);
+}
+
+.sombraClara {
+  -webkit-box-shadow: $size-sombra fade-out($color-claro-primario, $opacity);
+  -moz-box-shadow: $size-sombra fade-out($color-claro-primario, $opacity);
+  box-shadow: $size-sombra fade-out($color-claro-primario, $opacity);
+}
+.sombraPrimario {
+  -webkit-box-shadow: $size-sombra fade-out($color-primario, $opacity);
+  -moz-box-shadow: $size-sombra fade-out($color-primario, $opacity);
+  box-shadow: $size-sombra fade-out($color-primario, $opacity);
+}
+
+.degragadoColor {
+  background: $color-primario;
+  background: -moz-linear-gradient($color-degradado);
+  background: -webkit-gradient(to bottom, color-stop(0%, $color-primario), color-stop(100%, $color-segundario));
+  background: -webkit-linear-gradient($color-degradado);
+  background: -o-linear-gradient($color-degradado);
+  background: -ms-linear-gradient($color-degradado);
+  background: linear-gradient($color-degradado);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-primario', endColorstr='$color-segundario', GradientType=0 );
+}
+
+
+.styleScroll {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    width: 2px;
+    height: 2px;
+    background: fade-out($color-primario, 0.8);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    display: block;
+    box-shadow: 0 0 2px 1px fade-out($color-primario, 0.5);
+    background: $color-primario;
+  }
+}
+
+.styleScrollX {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    width: 2px;
+    height: 2px;
+    background: fade-out($color-oscuro, $opacity);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    display: block;
+    box-shadow: 0 0 2px 1px fade-out($color-primario, 0.5);
+    background: $color-primario;
+  }
+}
+
+@each $header, $size in (h2: 18px, h3: 16px, h4:14px) {
+  #{$header} {
+        font-size: $size;
+        margin: 0;
+  }
+};
+
+a{
+  text-decoration: none;
+  color: $color-oscuro;
+}
+p{
+  margin: 0%;
+}
+
+.img-redonda {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  background-color: $color-claro-contraste;
+  @extend .sombraOscura;
+}
