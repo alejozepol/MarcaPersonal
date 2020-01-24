@@ -8,7 +8,7 @@
   align-items: center;
   justify-items: center;
   position: relative;
-  background-color: $color-claro-primario;
+  background-color: $color-claro;
   @extend .sombraOscura;
   &_perfil-img{
       height: 40px;
@@ -28,7 +28,7 @@
     width: 100%;
     & > img {
       border-radius: 50%;
-      background-color: $color-claro-contraste;
+      background-color: $color-claro;
       @extend .sombraOscura;
     }
   }

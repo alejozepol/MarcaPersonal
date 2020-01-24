@@ -1,29 +1,35 @@
 @import "../../assets/styles/variables.scss";
 
-@media (max-width: 768px) {
-  .Header {
-    grid-template-columns: 7% 7% auto 7% 7%;
-    grid-template-areas: "margin icons content iso marginB";
-    &__atras {
-      grid-area: icons;
-    }
-    &__logo {
-      grid-area: content;
-    }
-    &__isotipo {
-      grid-area: iso;
-    }
-  }
-}
-
 .Header {
   width: 100%;
   height: 100%;
   display: grid;
-  background-color: $color-claro-primario;
   align-items: center;
+  grid-template-columns: 40% 60%;
+  background-color: $color-oscuro;
   @extend .sombraOscura;
   &__logo{
+    display: grid;
+    grid-template-columns: 60px auto;
+    justify-content: space-around;
+    align-items: center;
+    &-img{
+      width: 60px;
+      height: 60px;
+    }
+    &-title{
+      color: $color-primario;
+    }
+  }
+  & > nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-self: center;
+    color: $color-claro;
+    & > .TextIcon{
+      &:hover{
+        border-bottom: 3px $color-primario solid;
+      }
+    }
   }
 }

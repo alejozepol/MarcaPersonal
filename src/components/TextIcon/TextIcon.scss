@@ -1,0 +1,12 @@
+.TextIcon{
+  display: grid;
+  grid-template-columns: 40px minmax(auto,90px) ;
+  align-items: center;
+  &-img{
+    width: 40px;
+    height: 40px;
+  }
+  &-name{
+    font-size: medium;
+  }
+}

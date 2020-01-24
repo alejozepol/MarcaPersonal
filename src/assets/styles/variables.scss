@@ -1,15 +1,15 @@
-$color-claro-primario: #fcfcfc;
-$color-claro-contraste: #f4f4f4;
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+$color-claro: #fcfcfc;
 $color-oscuro: #000000;
-$color-primario: #ff6917;
-$color-segundario: #ff293e;
+$color-primario: #FFE100;
+$color-segundario: #FEB200;
 $color-aceptar: #00D362;
 $color-cancelar: #DB0606;
 $color-info: #2DB6FF;
 $color-degradado: to bottom, $color-primario 0%, $color-segundario 100%;
 $size-sombra: 0px 0px 5px 1px;
 $opacity: 0.5;
-$font-primaria: 'Poppins', sans-serif;
+$font-primaria: 'Chilanka', cursive;;
 $font-size-primaria: 12px;
 
 .sombraOscura {
@@ -19,9 +19,10 @@ $font-size-primaria: 12px;
 }
 
 .sombraClara {
-  -webkit-box-shadow: $size-sombra fade-out($color-claro-primario, $opacity);
-  -moz-box-shadow: $size-sombra fade-out($color-claro-primario, $opacity);
-  box-shadow: $size-sombra fade-out($color-claro-primario, $opacity);
+  $_colorsombraClara:$color-claro;
+  -webkit-box-shadow: $size-sombra fade-out($_colorsombraClara, $opacity);
+  -moz-box-shadow: $size-sombra fade-out($_colorsombraClara, $opacity);
+  box-shadow: $size-sombra fade-out($_colorsombraClara, $opacity);
 }
 .sombraPrimario {
   -webkit-box-shadow: $size-sombra fade-out($color-primario, $opacity);
@@ -79,9 +80,10 @@ $font-size-primaria: 12px;
   }
 }
 
-@each $header, $size in (h2: 18px, h3: 16px, h4:14px) {
+@each $header, $size in (h1: 20px, h2: 18px, h3: 16px, h4:14px) {
   #{$header} {
         font-size: $size;
+        font-family: $font-primaria;
         margin: 0;
   }
 };
@@ -98,6 +100,6 @@ p{
   height: 40px !important;
   width: 40px !important;
   border-radius: 50%;
-  background-color: $color-claro-contraste;
+  background-color: $color-claro;
   @extend .sombraOscura;
 }
