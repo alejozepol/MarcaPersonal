@@ -4,9 +4,9 @@
     min-height: 100vh;
  }
 
-@media (max-width: 700px) { 
+@media (min-width: 620px) { 
     .Layout{
-        grid-template-rows: 60px auto 300px;
+        grid-template-rows: 60px auto 150px;
         grid-template-areas:    "header" 
                                 "main" 
                                 "footer";
@@ -22,9 +22,9 @@
         }
     }
  }
-@media (min-width: 701px) { 
+@media (max-width: 619px) { 
     .Layout{
-        grid-template-rows: 60px auto 150px;
+        grid-template-rows: 60px auto 300px;
         grid-template-areas:    "header"
                                 "main"
                                 "footer";

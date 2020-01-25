@@ -1,6 +1,6 @@
 @import "../../assets/styles/variables.scss";
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .Footer {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "suscription"
@@ -10,7 +10,7 @@
     }
   }
 }
-@media (min-width: 701px) {
+@media (min-width: 601px) {
   .Footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "suscription brand";
