@@ -1,0 +1,14 @@
+.TextIconRedondo{
+  display: grid;
+  grid-template-rows: 100px 50px;
+  align-items: center;
+  width: 150px;
+  border-radius: 50px;
+  &-img{
+    width: 150px;
+    height: 150px;
+  }
+  &-name{
+    font-size: medium;
+  }
+}

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 /* import { Link } from 'react-router-dom'; */
 import TextIcon from '../../components/TextIcon';
-import IconoInicio from '../../assets/static/IconoInicio.svg';
-import IconoQuienSoy from '../../assets/static/IconoQuienSoy.svg';
-import IconoPortafolio from '../../assets/static/IconoPortafolio.svg';
-import IconoCV from '../../assets/static/IconoCV.svg';
+import IconoInicio from '../../assets/static/icons/IconoInicio.svg';
+import IconoQuienSoy from '../../assets/static/icons/IconoQuienSoy.svg';
+import IconoPortafolio from '../../assets/static/icons/IconoPortafolio.svg';
+import IconoCV from '../../assets/static/icons/IconoCV.svg';
 import Logo from '../../assets/static/LogoRedondo.svg';
 import './Header.scss';
 
@@ -30,8 +30,9 @@ const Header = (props) => {
     ];
   const [bmenu, setBMenu] = useState(false);
   const handleMenu = () => {
-    bmenu ? setBMenu(false) : setBMenu(true)
-  }
+    bmenu ? setBMenu(false) : setBMenu(true);
+  };
+
   return (
     <header className='Header'>
       <div className='Header__logo'>
