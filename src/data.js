@@ -7,6 +7,7 @@ import iconPS from './assets/static/icons/ps.svg';
 import iconAI from './assets/static/icons/ai.svg';
 import iconXD from './assets/static/icons/XD.svg';
 import iconExcel from './assets/static/icons/excel.svg';
+import imagenHero from './assets/static/FondoHero.png';
 
 const home = {
   areaInteres: [
@@ -54,7 +55,15 @@ const home = {
       id: 'Excel',
       nombre: 'Office Excel',
       imagen: iconExcel,
-    }],
+    },
+  ],
+  hero: {
+    img: imagenHero,
+    saludo: '¡Hola! soy',
+    title: 'Alejandro López Ramírez',
+    texto: 'Desarrollador full stack JavaScript con Node.js y Consultor de Nómina y Gestión Humana con amplios conocimientos en el ERP Kactus y con mucha pasión por nunca aprender',
+
+  }
 };
 
 export default home;
