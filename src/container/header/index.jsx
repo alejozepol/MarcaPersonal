@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/* import { Link } from 'react-router-dom'; */
+import { Link } from 'react-router-dom';
 import TextIcon from '../../components/TextIcon';
 import IconoInicio from '../../assets/static/icons/IconoInicio.svg';
 import IconoQuienSoy from '../../assets/static/icons/IconoQuienSoy.svg';
@@ -14,18 +14,22 @@ const Header = (props) => {
       {
         name: 'Inicio',
         img: IconoInicio,
+        url: '/',
       },
       {
         name: '¿Quién soy?',
         img: IconoQuienSoy,
+        url: '/QuienSoy',
       },
       {
         name: 'Curriculum Viate',
         img: IconoCV,
+        url: '/CV',
       },
       {
         name: 'Portafolio',
         img: IconoPortafolio,
+        url: '/Portafolio',
       },
     ];
   const [bmenu, setBMenu] = useState(false);
@@ -56,14 +60,22 @@ const Header = (props) => {
       {bmenu && (
         <nav className='Header__nav700'>
           {
-            menu.map((item) => <TextIcon key={item.name} img={item.img} name={item.name} />)
+            menu.map((item) => (
+              <Link to={item.url}>
+                <TextIcon key={item.name} img={item.img} name={item.name} />
+              </Link>
+            ))
           }
         </nav>
       )}
       {
         <nav className='Header__nav701'>
           {
-            menu.map((item) => <TextIcon key={item.name} img={item.img} name={item.name} />)
+            menu.map((item) => (
+              <Link to={item.url}>
+                <TextIcon key={item.name} img={item.img} name={item.name} />
+              </Link>
+            ))
           }
         </nav>
       }
