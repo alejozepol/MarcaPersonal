@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/hero';
 import home from '../data';
 import TextIconRedondo from '../components/TextIconRedondo';
+import Card from '../components/card';
 import '../assets/styles/app.scss';
 
 const Index = () => {
@@ -32,6 +33,11 @@ const Index = () => {
             home.areaInteres.map((i) => <TextIconRedondo key={i.id} img={i.imagen} name={i.nombre} />)
           }
         </div>
+      </div>
+      <div className='Home__servicios'>
+        {
+          home.servicios.map((i) => <Card key={i.id} img={i.imagen} title={i.titulo} text={i.descripcion} />)
+        }
       </div>
     </section>
   );

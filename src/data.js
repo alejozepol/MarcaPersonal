@@ -8,6 +8,12 @@ import iconAI from './assets/static/icons/ai.svg';
 import iconXD from './assets/static/icons/XD.svg';
 import iconExcel from './assets/static/icons/excel.svg';
 import imagenHero from './assets/static/FondoHero.png';
+import imgAuth from './assets/static/auditoria.jpg';
+import imgDev from './assets/static/desarrolloWeb.jpg';
+import imgNomina from './assets/static/Nomina.jpg';
+import imgUGPP from './assets/static/ugpp.png';
+import imgKactus from './assets/static/kactus.png';
+import imgEM from './assets/static/emailMarketing.png';
 
 const home = {
   areaInteres: [
@@ -82,6 +88,44 @@ const home = {
       id: 'GitLab',
       nombre: 'GitLab',
       imagen: iconExcel,
+    },
+  ],
+  servicios: [
+    {
+      id: 1,
+      titulo: 'Auditorias',
+      descripcion: 'Presto servicios de autorias en nómina, seguridad social, contabilización de nomina o verificacion de procesos Gestión Humana',
+      imagen: imgAuth,
+    },
+    {
+      id: 2,
+      titulo: 'Desarrollo Web',
+      descripcion: 'Elaboración de paginas web, presentaciones, e-commerce utilizando HTML5, CCS3, JavaScripts y framework como anguelar, bootstrap y otros mas',
+      imagen: imgDev,
+    },
+    {
+      id: 3,
+      titulo: 'Nomina y seguridad social',
+      descripcion: 'administración y liquidación de nomina y/o seguridad social de pequeño y grande volumen con conocimientos en beneficios por convenciones colectivas o beneficios extralegales con la ley presente en 🇨🇴 Colombia',
+      imagen: imgNomina,
+    },
+    {
+      id: 4,
+      titulo: 'Reportes y liquidación UGPP',
+      descripcion: 'Presto servicios de informes, reportes, verificación y liquidación de requerimientos UGPP, generacion de planillas de correción',
+      imagen: imgUGPP,
+    },
+    {
+      id: 5,
+      titulo: 'Soporte, mantenimiento o implementación en KACTUS HCM',
+      descripcion: 'Presto servicio como consultor o usuario lider del sistema KACTUS HCM desarrollado por DigitalWare en modulos de nomina y/o gestión humana',
+      imagen: imgKactus,
+    },
+    {
+      id: 6,
+      titulo: 'Campañas de Email marketing',
+      descripcion: 'Mediante campañas de e-mail marketing podemos comunicarnos con nuestros clientes',
+      imagen: imgEM,
     },
   ],
   hero: {

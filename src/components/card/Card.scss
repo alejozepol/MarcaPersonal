@@ -1,0 +1,41 @@
+@import "../../assets/styles/variables.scss";
+
+.Card {
+  position: relative;
+  width: 200px;
+  min-height: 370px;
+  display: grid;
+  grid-template-rows: minmax(100px, auto) 1fr 4fr;
+  grid-template-areas: "img" "title" "text";
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+  @extend .sombraPrimario;
+  & > img {
+    grid-area: img;
+    width: 100%;
+    object-fit: contain;
+  }
+  & > h3 {
+    grid-area: title;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: fade-out($color-primario, $opacity);
+  }
+  & > p {
+    grid-area: text;
+  }
+}
+
+@media (min-width: 620px) {
+  .Card {
+  }
+}
+
+@media (max-width: 619px) {
+  .Card {
+  }
+}
