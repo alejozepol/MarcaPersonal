@@ -34,10 +34,9 @@
     display: grid;
     grid-area: nav;
     justify-self: center;
-    color: $color-claro;
     & > a {
       color: $color-claro;
-      & > .TextIcon {
+      & > .TextIcon{
         &:hover {
           border-bottom: 3px $color-primario solid;
         }
