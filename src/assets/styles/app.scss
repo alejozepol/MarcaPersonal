@@ -11,26 +11,18 @@ body,
 
 $animationSpeed: 30s;
 
-// Animation
-@keyframes scroll {
-	0% { transform: translateX(0); }
-   100% { transform: translateX(calc(-15% * 15))}
-
-}
-
 .Home {
-    display: grid;
-    grid-template-rows: minmax(50vh, auto) 230px;
-    grid-template-areas: "hero" "habilidades";
-    grid-gap: 5%;
-    max-width: 100vw;
+  display: grid;
+  grid-template-rows: minmax(50vh, auto) 230px;
+  grid-template-areas: "hero" "habilidades";
+  grid-gap: 5%;
+  max-width: 100vw;
   & > .Hero {
     max-width: 100vw;
     grid-area: hero;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "img saludotitle";
+    grid-template-areas: "img saludotitle";
     & > .text {
       grid-area: saludotitle;
       height: inherit;
@@ -49,16 +41,25 @@ $animationSpeed: 30s;
   &__habilidades {
     grid-area: habilidades;
     @extend .styleScrollX;
-    &-icons{
-        display: -webkit-box;
-        padding-left: 100%;
-        animation: scroll $animationSpeed linear;
-        animation-iteration-count: infinite;
+    &-icons {
+      display: -webkit-box;
+      padding-left: 100%;
+      animation: scroll $animationSpeed linear;
+      animation-iteration-count: infinite;
     }
   }
 }
 
 @media (max-width: 619px) {
+  // Animation
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-15% * 30));
+    }
+  }
   .Home {
     & > .Hero {
       & > .text {
@@ -71,4 +72,16 @@ $animationSpeed: 30s;
 }
 
 @media (min-width: 620px) {
+  // Animation
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-15% * 15));
+    }
+  }
+  .Home {
+    grid-template-rows: minmax(50vh, auto) 230px;
+  }
 }
