@@ -111,7 +111,7 @@ const home = {
     },
     {
       id: 'Angular',
-      nombre: 'GitLab',
+      nombre: 'Angular',
       imagen: iconExcel,
     },
     {

@@ -9,7 +9,7 @@ body,
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-$animationSpeed: 30s;
+$animationSpeed: 35s;
 
 .Home {
   display: grid;
@@ -46,7 +46,6 @@ $animationSpeed: 30s;
       margin: 4% 0;
       display: -webkit-box;
       padding-left: 100%;
-      justify-content: space-around;
       animation: scroll $animationSpeed linear;
       animation-iteration-count: infinite;
     }
@@ -117,7 +116,7 @@ $animationSpeed: 30s;
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-30% * 6));
+      transform: translateX(calc(-30% * 10));
     }
   }
   .Home {
