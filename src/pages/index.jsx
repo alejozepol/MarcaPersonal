@@ -21,7 +21,7 @@ const Index = () => {
         <h2>Herramientas</h2>
         <div className='Home__herramientas-icons'>
           {
-            home.herramientas.map((i) => <TextIconRedondo img={i.imagen} name={i.nombre} />)
+            home.herramientas.map((i) => <TextIconRedondo key={i.id} img={i.imagen} name={i.nombre} />)
           }
         </div>
       </div>
@@ -29,7 +29,7 @@ const Index = () => {
         <h2>Habilidades</h2>
         <div className='Home__habilidades-icons'>
           {
-            home.areaInteres.map((i) => <TextIconRedondo img={i.imagen} name={i.nombre} />)
+            home.areaInteres.map((i) => <TextIconRedondo key={i.id} img={i.imagen} name={i.nombre} />)
           }
         </div>
       </div>
