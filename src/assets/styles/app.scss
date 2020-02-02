@@ -20,7 +20,7 @@ $animationSpeed: 30s;
 
 .Home {
     display: grid;
-    grid-template-rows: minmax(50vh, auto) 150px;
+    grid-template-rows: minmax(50vh, auto) 230px;
     grid-template-areas: "hero" "habilidades";
     grid-gap: 5%;
     max-width: 100vw;
