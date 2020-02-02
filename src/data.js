@@ -17,14 +17,14 @@ const home = {
       imagen: iconRRHH,
     },
     {
+      id: 'Git',
+      nombre: 'Git',
+      imagen: iconExcel,
+    },
+    {
       id: 'BD',
       nombre: 'Bases de Datos',
       imagen: iconBD,
-    },
-    {
-      id: 'Kactus',
-      nombre: 'kactus HCM',
-      imagen: iconKactus,
     },
     {
       id: 'ME',
@@ -32,10 +32,22 @@ const home = {
       imagen: iconEM,
     },
     {
-      id: 'Fronend',
-      nombre: 'Desarrollo Fronent',
+      id: 'ui',
+      nombre: 'UI / UX',
       imagen: iconFronend,
     },
+    {
+      id: 'Procesos',
+      nombre: 'Optimización de procesos',
+      imagen: iconFronend,
+    },
+    {
+      id: 'Frontend',
+      nombre: 'Desarrollo Software',
+      imagen: iconFronend,
+    },
+  ],
+  herramientas: [
     {
       id: 'Photoshop',
       nombre: 'Adobe Photoshop',
@@ -52,8 +64,23 @@ const home = {
       imagen: iconXD,
     },
     {
+      id: 'Kactus',
+      nombre: 'kactus HCM',
+      imagen: iconKactus,
+    },
+    {
       id: 'Excel',
-      nombre: 'Office Excel',
+      nombre: 'Excel',
+      imagen: iconExcel,
+    },
+    {
+      id: 'GitHub',
+      nombre: 'GitHub',
+      imagen: iconExcel,
+    },
+    {
+      id: 'GitLab',
+      nombre: 'GitLab',
       imagen: iconExcel,
     },
   ],
@@ -63,7 +90,7 @@ const home = {
     title: 'Alejandro López Ramírez',
     texto: 'Desarrollador full stack JavaScript con Node.js y Consultor de Nómina y Gestión Humana con amplios conocimientos en el ERP Kactus y con mucha pasión por nunca aprender',
 
-  }
+  },
 };
 
 export default home;
