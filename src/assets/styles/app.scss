@@ -5,13 +5,30 @@ body,
   margin: 0;
 }
 
+@mixin white-gradient {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-500px * 5))}
+}
+
 .Home {
+    display: grid;
+    grid-template-rows: minmax(50vh, auto) 150px;
+    grid-template-areas: "hero" "habilidades";
+    grid-gap: 5%;
+    max-width: 100vw;
   & > .Hero {
+    max-width: 100vw;
+    grid-area: hero;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 40px);
     grid-template-areas:
-      "img saludotitle"
       "img saludotitle";
     & > .text {
       grid-area: saludotitle;
@@ -27,6 +44,13 @@ body,
         }
       }
     }
+  }
+  &__habilidades {
+    grid-area: habilidades;
+    max-width: 100vw;
+    display: -webkit-inline-box;
+    animation: scroll $animationSpeed linear;
+    @extend .styleScrollX;
   }
 }
 

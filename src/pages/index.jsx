@@ -17,9 +17,11 @@ const Index = () => {
           <p>{home.hero.texto}</p>
         </div>
       </Hero>
-      {
-        home.areaInteres.map((i) => <TextIconRedondo img={i.imagen} name={i.nombre} />)
-      }
+      <div className='Home__habilidades'>
+        {
+          home.areaInteres.map((i) => <TextIconRedondo img={i.imagen} name={i.nombre} />)
+        }
+      </div>
     </section>
   );
 };
