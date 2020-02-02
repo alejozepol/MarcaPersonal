@@ -1,41 +1,43 @@
-@import '../../assets/styles/variables.scss';
-.Layout{
-    display: grid;
-    min-height: 100vh;
- }
+@import "../../assets/styles/variables.scss";
+.Layout {
+  display: grid;
+  min-height: 100vh;
+}
 
-@media (min-width: 620px) { 
-    .Layout{
-        grid-template-rows: 60px auto 150px;
-        grid-template-areas:    "header" 
-                                "main" 
-                                "footer";
-
-        & > header{
-          grid-area: header;
-        }
-        & > main {
-            grid-area: main; 
-        }
-        & > footer{
-            grid-area: footer;
-        }
+@media (min-width: 620px) {
+  .Layout {
+    grid-template-rows: 60px auto 150px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-gap: 3%;
+    & > header {
+      grid-area: header;
     }
- }
-@media (max-width: 619px) { 
-    .Layout{
-        grid-template-rows: 60px auto 300px;
-        grid-template-areas:    "header"
-                                "main"
-                                "footer";
-        & > header{
-          grid-area: header;
-        }
-        & > main {
-            grid-area: main; 
-        }
-        & > footer{
-            grid-area: footer;
-        }
+    & > main {
+      grid-area: main;
     }
- }
+    & > footer {
+      grid-area: footer;
+    }
+  }
+}
+@media (max-width: 619px) {
+  .Layout {
+    grid-template-rows: 60px auto 300px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    & > header {
+      grid-area: header;
+    }
+    & > main {
+      grid-area: main;
+    }
+    & > footer {
+      grid-area: footer;
+    }
+  }
+}

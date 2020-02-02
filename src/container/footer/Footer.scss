@@ -22,7 +22,7 @@
   align-content: center;
   justify-self: center;
   background-color: $color-segundario;
-  width: 100vw;
+  width: -webkit-fill-available;
   &__suscription {
     display: grid;
     grid-area: suscription;
