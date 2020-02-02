@@ -61,7 +61,7 @@ const Header = (props) => {
         <nav className='Header__nav700'>
           {
             menu.map((item) => (
-              <Link to={item.url}>
+              <Link key={item.url} to={item.url}>
                 <TextIcon key={item.name} img={item.img} name={item.name} />
               </Link>
             ))
@@ -72,7 +72,7 @@ const Header = (props) => {
         <nav className='Header__nav701'>
           {
             menu.map((item) => (
-              <Link to={item.url}>
+              <Link to={item.url} key={item.url}>
                 <TextIcon key={item.name} img={item.img} name={item.name} />
               </Link>
             ))

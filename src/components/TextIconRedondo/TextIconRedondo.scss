@@ -4,6 +4,7 @@
   display: grid;
   grid-template-rows: 150px auto;
   grid-template-areas: "img" "name";
+  justify-items: center;
   width: 150px;
   border-radius: 50px;
   margin: 0% 2%;
@@ -21,5 +22,12 @@
     align-self: center;
     font-size: medium;
     text-align: center;
+  }
+}
+
+.TextIconRedondo.sm {
+  grid-template-rows: 80px auto;
+  & > .TextIconRedondo-img{
+    width: 80px;
   }
 }

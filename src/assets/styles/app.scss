@@ -46,6 +46,7 @@ $animationSpeed: 30s;
       margin: 4% 0;
       display: -webkit-box;
       padding-left: 100%;
+      justify-content: space-around;
       animation: scroll $animationSpeed linear;
       animation-iteration-count: infinite;
     }

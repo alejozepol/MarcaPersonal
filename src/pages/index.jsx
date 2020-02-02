@@ -19,10 +19,10 @@ const Index = () => {
         </div>
       </Hero>
       <div className='Home__herramientas'>
-        <h2>Herramientas</h2>
+        <h2>Herramientas y Lenguajes</h2>
         <div className='Home__herramientas-icons'>
           {
-            home.herramientas.map((i) => <TextIconRedondo key={i.id} img={i.imagen} name={i.nombre} />)
+            home.herramientas.map((i) => <TextIconRedondo key={i.id} img={i.imagen} name={i.nombre} type='sm' />)
           }
         </div>
       </div>

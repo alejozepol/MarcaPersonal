@@ -70,6 +70,21 @@ const home = {
       imagen: iconXD,
     },
     {
+      id: 'HTML',
+      nombre: 'HTML',
+      imagen: iconXD,
+    },
+    {
+      id: 'CSS',
+      nombre: 'CSS',
+      imagen: iconXD,
+    },
+    {
+      id: 'SASS',
+      nombre: 'SASS preprocesador CSS',
+      imagen: iconXD,
+    },
+    {
       id: 'Kactus',
       nombre: 'kactus HCM',
       imagen: iconKactus,
@@ -87,6 +102,41 @@ const home = {
     {
       id: 'GitLab',
       nombre: 'GitLab',
+      imagen: iconExcel,
+    },
+    {
+      id: 'React',
+      nombre: 'React JS',
+      imagen: iconExcel,
+    },
+    {
+      id: 'Angular',
+      nombre: 'GitLab',
+      imagen: iconExcel,
+    },
+    {
+      id: 'MSSQL',
+      nombre: 'SQL Server',
+      imagen: iconExcel,
+    },
+    {
+      id: 'MySql',
+      nombre: 'MySQL',
+      imagen: iconExcel,
+    },
+    {
+      id: 'Oracle',
+      nombre: 'Oracle',
+      imagen: iconExcel,
+    },
+    {
+      id: 'JavaScript',
+      nombre: 'JavaScript',
+      imagen: iconExcel,
+    },
+    {
+      id: 'NodeJS',
+      nombre: 'NodeJS',
       imagen: iconExcel,
     },
   ],
