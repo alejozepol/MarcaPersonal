@@ -29,6 +29,11 @@ $font-size-primaria: 12px;
   -moz-box-shadow: $size-sombra $color-primario;
   box-shadow: $size-sombra $color-primario;
 }
+.sombraSegundario {
+  -webkit-box-shadow: $size-sombra $color-segundario;
+  -moz-box-shadow: $size-sombra $color-segundario;
+  box-shadow: $size-sombra $color-segundario;
+}
 
 .degragadoColor {
   background: $color-primario;

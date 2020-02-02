@@ -10,7 +10,8 @@
   justify-content: center;
   align-items: center;
   margin: 4%;
-  @extend .sombraPrimario;
+  transition: 450ms all;
+  @extend .sombraSegundario;
   & > img {
     grid-area: img;
     width: 100%;
@@ -23,19 +24,30 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: fade-out($color-primario, $opacity);
+    background-color: $color-primario;
   }
   & > p {
     grid-area: text;
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+    height: 100%;
+    padding: 0 6%;
+  }
+}
+.Card:hover {
+  width: 230px;
+  min-height: 370px;
+  transform: translate3d(2%,2%,2%);
+  @extend .sombraOscura;
+  & > h3 {
+    background-color: $color-segundario;
   }
 }
 
-@media (min-width: 620px) {
-  .Card {
-  }
-}
 
 @media (max-width: 619px) {
   .Card {
+    width: 80%;
   }
 }

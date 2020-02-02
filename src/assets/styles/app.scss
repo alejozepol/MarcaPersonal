@@ -63,6 +63,16 @@ $animationSpeed: 30s;
   }
   &__servicios {
     grid-area: servicios;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &-card{
+      margin-top: 2%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
   }
 }
 
@@ -89,6 +99,11 @@ $animationSpeed: 30s;
     &__habilidades {
       &-icons {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    &__servicios {
+      &-card{
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }

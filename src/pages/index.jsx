@@ -35,9 +35,12 @@ const Index = () => {
         </div>
       </div>
       <div className='Home__servicios'>
-        {
-          home.servicios.map((i) => <Card key={i.id} img={i.imagen} title={i.titulo} text={i.descripcion} />)
-        }
+        <h2>Algunos Servicios</h2>
+        <div className='Home__servicios-card'>
+          {
+            home.servicios.map((i) => <Card key={i.id} img={i.imagen} title={i.titulo} text={i.descripcion} />)
+          }
+        </div>
       </div>
     </section>
   );
