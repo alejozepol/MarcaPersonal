@@ -1,0 +1,89 @@
+@import "../../assets/styles/variables.scss";
+
+.CardHorizontal {
+  display: grid;
+  grid-template-columns: 100px minmax(auto, 15px) auto;
+  grid-template-rows: repeat(4, 25px) auto auto;
+  grid-template-areas:
+    "logo . cargo"
+    "logo . cargo"
+    "logo . actividades"
+    "logo . actividades"
+    "empresa . actividades"
+    "fechaInicio . actividades"
+    "fechaFinal  . actividades";
+  margin: 4%;
+  &-logo {
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px $color-oscuro solid;
+  }
+  &-empresa {
+    grid-area: empresa;
+    margin-left: 1%;
+    margin-top: 5%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &-cargo {
+    grid-area: cargo;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $color-primario;
+  }
+  &-fechaInicio {
+    grid-area: fechaInicio;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+  }
+  &-fechaFinal {
+    grid-area: fechaFinal;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+  }
+  &-actividades {
+    margin: 0;
+    grid-area: actividades;
+    margin-left: 1%;
+    background-color: $color-contraste;
+    border-left: 4px $color-primario solid;
+    & > li{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 619px) {
+  .CardHorizontal {
+    grid-template-columns: 100px minmax(auto, 15px) auto;
+    grid-template-rows: auto 50px 50px auto;
+    grid-template-areas:
+      "empresa . cargo cargo"
+      "logo . fechaInicio fechaInicio "
+      "logo . fechaFinal fechaFinal";
+      &-actividades {
+        display: none;
+      }
+      &-fechaInicio {
+        height: 100%;
+        align-self: center;
+        background-color: $color-contraste;
+        border-left: 4px $color-primario solid;
+      }
+      &-fechaFinal {
+        height: 100%;
+        align-self: center;
+        background-color: $color-contraste;
+        border-left: 4px $color-primario solid;
+      }
+  }
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
 $color-claro: #fcfcfc;
 $color-oscuro: #000000;
+$color-contraste: #887a7a34;
 $color-primario: #FFE100;
 $color-segundario: #FEB200;
 $color-aceptar: #00D362;
@@ -85,7 +86,7 @@ $font-size-primaria: 12px;
   }
 }
 
-@each $header, $size in (h1: 20px, h2: 18px, h3: 16px, h4:14px) {
+@each $header, $size in (h1: 24px, h2: 20px, h3: 18px, h4:16px) {
   #{$header} {
         font-size: $size;
         font-family: $font-primaria;

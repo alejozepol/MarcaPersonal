@@ -45,7 +45,6 @@ $animationSpeed: 35s;
     &-icons {
       margin: 4% 0;
       display: -webkit-box;
-      padding-left: 100%;
       animation: scroll $animationSpeed linear;
       animation-iteration-count: infinite;
     }
@@ -83,7 +82,7 @@ $animationSpeed: 35s;
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-10% * 40));
+      transform: translateX(calc(-3% * 40));
     }
   }
   .Home {

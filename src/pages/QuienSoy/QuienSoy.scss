@@ -44,17 +44,7 @@
 }
 
 @media (max-width: 619px) {
-  .Home {
-    & > .Hero {
-      grid-template-columns: 1fr;
-      grid-template-rows: minmax(80vh, auto) auto;
-      & > .text {
-        & > span {
-          flex-direction: column;
-        }
-      }
-    }
-  }
+
 }
 
 @media (min-width: 620px) {
