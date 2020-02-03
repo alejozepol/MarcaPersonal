@@ -30,7 +30,7 @@ import imgUGPP from './assets/static/ugpp.png';
 import imgKactus from './assets/static/kactus.png';
 import imgEM from './assets/static/emailMarketing.png';
 
-const home = {
+export const home = {
   areaInteres: [
     {
       id: 'RRHH',
@@ -202,4 +202,11 @@ const home = {
   },
 };
 
-export default home;
+export const QS = {
+  hero: {
+    img: imagenHero,
+    saludo: '¡Hola! soy',
+    title: 'Alejandro López Ramírez',
+    texto: 'Si en privado te averguenzas de ti mismo, es por que aun no eres la mejor version que puedes ser',
+  },
+};

@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/hero';
-import home from '../data';
+import { home } from '../data';
 import TextIconRedondo from '../components/TextIconRedondo';
 import Card from '../components/card';
 import '../assets/styles/app.scss';

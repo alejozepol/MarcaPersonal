@@ -1,0 +1,62 @@
+@import "../../assets/styles/variables.scss";
+
+.QuienSoy {
+  display: grid;
+  grid-template-rows: minmax(50vh, auto) auto;
+  grid-template-areas: "hero" "herramientas" "habilidades" "servicios";
+  max-width: 100vw;
+  & > .Hero {
+    max-width: 100vw;
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img saludotitle";
+    & > .text {
+      grid-area: saludotitle;
+      height: inherit;
+      padding: 1%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & > span {
+        display: flex;
+        & > h1 {
+          margin-left: 1%;
+        }
+      }
+    }
+  }
+  & > div {
+    margin: 0% 7%;
+    text-align: justify;
+    & > h2 {
+      text-align: center;
+      margin-top: 5%;
+    }
+    & > p {
+      margin-top: 2%;
+      & > b{
+        margin: 0 1%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 619px) {
+  .Home {
+    & > .Hero {
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(80vh, auto) auto;
+      & > .text {
+        & > span {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 620px) {
+
+}
