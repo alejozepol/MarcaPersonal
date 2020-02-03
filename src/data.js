@@ -56,6 +56,13 @@ import campañasEmail from './assets/static/campañasEmail.png';
 import PresentacionNegocioUndervisa from './assets/static/PresentacionNegocioUndervisa.png';
 import Ucatolica from './assets/static/Ucatolica.png';
 
+import iconCodeA from './assets/static/icons/iconCode-A.svg';
+import iconCodeI from './assets/static/icons/iconCode-I.svg';
+import icoProyectoA from './assets/static/icons/icoProyecto-A.svg';
+import icoProyectoI from './assets/static/icons/icoProyecto-I.svg';
+import icoVideoA from './assets/static/icons/icoVideo-A.svg';
+import icoVideoI from './assets/static/icons/icoVideo-I.svg';
+
 export const home = {
   areaInteres: [
     {
@@ -898,5 +905,22 @@ export const PF = {
       imagen: PresentacionNegocioUndervisa,
     },
 
+  ],
+  icons: [
+    {
+      a: iconCodeA,
+      i: iconCodeI,
+      name: 'Codigo',
+    },
+    {
+      a: icoProyectoA,
+      i: icoProyectoI,
+      name: 'Proyecto',
+    },
+    {
+      a: icoVideoA,
+      i: icoVideoI,
+      name: 'Video',
+    },
   ],
 };
