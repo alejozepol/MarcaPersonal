@@ -7,9 +7,24 @@ import iconPS from './assets/static/icons/ps.svg';
 import iconAI from './assets/static/icons/ai.svg';
 import iconXD from './assets/static/icons/XD.svg';
 import iconExcel from './assets/static/icons/excel.svg';
+import iconHTML from './assets/static/icons/html-5.svg';
+import iconCSS from './assets/static/icons/css.svg';
+import iconSASS from './assets/static/icons/sass.svg';
+import iconGitHub from './assets/static/icons/github.svg';
+import iconGitLab from './assets/static/icons/gitlab.svg';
+import iconReact from './assets/static/icons/react.svg';
+import iconMySQL from './assets/static/icons/mysql.svg';
+import iconNodeJS from './assets/static/icons/nodejs.svg';
+import iconJS from './assets/static/icons/js.svg';
+import iconOracle from './assets/static/icons/oracle.svg';
+import iconAngular from './assets/static/icons/angularjs.svg';
+import iconMSSQL from './assets/static/icons/mssql.svg';
 import imagenHero from './assets/static/FondoHero.png';
 import imgAuth from './assets/static/auditoria.jpg';
 import imgDev from './assets/static/desarrolloWeb.jpg';
+import imgUI from './assets/static/icons/UIUX.svg';
+import imgOptimizar from './assets/static/icons/Optimizar.svg';
+import imgGit from './assets/static/icons/git.svg';
 import imgNomina from './assets/static/Nomina.jpg';
 import imgUGPP from './assets/static/ugpp.png';
 import imgKactus from './assets/static/kactus.png';
@@ -25,7 +40,7 @@ const home = {
     {
       id: 'Git',
       nombre: 'Git',
-      imagen: iconExcel,
+      imagen: imgGit,
     },
     {
       id: 'BD',
@@ -40,12 +55,12 @@ const home = {
     {
       id: 'ui',
       nombre: 'UI / UX',
-      imagen: iconFronend,
+      imagen: imgUI,
     },
     {
       id: 'Procesos',
       nombre: 'Optimización de procesos',
-      imagen: iconFronend,
+      imagen: imgOptimizar,
     },
     {
       id: 'Frontend',
@@ -72,17 +87,17 @@ const home = {
     {
       id: 'HTML',
       nombre: 'HTML',
-      imagen: iconXD,
+      imagen: iconHTML,
     },
     {
       id: 'CSS',
       nombre: 'CSS',
-      imagen: iconXD,
+      imagen: iconCSS,
     },
     {
       id: 'SASS',
       nombre: 'SASS preprocesador CSS',
-      imagen: iconXD,
+      imagen: iconSASS,
     },
     {
       id: 'Kactus',
@@ -97,47 +112,47 @@ const home = {
     {
       id: 'GitHub',
       nombre: 'GitHub',
-      imagen: iconExcel,
+      imagen: iconGitHub,
     },
     {
       id: 'GitLab',
       nombre: 'GitLab',
-      imagen: iconExcel,
+      imagen: iconGitLab,
     },
     {
       id: 'React',
       nombre: 'React JS',
-      imagen: iconExcel,
+      imagen: iconReact,
     },
     {
       id: 'Angular',
       nombre: 'Angular',
-      imagen: iconExcel,
+      imagen: iconAngular,
     },
     {
       id: 'MSSQL',
       nombre: 'SQL Server',
-      imagen: iconExcel,
+      imagen: iconMSSQL,
     },
     {
       id: 'MySql',
       nombre: 'MySQL',
-      imagen: iconExcel,
+      imagen: iconMySQL,
     },
     {
       id: 'Oracle',
       nombre: 'Oracle',
-      imagen: iconExcel,
+      imagen: iconOracle,
     },
     {
       id: 'JavaScript',
       nombre: 'JavaScript',
-      imagen: iconExcel,
+      imagen: iconJS,
     },
     {
       id: 'NodeJS',
       nombre: 'NodeJS',
-      imagen: iconExcel,
+      imagen: iconNodeJS,
     },
   ],
   servicios: [
