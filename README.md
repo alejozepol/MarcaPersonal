@@ -1,5 +1,5 @@
 # Repositorio Base para React
-_En este reposito encontratas un proyecto realizado en React para actualizar mi portafolio personal._
+_En este reposito encontratas un proyecto base con un compenente presentacional llamado Hola Mundo._
 
 _Este proyecto cuenta con las dependencias para producción de **Eslint**, **Webpack**, **Babel**, **React**, **React-dom** y como dependecias de desarrollo **Webpack**, **Loader para ccs y html**_
 
