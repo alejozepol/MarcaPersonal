@@ -1,0 +1,43 @@
+@mixin btnPrimario {
+  border-color: $color-primario-claro;
+  @include degragadoPrimario;
+  @include sombraPrimarioClaro;
+}
+@mixin btnSegundary {
+  background: transparent;
+  border: 2px solid $color-contraste-oscuro;
+  @include sombraContrasteClaro;
+}
+
+.Btn {
+  border-radius: 30px;
+  margin: 5px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.35;
+  &-sm {
+    width: 150px;
+    height: 35px;
+    &-primary {
+      @include btnPrimario;
+    }
+    &-segundary {
+      @include btnSegundary;
+    }
+  }
+  &-md {
+    width: 300px;
+    height: 50px;
+    font-size: 1.5em;
+    &-primary {
+      @include btnPrimario;
+    }
+    &-segundary {
+      @include btnSegundary;
+    }
+  }
+
+  box-shadow: 0 3px 6px 0 rgba(255, 225, 0, 0.51);
+  background-image: linear-gradient(to bottom, #ffe100, #feb200);
+}

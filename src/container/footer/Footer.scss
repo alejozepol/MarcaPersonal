@@ -1,91 +1,123 @@
-
-
-@media (max-width: 600px) {
-  .Footer {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "suscription"
-                          "brand";
-    &__brand{
-      margin-top: 5%;
-    }
-  }
-}
-@media (min-width: 601px) {
-  .Footer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "suscription brand";
-  }
-}
-
 .Footer {
+  position: relative;
+  max-width: 100vw;
+  width: 95vw;
+  width: -webkit-fill-available;
+  border: none;
+  border-radius: 30% 0 0;
   display: grid;
+  grid-template-areas: "socialMedia branding recognition";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
   align-items: center;
   justify-self: center;
-  background-color: $color-primario-claro;
-  width: -webkit-fill-available;
-  &__suscription {
-    display: grid;
-    grid-area: suscription;
-    grid-template-columns: 80px repeat(2, 1fr);
-    grid-template-rows: 80px 20px;
-    grid-template-areas: "icon text text" "form form form";
-    align-items: center;
-    justify-self: center;
-    max-width: 305px;
-    & > form{
-      display: grid;
-      grid-area: form ;
-      grid-template-columns: 80px repeat(2, 1fr);
-      grid-template-areas: "input input buton";
-    }
-    &-img {
-      grid-area: icon ;
-      width: 80px;
-      height: 80px;
-    }
-    &-text{
-      grid-area: text ;
-    }
-    &-input{
-      grid-area: input;
-      border-radius: 30px 0 0 30px;
-      border: 1px $color-oscuro solid;
-      &::placeholder{
-        text-align: center;
-      }
-      &:focus{
-        outline:0px;
-        text-align: center;
-      }
-    }
-    &-buton{
-      grid-area: buton;
-      border-radius: 0px 30px 30px 0;
-      @include degragadoPrimario;
-      &:focus{
-        outline:0px;
-        text-align: center;
-      }
+  color: $color-claro;
+  @include sombraOscura;
+  @include paddingGlobal;
+  &-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+    border-radius: 30% 0 0;
+    border: none;
+    &-movil {
+      display: none;
     }
   }
-  &__brand{
-    display: grid;
-    grid-area: brand;
-    justify-content: center;
-    justify-items: center;
+  &__socialMedia {
+    width: 100%;
+    height: 70%;
     text-align: center;
-    grid-template-rows: 80px 1fr 1fr;
-    &-img{
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: $color-oscuro;
-    }
-    &-title{
-      font-weight: bold;
+    grid-area: socialMedia;
+    display: grid;
+    align-items: center;
+    &-followr,
+    &-professional {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > p {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.1rem;
+        color: $color-contraste-claro;
+      }
     }
   }
-  &__contact{
+  &__branding {
+    height: 100%;
+    text-align: center;
+    grid-area: branding;
     display: grid;
+    align-items: center;
+    justify-items: center;
+    & > img {
+      align-self: self-end;
+    }
+  }
+  &__recognition {
+    text-align: center;
+    grid-area: recognition;
+    display: grid;
+    align-items: center;
+    & > p {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: $color-contraste-claro;
+    }
+    &-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-item {
+      & > img {
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    grid-template-areas: "socialMedia" "branding" "recognition";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    &-bg {
+      display: none;
+      &-movil {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        z-index: -1;
+        border-radius: 30% 0 0;
+        border: none;
+      }
+    }
+    &__socialMedia {
+      &-followr,
+      &-professional {
+        flex-direction: column;
+        & > p {
+          margin: 5% 0;
+        }
+      }
+    }
+    &__recognition {
+      &-items {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+      &-item {
+        & > img {
+          height: 40px;
+        }
+      }
+    }
   }
 }

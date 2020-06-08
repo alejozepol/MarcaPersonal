@@ -1,5 +1,4 @@
 .Header {
-  padding: 0% 3.5%;
   display: grid;
   grid-template-areas: "logo menu";
   grid-template-columns: 300px auto;
@@ -7,6 +6,7 @@
   align-items: center;
   background-color: $color-oscuro;
   @include sombraOscura;
+  @include paddingGlobal;
   &__logo {
     grid-area: logo;
     height: 100%;

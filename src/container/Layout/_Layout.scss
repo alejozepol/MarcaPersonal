@@ -1,7 +1,7 @@
 .Layout {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 6rem auto 12rem;
+  grid-template-rows: 6rem auto 15rem;
   grid-template-areas:
     "header"
     "main"
@@ -15,5 +15,11 @@
   }
   & > footer {
     grid-area: footer;
+  }
+}
+
+@media (max-width: 768px) {
+  .Layout {
+    grid-template-rows: 6rem auto 120vh;
   }
 }

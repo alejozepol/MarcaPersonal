@@ -56,3 +56,19 @@
   background: linear-gradient($color-contraste-degradado);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-contraste-claro', endColorstr='$color-contraste-oscuro', GradientType=0 );
 }
+
+@each $color, $value in (
+  color-primario-claro: $color-primario-claro,
+  color-primario-oscuro: $color-primario-oscuro,
+  color-contraste-claro: $color-contraste-claro,
+  color-contraste-oscuro: $color-contraste-oscuro,
+  color-oscuro: $color-oscuro,
+  color-claro: $color-claro,
+) {
+  .#{$color} {
+    color: $value !important
+  }
+  .bg-#{$color} {
+    background: $value !important
+  }
+};

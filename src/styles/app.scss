@@ -3,10 +3,18 @@
 @import"./fonts";
 @import "../container/Layout/Layout.scss";
 @import "../container/header/Header.scss";
+@import "../container/footer/Footer.scss";
+@import "../components/iconSocialMedia/iconsSocialMedia";
+@import "../components/Button/Buttons";
 
 body {
     margin: 0;
     font-size: $font-size-desk;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 .styleScroll {
@@ -59,3 +67,5 @@ a {
     background-color: $color-claro;
     @include sombraOscura();
 }
+
+

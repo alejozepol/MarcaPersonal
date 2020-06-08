@@ -6,6 +6,11 @@ $color-contraste-oscuro: #d82aa3;
 $color-contraste-degradado: to bottom, $color-contraste-claro 0%, $color-contraste-oscuro 100%;
 $color-oscuro: #372f49;
 $color-claro: #f4edf2;
-$size-sombra: 0px 0px 5px 1px;
+$size-sombra: 0px 3px 6px 0px;
 $opacity: 0.5;
-$font-size-desk: 14px;
+$font-size-desk: 15px;
+
+
+@mixin paddingGlobal {
+  padding: 0% 3.5%;
+}
