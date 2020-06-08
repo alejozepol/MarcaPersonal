@@ -1,0 +1,19 @@
+.Layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 6rem auto 12rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  & > header {
+    grid-area: header;
+  }
+  & > main {
+    grid-area: main;
+    padding-bottom: 6%;
+  }
+  & > footer {
+    grid-area: footer;
+  }
+}

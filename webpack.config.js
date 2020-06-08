@@ -1,11 +1,16 @@
+// eslint-disable-next-line no-unused-vars
+const dotEnv = require('dotenv').config();
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtraxtPlugin = require('mini-css-extract-plugin');
 
-const nodeEnv = process.env.NODE_ENV === 'development';
+const mode = process.env.NODE_ENV;
+const nodeEnv = mode === 'development';
 
 module.exports = {
   entry: './src/index.js',
+  mode,
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -51,13 +56,16 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
     }),
     new MiniCssExtraxtPlugin({
-      filename: nodeEnv ? 'assets/[name].css' : 'assets/[name].css',
+      filename: nodeEnv ? 'assets/[name].css' : 'assets/[hash].css',
     }),
   ],
 
