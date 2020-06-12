@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = ({ children, direction, color }) => {
   return (
-    <section className='Hero'>
-      <h1>is the hero</h1>
+    <section className={`Hero-${direction} Hero-${direction}-${color}`}>
+      {children}
     </section>
   );
 };
