@@ -12,6 +12,9 @@
     height: 100%;
     display: grid;
     align-items: center;
+    &-img {
+      height: 55%;
+    }
     &-title {
       display: none;
     }
@@ -30,14 +33,14 @@
     }
     &-item {
       font-family: regular;
-      font-size: 2rem;
+      font-size: 150%;
       font-weight: 600;
       color: $color-claro;
       & > li {
         list-style: none;
       }
     }
-    &-input{
+    &-input {
       display: none;
     }
   }
@@ -52,18 +55,16 @@
     position: fixed;
     z-index: 3;
     width: 95vw;
-    height: 6rem;
+    height: 5em;
+    grid-template-columns: initial;
     &__logo {
       justify-items: center;
-      & > img{
-        width: 80%;
-      }
     }
     &__menu {
       justify-content: flex-end;
       &-nav {
         position: fixed;
-        top: 70px;
+        bottom: 0%;
         right: 0%;
         z-index: 2;
         display: none;
@@ -73,16 +74,15 @@
         height: 94vh;
         width: 70vw;
       }
-      &-item{
+      &-item {
         font-size: 1.5rem;
       }
-      &-input{
+      &-input {
         display: block;
-        &-act{
+        &-act {
           display: block;
         }
-
-        &-inac{
+        &-inac {
           display: none;
         }
       }
@@ -98,3 +98,4 @@
     display: block;
   }
 }
+
