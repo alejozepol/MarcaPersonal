@@ -58,12 +58,12 @@
 }
 
 @each $color, $value in (
-  color-primario-claro: $color-primario-claro,
-  color-primario-oscuro: $color-primario-oscuro,
-  color-contraste-claro: $color-contraste-claro,
-  color-contraste-oscuro: $color-contraste-oscuro,
-  color-oscuro: $color-oscuro,
-  color-claro: $color-claro,
+  primario-claro: $color-primario-claro,
+  primario-oscuro: $color-primario-oscuro,
+  contraste-claro: $color-contraste-claro,
+  contraste-oscuro: $color-contraste-oscuro,
+  oscuro: $color-oscuro,
+  claro: $color-claro,
 ) {
   .#{$color} {
     color: $value !important
