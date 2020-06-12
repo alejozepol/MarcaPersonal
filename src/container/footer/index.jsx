@@ -48,7 +48,7 @@ const Footer = () => {
         <p>Si no haces lo que no sabes hacer, nunca serás mejor de lo que eres hoy</p>
       </div>
       <div className='Footer__recognition'>
-        <p>Reconocimientos:</p>
+        <p className='Footer__recognition-title'>Reconocimientos:</p>
         <div className='Footer__recognition-items'>
           <div className='Footer__recognition-item'>
             <h2>Apps.Co</h2>

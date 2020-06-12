@@ -12,7 +12,6 @@
   align-items: center;
   justify-self: center;
   color: $color-claro;
-  @include sombraOscura;
   @include paddingGlobal;
   &-bg {
     position: absolute;
@@ -26,9 +25,11 @@
       display: none;
     }
   }
-  &__socialMedia {
-    width: 100%;
+  &__socialMedia, &__branding, &__recognition{
     height: 70%;
+    width: 100%;
+  }
+  &__socialMedia {
     text-align: center;
     grid-area: socialMedia;
     display: grid;
@@ -48,14 +49,18 @@
     }
   }
   &__branding {
-    height: 100%;
     text-align: center;
     grid-area: branding;
     display: grid;
+    grid-template-rows: auto minmax(auto, 40px) 20px 30px ;
     align-items: center;
     justify-items: center;
     & > img {
       align-self: self-end;
+      height: 100%;
+    }
+    & > p {
+      font-size: 12px;
     }
   }
   &__recognition {
@@ -63,7 +68,7 @@
     grid-area: recognition;
     display: grid;
     align-items: center;
-    & > p {
+    &-title {
       font-weight: bold;
       font-style: italic;
       font-size: 1.1rem;
@@ -74,6 +79,9 @@
       grid-template-columns: repeat(2, 1fr);
     }
     &-item {
+      & > p {
+        font-size: 12px;
+      }
       & > img {
         height: 40px;
       }
@@ -99,13 +107,21 @@
         border: none;
       }
     }
+    &__socialMedia, &__branding, &__recognition{
+      height: initial;
+      width: 100%;
+    }
+    &__branding{
+      grid-template-rows: auto auto 20px 30px ;
+      & > img{
+        margin-top: 20px;
+        height: 40px;
+      }
+    }
     &__socialMedia {
       &-followr,
       &-professional {
         flex-direction: column;
-        & > p {
-          margin: 5% 0;
-        }
       }
     }
     &__recognition {
