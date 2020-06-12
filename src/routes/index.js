@@ -12,12 +12,12 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Layout>
-{/*           <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Home} />
+          {/*
           <Route exact path='/QuienSoy' component={AboutMe} />
           <Route exact path='/CV' component={CV} />
           <Route exact path='/HV' component={CV} />
           <Route exact path='/Portafolio' component={Portfolio} /> */}
-          <h1>Layout</h1>
         </Layout>
       </Switch>
     </BrowserRouter>

@@ -1,6 +1,4 @@
 import React from 'react';
-import bgFooter from '../../assets/bgFooter.png';
-import bgFooterMovil from '../../assets/bgFooter-movil.png';
 import IconSocialMedia from '../../components/iconSocialMedia';
 import Button from '../../components/Button';
 import LogoContraste from '../../assets/logoContraste.png';
@@ -10,8 +8,6 @@ import logoPlatziMaster from '../../assets/logoPlatziMaster.png';
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <img className='Footer-bg' src={bgFooter} alt='decoracion fondo' />
-      <img className='Footer-bg-movil' src={bgFooterMovil} alt='decoracion fondo' />
       <div className='Footer__socialMedia'>
         <p>
           <span className='color-primario-claro'>¿</span>
@@ -56,7 +52,7 @@ const Footer = () => {
           </div>
           <div className='Footer__recognition-item'>
             <img src={StatupWeekend} alt='Logo statup Weekend' />
-            <p>2do Puesto Colombia emprendimientos contra el covid-19</p>
+            <p>2do Puesto Colombia emprendimientos contra el covid19</p>
           </div>
           <div className='Footer__recognition-item'>
             <img src={logoPlatziMaster} alt='Logo Platzi Master' />
