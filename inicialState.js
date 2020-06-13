@@ -1,3 +1,6 @@
+import React from 'react';
+
+/* Herramientas */
 import iconAI from './src/assets/icons/adobe-ai.png';
 import iconPS from './src/assets/icons/adobe-ps.png';
 import iconXD from './src/assets/icons/adobe-xd.png';
@@ -19,6 +22,14 @@ import iconKactus from './src/assets/icons/kactus.png';
 import iconGitHub from './src/assets/icons/github.png';
 import iconGitLab from './src/assets/icons/gitlab.png';
 import iconGit from './src/assets/icons/git.png';
+
+/** Iconos Amarillos */
+import iconAudit from './src/assets/YellowIcons/iconAuditoria.png';
+import iconDevelopment from './src/assets/YellowIcons/iconDesarrollo.png';
+import iconNomina from './src/assets/YellowIcons/iconNomina.png';
+import iconUGPP from './src/assets/YellowIcons/iconUGPP.png';
+import iconKactusYellow from './src/assets/YellowIcons/iconkactusAmarillo.png';
+import iconUI from './src/assets/YellowIcons/iconUI.png';
 
 const inicialState = {
   herramientas: [
@@ -126,6 +137,87 @@ const inicialState = {
       id: 'Mailchimp',
       nombre: 'Mailchimp',
       imagen: iconMailChimp,
+    },
+  ],
+  servicios: [
+    {
+      id: 1,
+      title: 'Auditorias',
+      content: 
+      `En procesos gestión humana,
+      nómina, seguridad social,
+      contabilización en nómina y
+      su liquidación`,
+      icon: iconAudit,
+    },
+    {
+      id: 2,
+      title: 'Desarrollo',
+      content: 
+      `Desarrollo a la medida, paginas
+      web, mantenimiento, e-commerce
+      utilizando HTML5, CCS3, JavaScript
+      y framework como Angular, React.
+
+      Conocimientos en NodeJS, Sass,
+      Bases de Datos, Firebase,
+      Bootstrap y otros mas...
+
+      Ejecuto campañas de email
+      Marketing con su desarrollo en
+      HTML.`,
+      icon: iconDevelopment,
+    },
+    {
+      id: 3,
+      title: 'Nómina',
+      content: 
+      `Administración y liquidación de
+      nomina y/o seguridad social de
+      pequeño y grande empresas
+      regidas por la legislación
+      Colombiana, con conocimientos en
+      beneficios por convenciones
+      colectivas o beneficios
+        extralegales. `,
+      icon: iconNomina,
+    },
+    {
+      id: 4,
+      title: 'UGPP',
+      content: 
+      `Servicios en elaborción
+      de informes, reportes,
+      verificación y liquidación
+      de requerimientos UGPP,
+      generacion de planillas
+      de correción`,
+      icon: iconUGPP,
+    },
+    {
+      id: 5,
+      title: 'KACTUS HCM',
+      content: 
+      `Software de administración de
+      nómina y gestión humana
+      desarrollado por DigitalWare.
+      
+      Consultor con 10 años de
+      experiencia en administración,
+      implementación y optimización.
+      
+      Administración de base de datos,
+      SQL Server, Oracle`,
+      icon: iconKactusYellow,
+    },
+    {
+      id: 6,
+      title: 'Diseño UI',
+      content: 
+      `Diseño de interfaces de usuario,
+      para web o movil, enfocado en
+       experiencia de usuario.`,
+      icon: iconUI,
     },
   ],
 };

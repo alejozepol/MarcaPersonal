@@ -38,7 +38,7 @@ const Home = () => (
       </section>
     </Hero>
     <Herramientas items={inicialState.herramientas} />
-    <GardenCardHorizontal />
+    <GardenCardHorizontal title='Algunas cosas en que te puedo ayudar' items={[...inicialState.servicios]} />
   </section>
 
 );

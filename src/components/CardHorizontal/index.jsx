@@ -5,8 +5,8 @@ const CardHorizontal = ({ title, icon, img, content }) => (
     {
       !img ? (
         <div className='CardHorizontal__title CardHorizontal__title-text'>
-          {icon && (<img src={icon} alt={`icono ${title}`} />)}
-          <h4>{title}</h4>
+          {icon && (<img className='CardHorizontal__title-text-icon' src={icon} alt={`icono ${title}`} />)}
+          <h4 className='CardHorizontal__title-text-title'>{title}</h4>
         </div>
       ) : (
         <img src={img} alt={`imagen ${title}`} className='CardHorizontal__title' />

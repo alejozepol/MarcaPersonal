@@ -1,12 +1,12 @@
 import React from 'react';
 import CardHorizontal from '../../components/CardHorizontal';
 
-const GardenCardHorizontal = ({ title, item = [] }) => (
+const GardenCardHorizontal = ({ title, items = [] }) => (
   <section className='GardenCardHorizontal'>
     <h2 className='GardenCardHorizontal__title'>{title}</h2>
     <div className='GardenCardHorizontal__content'>
       {
-        item.map((item) => (
+        items.map((item) => (
           <CardHorizontal
             key={item.id}
             title={item.title}
