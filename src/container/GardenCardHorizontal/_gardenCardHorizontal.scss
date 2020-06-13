@@ -1,0 +1,12 @@
+.GardenCardHorizontal{
+  margin-top: 2%;
+  text-align: center;
+  color: $color-oscuro;
+  @include paddingGlobal;
+  &__content{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5% 5%;
+  }
+}
