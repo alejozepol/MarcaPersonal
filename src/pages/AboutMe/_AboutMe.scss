@@ -1,0 +1,45 @@
+.AboutMe{
+  &__hero{
+    width: 100%;
+    display: flex;
+    & > img{
+      align-self: flex-end;
+      border-radius: 0 0 10% 35%;
+      width: 80%;
+      max-width: 420px;
+    }
+  }
+  &__content{
+    margin-top: 5%;
+    @include paddingGlobal;
+    & > h2 {
+      margin-top: 5%;
+      text-align: center;
+      color: $color-oscuro;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .AboutMe{
+    &__hero{
+      flex-direction: column-reverse;
+      align-items: center;
+      & > img{
+        align-self: flex-start;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 425px) {
+  .AboutMe{
+    &__hero{
+      & > img{
+        border-radius: 0 0 58% 35%;
+      }
+    }
+  }
+
+}
