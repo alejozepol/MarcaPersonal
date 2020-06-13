@@ -1,5 +1,4 @@
 import React from 'react';
-import './TextIconRedondo.scss';
 
 const TextIconRedondo = ({ img, name, type, subTitle, url, button }) => {
   if (!type) {

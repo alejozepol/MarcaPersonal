@@ -1,81 +1,86 @@
 .Home {
-  width: 100%;
-  display: grid;
-  grid-template-areas: "img text";
-  grid-template-columns: auto, max-content;
-  & > img {
-    align-self: flex-end;
-    grid-area: img;
-    height: 70%;
-    border-radius: 0% 0% 0% 34%;
-    margin-bottom: 1%;
-  }
-  &__text {
-    display: flex;
-    flex-direction: column;
-    &-saludo {
-      font-family: Script;
-      font-size: 2em;
+  width: 98vw;
+  &__Hero {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "img text";
+    grid-template-columns: auto, max-content;
+    & > img {
+      align-self: flex-end;
+      grid-area: img;
+      height: 70%;
+      border-radius: 0% 0% 0% 34%;
+      margin-bottom: 1%;
     }
-    &-perfile {
+    &__text {
       display: flex;
       flex-direction: column;
-      & > h3 {
-        font-size: 1.8rem;
-        font-style: italic;
+      &-saludo {
+        font-family: Script;
+        font-size: 2em;
       }
-      &-line {
-        align-self: start;
-        border-top: 3px solid $color-contraste-claro;
-        width: 150px;
-        writing-mode: vertical-rl;
-      }
-      &-text {
-        max-width: 380px;
-        font-size: 1.5rem;
+      &-perfile {
+        display: flex;
+        flex-direction: column;
+        & > h3 {
+          font-size: 1.3rem;
+          font-style: italic;
+        }
+        &-line {
+          align-self: start;
+          border-top: 3px solid $color-contraste-claro;
+          width: 150px;
+          writing-mode: vertical-rl;
+        }
+        &-text {
+          max-width: 380px;
+          font-size: 1.2rem;
+        }
       }
     }
   }
 }
 @media (max-width: 768px) {
   .Home {
-    grid-template-areas: "text";
-    grid-template-columns: initial;
-    & > img {
-      display: none;
-      align-self: flex-end;
-      grid-area: img;
-      height: 13rem;
-      border-radius: 0% 0% 36% 43%;
-      margin-bottom: 1%;
-    }
-    &__text {
-      align-items: center;
-      &-saludo {
-        text-align: center;
-        font-family: Script;
-        font-size: 2em;
+    &__Hero {
+      grid-template-areas: "text";
+      grid-template-columns: initial;
+      & > img {
+        display: none;
+        align-self: flex-end;
+        grid-area: img;
+        height: 13rem;
+        border-radius: 0% 0% 36% 43%;
+        margin-bottom: 1%;
       }
-      &-SocialMedia {
-        display: flex;
-        justify-content: center;
-      }
-      &-perfile {
-        text-align: center;
-        align-content: center;
+      &__text {
         align-items: center;
-        & > h3 {
-          font-size: 1.5rem;
-          font-style: italic;
+        &-saludo {
+          text-align: center;
+          font-family: Script;
+          font-size: 2em;
         }
-        &-line {
-          justify-self: center;
-          border-top: 3px solid $color-contraste-claro;
-          writing-mode: initial;
+        &-SocialMedia {
+          display: flex;
+          justify-content: center;
         }
-        &-text {
-          max-width: 80%;
-          font-size: 1.1rem;
+        &-perfile {
+          text-align: center;
+          align-content: center;
+          align-items: center;
+          & > h3 {
+            font-size: 1.5rem;
+            font-style: italic;
+          }
+          &-line {
+            justify-self: center;
+            border-top: 3px solid $color-contraste-claro;
+            writing-mode: initial;
+          }
+          &-text {
+            max-width: 80%;
+            font-size: 1.1rem;
+          }
         }
       }
     }
