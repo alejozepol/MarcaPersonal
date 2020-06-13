@@ -8,6 +8,10 @@
       color: $color-claro;
       background-color: $color-oscuro;
     }
+    &-contrast {
+      color: $color-claro;
+      background-color: $color-oscuro-contraste;
+    }
   }
   &-left {
     border-radius: 0% 0% 30% 100%;
