@@ -1,19 +1,16 @@
 import React from 'react';
-import Hero from '../../components/hero';
+import HeroTextImg from '../../container/HeroTextImg';
 import Quote from '../../components/Quote';
 import foto2 from '../../assets/foto2.png';
 
 const AboutMe = () => (
   <section className='AboutMe'>
-    <Hero color='contrast' direction='right'>
-      <div className='AboutMe__hero'>
-        <img src={foto2} alt='Foto Alejandro López' />
-        <Quote
-          direction='left'
-          sentence='Si en privado te avergüenzas de ti mismo, es por que aun no eres la mejor version que puedes ser'
-        />
-      </div>
-    </Hero>
+    <HeroTextImg color='contrast' direction='right' img={foto2} alt='Foto Alejandro López'>
+      <Quote
+        direction='left'
+        sentence='Si en privado te avergüenzas de ti mismo, es por que aun no eres la mejor version que puedes ser'
+      />
+    </HeroTextImg>
     <section className='AboutMe__content'>
       <h2>¿Quién soy?</h2>
       <div>

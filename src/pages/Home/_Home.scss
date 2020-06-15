@@ -1,17 +1,5 @@
 .Home {
-  width: 98vw;
   &__Hero {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "img text";
-    grid-template-columns: auto, max-content;
-    & > img {
-      align-self: flex-end;
-      grid-area: img;
-      height: 70%;
-      border-radius: 0% 0% 0% 34%;
-      margin-bottom: 1%;
-    }
     &__text {
       display: flex;
       flex-direction: column;
@@ -43,16 +31,6 @@
 @media (max-width: 768px) {
   .Home {
     &__Hero {
-      grid-template-areas: "text";
-      grid-template-columns: initial;
-      & > img {
-        display: none;
-        align-self: flex-end;
-        grid-area: img;
-        height: 13rem;
-        border-radius: 0% 0% 36% 43%;
-        margin-bottom: 1%;
-      }
       &__text {
         align-items: center;
         &-saludo {
@@ -82,6 +60,31 @@
             font-size: 1.1rem;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .Home {
+    &__Hero {
+      &__text {
+        &-saludo {
+          font-size: 18px;
+        }
+        &-perfile {
+          & > h3 {
+            font-size: 16px;
+          }
+          &-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    & > .Hero .HeroTextImg {
+      &__img {
+        display: none;
       }
     }
   }

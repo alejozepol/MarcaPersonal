@@ -41,3 +41,16 @@
   box-shadow: 0 3px 6px 0 rgba(255, 225, 0, 0.51);
   background-image: linear-gradient(to bottom, #ffe100, #feb200);
 }
+@media (max-width: 450px) {
+  .Btn {
+    &-sm {
+      width: 150px;
+      height: 35px;
+    }
+    &-md {
+      width: 150px;
+      height: 30px;
+      font-size: 1em;
+    }
+  }
+}
