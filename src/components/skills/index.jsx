@@ -6,6 +6,9 @@ import iconLiderazgo from '../../assets/iconsBgYellow/iconLiderazgo.png';
 import iconCreativo from '../../assets/iconsBgYellow/IconCreativo.png';
 import iconEmpatia from '../../assets/iconsBgYellow/IconEmpatia.png';
 import iconAutoDidagta from '../../assets/iconsBgYellow/iconAutodidacta.png';
+import iconTrabajo from '../../assets/iconsBgYellow/iconTrabajo.png';
+import iconAdaptacion from '../../assets/iconsBgYellow/iconAdaptacion.png';
+import iconResponsabilidad from '../../assets/iconsBgYellow/iconResponsabilidad.png';
 
 const Skills = ({ skill }) => {
   switch (skill) {
@@ -42,6 +45,27 @@ const Skills = ({ skill }) => {
         <TextIcon
           img={iconEmpatia}
           name='Empatia'
+        />
+      );
+    case 'trabajo':
+      return (
+        <TextIcon
+          img={iconTrabajo}
+          name='Trabajo en Equipo'
+        />
+      );
+    case 'adaptacion':
+      return (
+        <TextIcon
+          img={iconAdaptacion}
+          name='Adaptaci[on al Cambio'
+        />
+      );
+    case 'responsabilidad':
+      return (
+        <TextIcon
+          img={iconResponsabilidad}
+          name='Responsabilidad'
         />
       );
 
