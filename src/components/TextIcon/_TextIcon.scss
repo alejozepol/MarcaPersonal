@@ -1,4 +1,4 @@
-.TextIconRedondo{
+.TextIcon{
   display: grid;
   grid-template-rows: 100px auto;
   grid-template-areas: "img" "name";
@@ -14,7 +14,7 @@
   &-name{
     grid-area: name;
     align-self: center;
-    font-size: medium;
+    font-size: inherit;
     text-align: center;
     color: $color-oscuro;
   }
@@ -27,15 +27,15 @@
   }
 }
 
-.TextIconRedondo.sm {
+.TextIcon.sm {
   grid-template-rows: 80px 80px;
-  & > .TextIconRedondo-img{
+  & > .TextIcon-img{
     width: 80px;
   }
 }
 
 @media (max-width: 619px) {
-  .TextIconRedondo{
+  .TextIcon{
     margin: auto;
   }
 }
