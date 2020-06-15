@@ -1,0 +1,44 @@
+.CV{
+  &__hero{
+    display: grid;
+    grid-template-areas: "development hr RRHH";
+    column-gap: 2em;
+    &-development, &-RRHH{
+      width: 80%;
+      display: grid;
+      grid-template-areas: "title" "perfile" "items";
+      grid-template-rows: 50px 90px min-content;
+      & > h2{
+        grid-area: title;
+        font-size: x-large;
+      }
+      & > p{
+        grid-area: perfile;
+      }
+      & > ul {
+        grid-area: items;
+        list-style: none;
+        font-size: large;
+        font-family: regular;
+        font-style: italic;
+        font-weight: bolder;
+      }
+    }
+    & > hr{
+      align-self: center;
+      display: hr;
+      height: 80%;
+      border: 1px solid $color-primario-claro;
+    }
+    &-development{
+      justify-self: right;
+      text-align: right;
+      grid-area: development;
+    }
+    &-RRHH{
+      justify-self: left;
+      text-align: left;
+      grid-area: RRHH;
+    }
+  }
+}
