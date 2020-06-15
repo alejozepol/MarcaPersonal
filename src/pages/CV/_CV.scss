@@ -7,7 +7,7 @@
       width: 80%;
       display: grid;
       grid-template-areas: "title" "perfile" "items";
-      grid-template-rows: 50px 90px min-content;
+      grid-template-rows: 70px 100px min-content;
       & > h2{
         grid-area: title;
         font-size: x-large;
@@ -39,6 +39,105 @@
       justify-self: left;
       text-align: left;
       grid-area: RRHH;
+    }
+  }
+}
+
+@media (max-width:450px){
+  .CV{
+    &__hero{
+      display: grid;
+      grid-template-areas: "development" "hr" "RRHH";
+      grid-template-rows: min-content 15px min-content;
+      column-gap: initial;
+      justify-content: center;
+      &-development, &-RRHH{
+        width: 90%;
+        display: grid;
+        grid-template-areas: "title" "perfile" "items";
+        grid-template-rows: 50px min-content min-content;
+        & > h2{
+          grid-area: title;
+          font-size: large;
+        }
+        & > p{
+          font-size: 14px;
+        }
+        & > ul {
+        }
+      }
+      & > hr{
+        align-self: center;
+        display: hr;
+        height: initial;
+        width: 90%;
+        border: 3px solid $color-primario-claro;
+      }
+      &-development{
+        justify-self: left;
+        text-align: left;
+        grid-area: development;
+        & > ul {
+          justify-self: right;
+          text-align: right;
+        }
+      }
+      &-RRHH{
+        margin-right: 5%;
+        justify-self: right;
+        text-align: right;
+        & > ul {
+          justify-self: right;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+@media (max-width:320px){
+  .CV{
+    &__hero{
+      display: grid;
+      grid-template-areas: "development" "hr" "RRHH";
+      grid-template-rows: min-content 15px min-content;
+      column-gap: initial;
+      justify-content: center;
+      &-development, &-RRHH{
+        width: 95%;
+        display: grid;
+        grid-template-areas: "title" "perfile" "items";
+        grid-template-rows: 30px 40px min-content;
+        & > p{
+          font-size: 12px;
+        }
+        & > ul {
+        }
+      }
+      & > hr{
+        align-self: center;
+        display: hr;
+        height: initial;
+        width: 90%;
+        border: 3px solid $color-primario-claro;
+      }
+      &-development{
+        justify-self: left;
+        text-align: left;
+        grid-area: development;
+        & > ul {
+          justify-self: right;
+          text-align: right;
+        }
+      }
+      &-RRHH{
+        margin-right: 5%;
+        justify-self: right;
+        text-align: right;
+        & > ul {
+          justify-self: right;
+          text-align: right;
+        }
+      }
     }
   }
 }
