@@ -3,6 +3,7 @@ import HeroTextImg from '../../container/HeroTextImg';
 import Quote from '../../components/Quote';
 import foto2 from '../../assets/foto2.png';
 import Skills from '../../components/skills';
+import Button from '../../components/Button';
 
 const AboutMe = () => (
   <section className='AboutMe'>
@@ -11,6 +12,7 @@ const AboutMe = () => (
         direction='left'
         sentence='Si en privado te avergüenzas de ti mismo, es por que aun no eres la mejor version que puedes ser'
       />
+      <Button type='primary' size='md' name='Trabajemos Juntos' />
     </HeroTextImg>
     <section className='AboutMe__content'>
       <h2>¿Quién soy?</h2>
