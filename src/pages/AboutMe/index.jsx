@@ -2,6 +2,7 @@ import React from 'react';
 import HeroTextImg from '../../container/HeroTextImg';
 import Quote from '../../components/Quote';
 import foto2 from '../../assets/foto2.png';
+import Skills from '../../components/skills';
 
 const AboutMe = () => (
   <section className='AboutMe'>
@@ -28,7 +29,13 @@ const AboutMe = () => (
         <br />
         <p>Algunos de mis habilidades que destaco son:</p>
       </div>
-      <div>this is icons</div>
+      <div className='AboutMe__content-skills'>
+        <Skills skill='solucion' />
+        <Skills skill='liderazgo' />
+        <Skills skill='creatividad' />
+        <Skills skill='autodidagta' />
+        <Skills skill='empatia' />
+      </div>
       <h2>Parte de mi historia</h2>
       <div>
         <p>Desde muy pequeño he sido muy curioso por entender el funcionamiento de las cosas que me rodean, por este motivo desde mis 14 años llevo realizando diferentes cursos para complementar mi formación entre estos relacionados conla tecnología y las finanzas.</p>

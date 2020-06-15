@@ -1,5 +1,5 @@
-.AboutMe{
-  &__content{
+.AboutMe {
+  &__content {
     margin-top: 5%;
     @include paddingGlobal;
     & > h2 {
@@ -7,7 +7,33 @@
       text-align: center;
       color: $color-oscuro;
     }
+    &-skills {
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 }
 
+@media (max-width: 700px) {
+  .AboutMe {
+    &__content {
+      &-skills {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
 
+@media (max-width: 425px) {
+  .AboutMe {
+    &__content {
+      &-skills {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
