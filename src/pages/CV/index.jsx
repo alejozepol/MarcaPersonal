@@ -4,6 +4,7 @@ import Button from '../../components/Button';
 import Herramientas from '../../container/Herramientas';
 import inicialState from '../../../inicialState';
 import Skills from '../../components/skills';
+import CardLogoRight from '../../components/CardLogoRight';
 
 const CV = () => (
   <section className='CV'>
@@ -59,7 +60,21 @@ const CV = () => (
     </section>
     <section className='CV__experience'>
       <h2>Experiencia Laboral</h2>
-      this is the card of the work
+      <div className='CV__experience-items'>
+        {
+          inicialState.experienciaLaboral.map(
+            (item) => (
+              <CardLogoRight
+                key={item.id}
+                img={item.logo}
+                empresa={item.empresa}
+                cargo={item.cargo}
+                actividad={item.actividad}
+              />
+            ),
+          )
+        }
+      </div>
     </section>
     <Herramientas items={inicialState.herramientas} />
     <section className='CV__education'>

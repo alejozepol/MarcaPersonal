@@ -47,17 +47,27 @@
     }
   }
   & > section {
-    @include paddingGlobal;
     & > h2 {
-      margin-top: 10%;
       text-align: center;
       color: $color-oscuro;
     }
+  }
+  &__profile , &__skills, &__experience, &__education, &__complementEducations{
+    margin: 8% 0;
+    @include paddingGlobal;
   }
   &__skills{
     &-items{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__experience{
+    &-items{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
