@@ -70,6 +70,8 @@ const CV = () => (
                 empresa={item.empresa}
                 cargo={item.cargo}
                 actividad={item.actividad}
+                fechaInicio={item.fechaInicio}
+                fechaFin={item.fechaFin}
               />
             ),
           )
