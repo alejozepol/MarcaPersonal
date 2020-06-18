@@ -230,7 +230,7 @@ const inicialState = {
   ],
   experienciaLaboral: [
     {
-      id: 1,
+      id: 20,
       empresa: 'Parners Co',
       fechaInicio: 'Marzo/2019',
       fechaFin: 'Actualidad',
