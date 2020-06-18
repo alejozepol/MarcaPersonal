@@ -92,6 +92,7 @@
       margin: 2%;
       column-fill: auto;
       columns: 2;
+<<<<<<< HEAD
       & > li {
         list-style: none;
         &::before {
@@ -102,6 +103,18 @@
           font-size: 12px;
         }
       }
+=======
+      & > li{
+        list-style: none;
+      &::before {
+        content: "\2605";
+        color: $color-contraste-claro;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 12px;
+      }
+    }
+>>>>>>> c31e8bdaa97d0509df8932122416832fed572727
     }
   }
 }
@@ -115,11 +128,15 @@
   .CardLogoRight {
     grid-template-columns: minmax(68px, 20%) auto;
     grid-template-rows: 175px;
+<<<<<<< HEAD
     &__Container {
       &-subtitle {
         font-size: 1.4em;
       }
     }
+=======
+    font-size: 1em;
+>>>>>>> c31e8bdaa97d0509df8932122416832fed572727
   }
 }
 
