@@ -1,5 +1,3 @@
-import React from 'react';
-
 /* Herramientas */
 import iconAI from './src/assets/icons/adobe-ai.png';
 import iconPS from './src/assets/icons/adobe-ps.png';
@@ -155,7 +153,7 @@ const inicialState = {
     {
       id: 1,
       title: 'Auditorias',
-      content: 
+      content:
       `En procesos gestión humana,
       nómina, seguridad social,
       contabilización en nómina y
@@ -165,7 +163,7 @@ const inicialState = {
     {
       id: 2,
       title: 'Desarrollo',
-      content: 
+      content:
       `Desarrollo a la medida, paginas
       web, mantenimiento, e-commerce
       utilizando HTML5, CCS3, JavaScript
@@ -183,7 +181,7 @@ const inicialState = {
     {
       id: 3,
       title: 'Nómina',
-      content: 
+      content:
       `Administración y liquidación de
       nomina y/o seguridad social de
       pequeño y grande empresas
@@ -197,7 +195,7 @@ const inicialState = {
     {
       id: 4,
       title: 'UGPP',
-      content: 
+      content:
       `Servicios en elaborción
       de informes, reportes,
       verificación y liquidación
@@ -213,11 +211,9 @@ const inicialState = {
       `Software de administración de
       nómina y gestión humana
       desarrollado por DigitalWare.
-      
       Consultor con 10 años de
       experiencia en administración,
       implementación y optimización.
-      
       Administración de base de datos,
       SQL Server, Oracle`,
       icon: iconKactusYellow,
@@ -225,10 +221,10 @@ const inicialState = {
     {
       id: 6,
       title: 'Diseño UI',
-      content: 
+      content:
       `Diseño de interfaces de usuario,
       para web o movil, enfocado en
-       experiencia de usuario.`,
+      experiencia de usuario.`,
       icon: iconUI,
     },
   ],
