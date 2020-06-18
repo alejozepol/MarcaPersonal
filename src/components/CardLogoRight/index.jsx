@@ -11,15 +11,19 @@ const CardLogoRight = ({ img, empresa, cargo, fechaInicio, fechaFin, actividad =
     </div>
     <div className='CardLogoRight__Container'>
       <div className='CardLogoRight__Container-bg'>
-        <h3>{empresa}</h3>
-        <h4>{cargo}</h4>
-        <p>{fechaInicio}</p>
-        <p>{fechaFin}</p>
-        <ul>
-          {
-            actividad.map((item) => <li>{item}</li>)
-          }
-        </ul>
+        <div className='CardLogoRight__Container-content'>
+          <h5 className='CardLogoRight__Container-title'>{empresa}</h5>
+          <h3 className='CardLogoRight__Container-subtitle'>{cargo}</h3>
+          <div className='CardLogoRight__Container-date'>
+            <p className='CardLogoRight__Container-date-start'>{fechaInicio}</p>
+            <p className='CardLogoRight__Container-date-end'>{fechaFin}</p>
+          </div>
+          <ul className='CardLogoRight__Container-activity'>
+            {
+              actividad.map((item) => <li key={item}>{item}</li>)
+            }
+          </ul>
+        </div>
       </div>
     </div>
   </section>

@@ -234,6 +234,21 @@ const inicialState = {
   ],
   experienciaLaboral: [
     {
+      id: 1,
+      empresa: 'Parners Co',
+      fechaInicio: 'Marzo/2019',
+      fechaFin: 'Actualidad',
+      cargo: 'Co-fundador',
+      actividad: [
+        'Desarrollo plan de negocio',
+        'Diseño UI/UX',
+        'Desarrollo Plataforma',
+        'Desarrollo web',
+      ],
+      logo: undervisa,
+    },
+    {
+      id: 1,
       empresa: 'Undervisa Master Trade',
       fechaInicio: 'Agosto/2018',
       fechaFin: 'Julio/2019',
@@ -249,6 +264,7 @@ const inicialState = {
       logo: undervisa,
     },
     {
+      id: 2,
       empresa: 'Freelancer',
       fechaInicio: 'Noviembre/2014',
       fechaFin: 'Marzo/2019',
@@ -266,6 +282,7 @@ const inicialState = {
       logo: alejozepol,
     },
     {
+      id: 3,
       empresa: 'DigitalWare',
       fechaInicio: 'Abril/2014',
       fechaFin: 'Octubre/2014',
@@ -282,10 +299,11 @@ const inicialState = {
       logo: DigitalWare,
     },
     {
+      id: 4,
       empresa: 'Heinsohn',
       fechaInicio: 'Abril/2013',
       fechaFin: 'Febrero/2014',
-      cargo: 'Ingeniero y Líder de Soporte',
+      cargo: 'Líder de Soporte',
       actividad: [
         'Lider Soporte',
         'Soporte técnico y funcional',
@@ -299,6 +317,7 @@ const inicialState = {
       logo: HN,
     },
     {
+      id: 5,
       empresa: 'Almaviva S.A.',
       cargo: 'Usuario Lider Kactus HR',
       fechaInicio: 'Febrero/2012',
@@ -317,8 +336,9 @@ const inicialState = {
       logo: almaviva,
     },
     {
+      id: 6,
       empresa: 'UNAD.',
-      cargo: 'Contratista Kactus HR y seguridad social',
+      cargo: 'Contratista Kactus HR',
       fechaInicio: 'Julio/2010',
       fechaFin: 'Septiembre/2011',
       actividad: [
@@ -333,6 +353,7 @@ const inicialState = {
       logo: unad,
     },
     {
+      id: 7,
       empresa: 'Outsourcing SA.',
       cargo: 'Analista Nómina',
       fechaInicio: 'Marzo/2010',
@@ -347,8 +368,9 @@ const inicialState = {
       logo: outsourcing,
     },
     {
+      id: 8,
       empresa: 'Unipanamericana',
-      cargo: 'Gestor de gestión humana',
+      cargo: 'Gestor de Gestión Humana',
       fechaInicio: 'Noviembre/2008',
       fechaFin: 'Agosto/2009',
       actividad: [
@@ -361,8 +383,9 @@ const inicialState = {
       logo: unipanamericana,
     },
     {
+      id: 9,
       empresa: 'Compensar',
-      cargo: 'Auxiliar técnologia',
+      cargo: 'Auxiliar Técnologia',
       fechaInicio: 'Marzo/2009',
       fechaFin: 'Septiembre/2009',
       actividad: [
@@ -376,8 +399,9 @@ const inicialState = {
       logo: compensar,
     },
     {
+      id: 10,
       empresa: 'Compensar',
-      cargo: 'Aprendiz SENA Gestión Humana',
+      cargo: 'Aprendiz Gestión Humana',
       fechaInicio: 'Junio/2007',
       fechaFin: 'Marzo/2009',
       actividad: [
