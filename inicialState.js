@@ -53,6 +53,17 @@ import iconDGGolden from './src/assets/education/goldenDG.svg';
 
 /* project */
 import buynow from './src/assets/proyectos/buynow2.png';
+import blogTecnology from './src/assets/proyectos/BlogTecnology.png';
+import calculadoraBases from './src/assets/proyectos/calculadoraBases.png';
+import cvReact from './src/assets/proyectos/cvReact.png';
+import platziVideo from './src/assets/proyectos/platziVideo.png';
+import dexpress from './src/assets/proyectos/dexpress.png';
+
+/* project ui */
+import cardAsteroid from './src/assets/ProjectUI/cardAsteroid.png';
+import distance from './src/assets/ProjectUI/distance.png';
+import medilab from './src/assets/ProjectUI/medilab.png';
+import parners from './src/assets/ProjectUI/parners.png';
 
 const inicialState = {
   herramientas: [
@@ -1172,46 +1183,88 @@ const inicialState = {
       title: 'BuyNow',
       img: buynow,
       content: 'E-commerce de productos de platzi realizo con angular 9 e implementado Lazy Loader y PWA',
-      lenguage: [iconAngular, iconHTML, iconSASS, iconTypeScript, iconFirebase],
+      lenguage: [iconXD, iconAngular, iconHTML, iconSASS, iconTypeScript, iconFirebase],
       video: 'https://youtu.be/OZRcMeVD4y4',
       code: 'https://github.com/alejozepol/BuyNow',
       project: 'https://buynow-8ed3d.web.app/home',
     },
     {
       title: 'Blog Tecnlogy',
-      img: buynow,
-      content: 'Blog realizado con React en diferentes tipos de posicion en las tarjetas tipo pinterest',
+      img: blogTecnology,
+      content: 'Blog realizado con React en diferentes tipos de acomodación de elementos y tarjetas tipo pinterest utilizando grid y flex de css',
       lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
       code: 'https://github.com/alejozepol/Blog-tecnology',
       project: 'https://blog-react-platzimaster.web.app/',
+      video: 'https://youtu.be/3Z93YyBJUbE',
     },
     {
       title: 'Calculadora Bases',
-      img: buynow,
-      content: 'Calculadora para operaciones básicas y conversiones de números en sistema binario, octal, décimal y hexadécimal.',
-      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
+      img: calculadoraBases,
+      content: 'Calculadora para operaciones básicas y conversiones de números en sistema binario, octal, decimal y hexadecimal.',
+      lenguage: [iconXD, iconReact, iconHTML, iconSASS, iconFirebase],
       code: 'https://github.com/alejozepol/calculadora-Bases',
       project: 'https://calculadorabases.web.app/',
+      video: 'https://youtu.be/EpsgOypIyrQ',
     },
     {
       title: 'Curiculum Viate',
-      img: buynow,
-      content: 'Desarrollo de CV de una persona imaginaria itereando datos de un array',
-      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
+      img: cvReact,
+      content: 'Desarrollo de CV de una persona imaginaria iterando datos de un array',
+      lenguage: [iconXD, iconReact, iconHTML, iconSASS, iconFirebase],
       code: 'https://github.com/alejozepol/CV-React',
       project: 'https://reactcalleger-cv.web.app/',
+      video: 'https://youtu.be/CeT2FxNzHb0',
     },
     {
       title: 'Platzi Video',
-      img: buynow,
+      img: platziVideo,
       content: 'Proyecto escuela JS de plataforma de reproduccion de videos',
-      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase, iconNodeJS],
+      lenguage: [iconReact, iconHTML, iconSASS, iconNodeJS],
+      video: 'https://youtu.be/HlYKUZa8JMY',
+      code: 'https://github.com/alejozepol/PlatziVideoReact',
     },
     {
-      title: 'POS Frotend',
-      img: buynow,
+      title: 'D-Express',
+      img: dexpress,
       content: 'Sistema POS desarrollado que tiene como objetivo la administración de caja y pagos',
       lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
+      code: 'https://github.com/d-express/pos-frontend/blob/master/now.json',
+      project: 'https://pos-frontend-9ryc25ptu.now.sh/',
+    },
+  ],
+  ProjectUI: [
+    {
+      title: 'detail asteroid Card NASA',
+      img: cardAsteroid,
+      content: 'Seguerencia de tarjeta para mostrar a informacion de la API de los asteorides registrados por la NASA',
+      lenguage: [iconXD],
+      code: 'https://xd.adobe.com/view/23186d94-3532-4de1-4311-7ab1ab33beae-5529/?fullscreen',
+      project: 'https://www.behance.net/gallery/99143409/detail-asteroid-card-NASA',
+    },
+    {
+      title: 'Distance',
+      img: distance,
+      content: 'Distance el cual quedo en segundo lugar en el Startup Weekend 2019 en contra del covid-19',
+      lenguage: [iconXD],
+      code: 'https://xd.adobe.com/view/1486231e-ec5a-4913-6512-a9325c7c958b-62b7/',
+      project: 'https://www.behance.net/gallery/99144855/Distance-segundo-lugar-en-el-Startup-Weekend-2019',
+      video: 'https://youtu.be/5w1LVLzYZH8',
+    },
+    {
+      title: 'MediLab',
+      img: medilab,
+      content: 'Diseño de plataforma para administracion de laboratorios medicos',
+      lenguage: [iconXD, iconAI],
+      code: 'https://xd.adobe.com/view/50d60adc-0d33-4e20-5980-8e36bf89f348-26e7/',
+      project: 'https://www.behance.net/gallery/99145743/Medilab?share=1',
+      video: 'https://youtu.be/NvWcd0TxU5o',
+    },
+    {
+      title: 'Parners',
+      img: parners,
+      content: 'diseño y desarrollo de la Landing Parners y captura de datos en Mailchimp',
+      lenguage: [iconXD, iconAI, iconHTML, iconCSS],
+      project: 'https://www.parners.com.co/',
     },
   ],
 };
