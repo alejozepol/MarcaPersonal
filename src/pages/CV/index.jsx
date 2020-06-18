@@ -5,6 +5,7 @@ import Herramientas from '../../container/Herramientas';
 import inicialState from '../../../inicialState';
 import Skills from '../../components/skills';
 import CardLogoRight from '../../components/CardLogoRight';
+import CardPortada from '../../components/CardPortada';
 
 const CV = () => (
   <section className='CV'>
@@ -81,11 +82,38 @@ const CV = () => (
     <Herramientas items={inicialState.herramientas} />
     <section className='CV__education'>
       <h2>Educación</h2>
-      this is card educactions
+      <div className='CV__education-content'>
+        {
+          inicialState.carreras.map((item) => (
+            <CardPortada
+              color='primary'
+              size='md'
+              key={item.id}
+              title={item.titulo}
+              subtitle={item.entidad}
+              img={item.logo}
+            />
+          ))
+        }
+      </div>
     </section>
     <section className='CV__complementEducations'>
       <h2>Educación Complementaria</h2>
-      this is card educactions
+      <div className='CV__complementEducations-content'>
+        {
+          inicialState.cursos.map((item) => (
+            <CardPortada
+              color='contrast'
+              size='sm'
+              key={item.id}
+              title={item.title}
+              subtitle={item.career}
+              img={item.badge}
+              btn={item.diploma_link}
+            />
+          ))
+        }
+      </div>
     </section>
   </section>
 );
