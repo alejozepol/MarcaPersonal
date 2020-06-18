@@ -22,9 +22,10 @@ deploy:
   skip-cleanup: true
   keep-history: true
   token:
-    secure: "YOUR ENCRYPTED token"
+    secure: $FIREBASE_CI
+  project: "AlejoZepol"
   local-dir: dist/
-  target-branch: gh-pages
+  target-branch: master
   commit_message: "deploy del proyecto"
   on:
     branch: master
