@@ -20,6 +20,7 @@ import iconKactus from './src/assets/icons/kactus.png';
 import iconGitHub from './src/assets/icons/github.png';
 import iconGitLab from './src/assets/icons/gitlab.png';
 import iconGit from './src/assets/icons/git.png';
+import iconTypeScript from './src/assets/icons/typeScript.png';
 
 /** Iconos Amarillos */
 import iconAudit from './src/assets/YellowIcons/iconAuditoria.png';
@@ -50,6 +51,9 @@ import iconPBGolden from './src/assets/education/goldenPB.svg';
 import iconEMGolden from './src/assets/education/goldenEM.svg';
 import iconDGGolden from './src/assets/education/goldenDG.svg';
 
+/* project */
+import buynow from './src/assets/proyectos/buynow2.png';
+
 const inicialState = {
   herramientas: [
     {
@@ -61,6 +65,11 @@ const inicialState = {
       id: 'Ilustrator',
       nombre: 'Adobe Ilustrator',
       imagen: iconAI,
+    },
+    {
+      id: 'TypeScript',
+      nombre: 'TypeScript',
+      imagen: iconTypeScript,
     },
     {
       id: 'XD',
@@ -1156,6 +1165,53 @@ const inicialState = {
       'career': '',
       'diploma_link': '',
       'instituto': 'SENA',
+    },
+  ],
+  ProjectWeb: [
+    {
+      title: 'BuyNow',
+      img: buynow,
+      content: 'E-commerce de productos de platzi realizo con angular 9 e implementado Lazy Loader y PWA',
+      lenguage: [iconAngular, iconHTML, iconSASS, iconTypeScript, iconFirebase],
+      video: 'https://youtu.be/OZRcMeVD4y4',
+      code: 'https://github.com/alejozepol/BuyNow',
+      project: 'https://buynow-8ed3d.web.app/home',
+    },
+    {
+      title: 'Blog Tecnlogy',
+      img: buynow,
+      content: 'Blog realizado con React en diferentes tipos de posicion en las tarjetas tipo pinterest',
+      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
+      code: 'https://github.com/alejozepol/Blog-tecnology',
+      project: 'https://blog-react-platzimaster.web.app/',
+    },
+    {
+      title: 'Calculadora Bases',
+      img: buynow,
+      content: 'Calculadora para operaciones básicas y conversiones de números en sistema binario, octal, décimal y hexadécimal.',
+      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
+      code: 'https://github.com/alejozepol/calculadora-Bases',
+      project: 'https://calculadorabases.web.app/',
+    },
+    {
+      title: 'Curiculum Viate',
+      img: buynow,
+      content: 'Desarrollo de CV de una persona imaginaria itereando datos de un array',
+      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
+      code: 'https://github.com/alejozepol/CV-React',
+      project: 'https://reactcalleger-cv.web.app/',
+    },
+    {
+      title: 'Platzi Video',
+      img: buynow,
+      content: 'Proyecto escuela JS de plataforma de reproduccion de videos',
+      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase, iconNodeJS],
+    },
+    {
+      title: 'POS Frotend',
+      img: buynow,
+      content: 'Sistema POS desarrollado que tiene como objetivo la administración de caja y pagos',
+      lenguage: [iconReact, iconHTML, iconSASS, iconFirebase],
     },
   ],
 };

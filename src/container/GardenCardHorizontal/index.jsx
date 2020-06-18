@@ -13,6 +13,10 @@ const GardenCardHorizontal = ({ title, items = [] }) => (
             icon={item.icon}
             img={item.img}
             content={item.content}
+            lenguage={item.lenguage}
+            code={item.code}
+            project={item.project}
+            video={item.video}
           />
         ))
       }

@@ -1,0 +1,34 @@
+import React from 'react';
+import HeroTextImg from '../../container/HeroTextImg';
+import Quote from '../../components/Quote';
+import Button from '../../components/Button';
+import foto3 from '../../assets/foto3.png';
+import Herramientas from '../../container/Herramientas';
+import inicialState from '../../../inicialState';
+import GardenCardHorizontal from '../../container/GardenCardHorizontal';
+
+const Portfolio = () => (
+  <section className='Portfolio'>
+    <HeroTextImg color='contrast' direction='left' img={foto3} alt='Foto Alejandro López'>
+      <Quote
+        direction='right'
+        sentence='Si solo sabes de tu profesión ni de tu profesión sabes...'
+      />
+      <Button type='primary' size='md' name='Trabajemos Juntos' />
+    </HeroTextImg>
+    <section className='Portfolio__web'>
+      <GardenCardHorizontal title='Desarrollo web' items={[...inicialState.ProjectWeb]} />
+    </section>
+    <section className='Portfolio__RRHH'>
+      <h2>Clientes RRHH</h2>
+      <div className='Portfolio__RRHH-content'>
+        <Herramientas items={inicialState.herramientas} />
+      </div>
+    </section>
+    <section className='Portfolio__UI'>
+      <GardenCardHorizontal title='Diseño UI' items={[...inicialState.ProjectWeb]} />
+    </section>
+  </section>
+);
+
+export default Portfolio;
