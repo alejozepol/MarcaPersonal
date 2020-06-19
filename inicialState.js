@@ -1180,6 +1180,7 @@ const inicialState = {
   ],
   ProjectWeb: [
     {
+      id: 1,
       title: 'BuyNow',
       img: buynow,
       content: 'E-commerce de productos de platzi realizo con angular 9 e implementado Lazy Loader y PWA',
@@ -1189,6 +1190,7 @@ const inicialState = {
       project: 'https://buynow-8ed3d.web.app/home',
     },
     {
+      id: 2,
       title: 'Blog Tecnlogy',
       img: blogTecnology,
       content: 'Blog realizado con React en diferentes tipos de acomodación de elementos y tarjetas tipo pinterest utilizando grid y flex de css',
@@ -1198,6 +1200,7 @@ const inicialState = {
       video: 'https://youtu.be/3Z93YyBJUbE',
     },
     {
+      id: 3,
       title: 'Calculadora Bases',
       img: calculadoraBases,
       content: 'Calculadora para operaciones básicas y conversiones de números en sistema binario, octal, decimal y hexadecimal.',
@@ -1207,6 +1210,7 @@ const inicialState = {
       video: 'https://youtu.be/EpsgOypIyrQ',
     },
     {
+      id: 4,
       title: 'Curiculum Viate',
       img: cvReact,
       content: 'Desarrollo de CV de una persona imaginaria iterando datos de un array',
@@ -1216,6 +1220,7 @@ const inicialState = {
       video: 'https://youtu.be/CeT2FxNzHb0',
     },
     {
+      id: 5,
       title: 'Platzi Video',
       img: platziVideo,
       content: 'Proyecto escuela JS de plataforma de reproduccion de videos',
@@ -1224,6 +1229,7 @@ const inicialState = {
       code: 'https://github.com/alejozepol/PlatziVideoReact',
     },
     {
+      id: 6,
       title: 'D-Express',
       img: dexpress,
       content: 'Sistema POS desarrollado que tiene como objetivo la administración de caja y pagos',
@@ -1234,6 +1240,7 @@ const inicialState = {
   ],
   ProjectUI: [
     {
+      id: 1,
       title: 'detail asteroid Card NASA',
       img: cardAsteroid,
       content: 'Seguerencia de tarjeta para mostrar a informacion de la API de los asteorides registrados por la NASA',
@@ -1242,6 +1249,7 @@ const inicialState = {
       project: 'https://www.behance.net/gallery/99143409/detail-asteroid-card-NASA',
     },
     {
+      id: 2,
       title: 'Distance',
       img: distance,
       content: 'Distance el cual quedo en segundo lugar en el Startup Weekend 2019 en contra del covid-19',
@@ -1251,6 +1259,7 @@ const inicialState = {
       video: 'https://youtu.be/5w1LVLzYZH8',
     },
     {
+      id: 3,
       title: 'MediLab',
       img: medilab,
       content: 'Diseño de plataforma para administracion de laboratorios medicos',
@@ -1260,6 +1269,7 @@ const inicialState = {
       video: 'https://youtu.be/NvWcd0TxU5o',
     },
     {
+      id: 4,
       title: 'Parners',
       img: parners,
       content: 'diseño y desarrollo de la Landing Parners y captura de datos en Mailchimp',

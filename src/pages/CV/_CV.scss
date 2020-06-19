@@ -1,4 +1,5 @@
 .CV {
+  max-width: 100vw;
   &__hero {
     display: grid;
     grid-template-areas: "development hr RRHH" "button button button";
@@ -74,15 +75,49 @@
     &-content{
       display: grid;
       grid-template-columns: repeat(3,1fr);
+      justify-items: center;
     }
   }
   &__complementEducations{
     &-content{
       display: grid;
       grid-template-columns: repeat(4,1fr);
+      justify-items: center;
     }
   }
 }
+
+
+@media (max-width: 925px) {
+  .CV {
+    &__education{
+      &-content{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+    &__complementEducations{
+      &-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+      }
+    }
+  }}
+
+  @media (max-width: 622px) {
+    .CV {
+      &__education{
+        &-content{
+          grid-template-columns: repeat(1,1fr);
+        }
+      }
+      &__complementEducations{
+        &-content{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+    }
+  }
 
 @media (max-width: 450px) {
   .CV {
@@ -128,6 +163,12 @@
       &-items{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    &__complementEducations{
+      &-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
       }
     }
   }
