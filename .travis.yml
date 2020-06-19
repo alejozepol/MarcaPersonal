@@ -8,7 +8,6 @@ node_js:
 git:
   depth: 3
 script:
-  - yaild run lint
   - yarn build
 notificarions:
   email:
