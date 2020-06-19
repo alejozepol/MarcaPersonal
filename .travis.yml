@@ -1,0 +1,31 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - '12'
+git:
+  depth: 3
+script:
+  - yaild run lint
+  - yarn build
+notificarions:
+  email:
+    recipients:
+      - alejozepol@gmail.com
+      - galopez683@misena.edu.co
+    on_success: always
+    on_failure: always
+deploy:
+  provider: firebase
+  skip-cleanup: true
+  keep-history: true
+  token:
+    secure: $FIREBASE_CI
+  project: "AlejoZepol"
+  local-dir: dist/
+  target-branch: master
+  commit_message: "deploy del proyecto"
+  on:
+    branch: master
