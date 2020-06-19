@@ -1,40 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import TextIcon from '../../components/TextIcon';
-import IconoInicio from '../../assets/static/icons/IconoInicio.svg';
-import IconoQuienSoy from '../../assets/static/icons/IconoQuienSoy.svg';
-import IconoPortafolio from '../../assets/static/icons/IconoPortafolio.svg';
-import IconoCV from '../../assets/static/icons/IconoCV.svg';
-import Logo from '../../assets/static/LogoRedondo.svg';
-import './Header.scss';
+import Logo from '../../assets/logo.png';
+import iconMenu from '../../assets/iconMenu.svg';
+import iconClose from '../../assets/iconClose.svg';
 
 const Header = (props) => {
-  const menu =
-    [
-      {
-        name: 'Inicio',
-        img: IconoInicio,
-        url: '/',
-      },
-      {
-        name: '¿Quién soy?',
-        img: IconoQuienSoy,
-        url: '/QuienSoy',
-      },
-      {
-        name: 'Curriculum Viate',
-        img: IconoCV,
-        url: '/CV',
-      },
-      {
-        name: 'Portafolio',
-        img: IconoPortafolio,
-        url: '/Portafolio',
-      },
-    ];
-  const [bmenu, setBMenu] = useState(false);
-  const handleMenu = () => {
-    bmenu ? setBMenu(false) : setBMenu(true);
+  const nav = [
+    {
+      id: 1,
+      name: 'Inicio',
+      url: '/',
+    },
+    {
+      id: 2,
+      name: 'Sobre mi',
+      url: '/sobremi',
+    },
+    {
+      id: 3,
+      name: 'Curriculum',
+      url: '/cv',
+    },
+    {
+      id: 4,
+      name: 'Portafolio',
+      url: '/portafolio',
+    },
+  ];
+
+  const hidemenu = () => {
+    const check = document.getElementById('toggle');
+    check.checked = 0;
   };
 
   return (
@@ -43,42 +39,19 @@ const Header = (props) => {
         <img className='Header__logo-img' src={Logo} alt='Logo Alejandro López | Alejozepol' />
         <h1 className='Header__logo-title'>Alejandro López | Alejozepol</h1>
       </div>
-      {
-        bmenu ? (
-          <button type='button' className='Header__menu' onClick={() => handleMenu()}>
-            <i className='material-icons'>
-              menu_open
-            </i>
-          </button>
-        ) :
-          (
-            <button type='button' className='Header__menu' onClick={() => handleMenu()}>
-              <i className='material-icons'>menu</i>
-            </button>
-          )
-      }
-      {bmenu && (
-        <nav className='Header__nav700'>
+      <div className='Header__menu'>
+        <input type='checkbox' id='toggle' />
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+        <label className='Header__menu-input' htmlFor='toggle'>
+          <img className='Header__menu-input-act' src={iconMenu} alt='icon Menú Hamburgesa' />
+          <img className='Header__menu-input-inac' src={iconClose} alt='icon cierre Menú Hamburgesa' />
+        </label>
+        <nav className='Header__menu-nav'>
           {
-            menu.map((item) => (
-              <Link key={item.url} to={item.url}>
-                <TextIcon key={item.name} img={item.img} name={item.name} />
-              </Link>
-            ))
+            nav.map((item) => (<Link className='Header__menu-item' to={item.url} key={item.id} onClick={() => hidemenu()}><li>{item.name}</li></Link>))
           }
         </nav>
-      )}
-      {
-        <nav className='Header__nav701'>
-          {
-            menu.map((item) => (
-              <Link to={item.url} key={item.url}>
-                <TextIcon key={item.name} img={item.img} name={item.name} />
-              </Link>
-            ))
-          }
-        </nav>
-      }
+      </div>
     </header>
   );
 };

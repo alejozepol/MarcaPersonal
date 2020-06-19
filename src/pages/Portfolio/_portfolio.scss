@@ -1,0 +1,18 @@
+.Portfolio{
+  &__RRHH{
+    margin: 5% 0%;
+    text-align: center;
+    @include paddingGlobal;
+    color: $color-oscuro;
+    &-content{
+      margin-top: 2%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5%;
+      justify-items: center;
+      & > img {
+        max-width: 80%;
+      }
+    }
+  }
+}

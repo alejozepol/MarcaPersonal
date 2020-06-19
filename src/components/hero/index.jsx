@@ -1,10 +1,8 @@
 import React from 'react';
-import './Hero.scss';
 
-const Hero = ({ img, children }) => {
+const Hero = ({ children, direction, color }) => {
   return (
-    <section className='Hero'>
-      <img src={img} alt='Imagen Hero' />
+    <section className={` Hero Hero-${direction} Hero-${direction}-${color}`}>
       {children}
     </section>
   );

@@ -1,38 +1,65 @@
 import React from 'react';
-/* import { Link } from 'react-router-dom'; */
-import IconMegadono from '../../assets/static/megafono.svg';
-import Logo from '../../assets/static/LogoRedondo.svg';
-/* import IconContactame from '../../assets/static/Contactame.svg'; */
-import './Footer.scss';
-/* import TextIcon from '../../components/TextIcon'; */
+import IconSocialMedia from '../../components/iconSocialMedia';
+import Button from '../../components/Button';
+import LogoContraste from '../../assets/logoContraste.png';
+import StatupWeekend from '../../assets/statupWeekend.png';
+import logoPlatziMaster from '../../assets/logoPlatziMaster.png';
 
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <div className='Footer__suscription'>
-        <img className='Footer__suscription-img' src={IconMegadono} alt='icono megafono' />
-        <h3 className='Footer__suscription-text'>Cuentame de emprendimiento, tecnología y nuevos proyectos</h3>
-        <form action='https://facebook.us20.list-manage.com/subscribe/post?u=b7f408a304fd50944e1238192&amp;id=e7dbf243c0' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' target='_blank'>
-          <input name='EMAIL' id='mce-EMAIL' className='Footer__suscription-input' type='email' placeholder='Correo electronico' />
-          <button className='Footer__suscription-buton' type='submit'>Suscribirme</button>
-        </form>
-      </div>
-      <div className='Footer__brand'>
-        <img className='Footer__brand-img' src={Logo} alt='Logo Alejandro López | Alejozepol' />
-        <p className='Footer__brand-text'>
-          hecho en Colombia con.
-          <span role='img' aria-labelledby='corazon'>
-            💖
-          </span>
-          y pasion
+      <div className='Footer__socialMedia'>
+        <p>
+          <span className='color-primario-claro'>¿</span>
+          Quieres ayuda u orientación con algo
+          <span className='color-primario-claro'>?</span>
         </p>
-        <p className='Footer__brand-title'>@alejozepol</p>
+        <p>
+          ¡
+          <span className='color-primario-claro'>Escríbeme</span>
+          {' '}
+          en alguna red Social!
+        </p>
+        <div className='Footer__socialMedia-followr'>
+          <p>Sígueme en:</p>
+          <div>
+            <IconSocialMedia type='TW' size='sm' />
+            <IconSocialMedia type='IG' size='sm' />
+            <IconSocialMedia type='FB' size='sm' />
+          </div>
+        </div>
+        <div className='Footer__socialMedia-professional'>
+          <p>Redes Profesionales:</p>
+          <div>
+            <IconSocialMedia type='GH' size='sm' />
+            <IconSocialMedia type='IN' size='sm' />
+
+          </div>
+        </div>
       </div>
-      {/*       <div className='Footer__contact'>
-        <TextIcon img={IconContactame} name='Contactame' />
-        <TextIcon img={IconContactame} name='@Alejozepol' />
-        <TextIcon img={IconContactame} name='Contactame' />
-      </div> */}
+      <div className='Footer__branding'>
+        <Button type='primary' size='md' name='Trabajemos Juntos' />
+        <img src={LogoContraste} alt='Logo Alejandro Lopez | Alejozepol con morado' />
+        <p>© 2020</p>
+        <p>Si no haces lo que no sabes hacer, nunca serás mejor de lo que eres hoy</p>
+      </div>
+      <div className='Footer__recognition'>
+        <p className='Footer__recognition-title'>Reconocimientos:</p>
+        <div className='Footer__recognition-items'>
+          <div className='Footer__recognition-item'>
+            <h2>Apps.Co</h2>
+            <p>Emprendedor en etapa de descubrimiento</p>
+          </div>
+          <div className='Footer__recognition-item'>
+            <img src={StatupWeekend} alt='Logo statup Weekend' />
+            <p>2do Puesto Colombia emprendimientos contra el covid19</p>
+          </div>
+          <div className='Footer__recognition-item'>
+            <img src={logoPlatziMaster} alt='Logo Platzi Master' />
+            <p>Estudiante de Platzi Master cohort 2 </p>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };

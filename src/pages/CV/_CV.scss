@@ -1,0 +1,190 @@
+.CV {
+  max-width: 100vw;
+  &__hero {
+    display: grid;
+    grid-template-areas: "development hr RRHH" "button button button";
+    column-gap: 2em;
+    &-development,
+    &-RRHH {
+      width: 80%;
+      display: grid;
+      grid-template-areas: "title" "perfile" "items";
+      grid-template-rows: 70px 100px min-content;
+      & > h2 {
+        grid-area: title;
+        font-size: x-large;
+      }
+      & > p {
+        grid-area: perfile;
+      }
+      & > ul {
+        grid-area: items;
+        list-style: none;
+        font-size: large;
+        font-family: regular;
+        font-style: italic;
+        font-weight: bolder;
+      }
+    }
+    & > hr {
+      align-self: center;
+      display: hr;
+      height: 80%;
+      border: 1px solid $color-primario-claro;
+    }
+    &-development {
+      justify-self: right;
+      text-align: right;
+      grid-area: development;
+    }
+    &-RRHH {
+      justify-self: left;
+      text-align: left;
+      grid-area: RRHH;
+    }
+    & > button {
+      grid-area: button;
+      justify-self: center;
+    }
+  }
+  & > section {
+    & > h2 {
+      text-align: center;
+      color: $color-oscuro;
+    }
+  }
+  &__profile , &__skills, &__experience, &__education, &__complementEducations{
+    margin: 8% 0;
+    @include paddingGlobal;
+  }
+  &__skills{
+    &-items{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__experience{
+    &-items{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__education{
+    &-content{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-items: center;
+    }
+  }
+  &__complementEducations{
+    &-content{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      justify-items: center;
+    }
+  }
+}
+
+
+@media (max-width: 925px) {
+  .CV {
+    &__education{
+      &-content{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+    &__complementEducations{
+      &-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+      }
+    }
+  }}
+
+  @media (max-width: 622px) {
+    .CV {
+      &__education{
+        &-content{
+          grid-template-columns: repeat(1,1fr);
+        }
+      }
+      &__complementEducations{
+        &-content{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+    }
+  }
+
+@media (max-width: 450px) {
+  .CV {
+    &__hero {
+      grid-template-areas: "development" "hr" "RRHH" "button";
+      grid-template-rows: min-content 15px min-content min-content;
+      column-gap: initial;
+      justify-content: center;
+      &-development,
+      &-RRHH {
+        grid-template-rows: 50px min-content min-content;
+        & > h2 {
+          font-size: large;
+        }
+        & > p {
+          font-size: 14px;
+        }
+      }
+      & > hr {
+        height: initial;
+        width: 90%;
+        border: 3px solid $color-primario-claro;
+      }
+      &-development {
+        justify-self: left;
+        text-align: left;
+        & > ul {
+          justify-self: right;
+          text-align: right;
+        }
+      }
+      &-RRHH {
+        margin-right: 5%;
+        justify-self: right;
+        text-align: right;
+        & > ul {
+          justify-self: center;
+          text-align: right;
+        }
+      }
+    }
+    &__skills{
+      &-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    &__complementEducations{
+      &-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .CV {
+    &__hero {
+      &-development,
+      &-RRHH {
+        width: 95%;
+        display: grid;
+        grid-template-rows: 30px 40px min-content;
+        & > p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

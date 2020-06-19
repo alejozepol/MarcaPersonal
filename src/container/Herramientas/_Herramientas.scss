@@ -1,0 +1,22 @@
+$animationSpeed: 35s;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-3% * 40));
+  }
+}
+
+.Herramientas{
+  width: 98vw;
+  margin-top: 5%;
+  text-align: center;
+  color: $color-oscuro;
+  @include styleScrollX;
+  &__icons {
+    display: -webkit-box;
+    animation: scroll $animationSpeed linear;
+    animation-iteration-count: infinite;
+  }
+}
