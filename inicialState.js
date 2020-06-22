@@ -243,7 +243,7 @@ const inicialState = {
       experiencia en administración,
       implementación y optimización.
       Administración de base de datos,
-      SQL Server, Oracle`,
+      SQL Server, Oracle.`,
       icon: iconKactusYellow,
     },
     {
