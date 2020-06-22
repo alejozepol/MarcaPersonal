@@ -40,7 +40,7 @@ import unad from './src/assets/logoExperiencia/unad.jpg';
 import outsourcing from './src/assets/logoExperiencia/outsourcing.png';
 import unipanamericana from './src/assets/logoExperiencia/unipanamericana.jpg';
 import compensar from './src/assets/logoExperiencia/compensar.jpg';
-
+import alejozepol from './dist/assets/logo.png';
 /* carreras */
 
 import iconSena from './src/assets/education/SENA.png';
