@@ -33,7 +33,6 @@ import iconUI from './src/assets/YellowIcons/iconUI.png';
 /* Logos Experiencia */
 
 import undervisa from './src/assets/logoExperiencia/Undervisa.svg';
-import alejozepol from './dist/assets/logo.png';
 import DigitalWare from './src/assets/logoExperiencia/DigitalWare.jpg';
 import HN from './src/assets/logoExperiencia/HN.png';
 import almaviva from './src/assets/logoExperiencia/almaviva.jpg';
