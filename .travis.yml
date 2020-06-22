@@ -13,7 +13,7 @@ deploy:
   provider: firebase
   token: $FIREBASE_CI
   project: "alejozepol-4d4f3"
-  local-dir: dist/
+  local-dir: dist
   target-branch: master
   commit_message: "deploy del proyecto"
   on:
