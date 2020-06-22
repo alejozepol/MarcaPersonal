@@ -6,13 +6,11 @@ cache:
 node_js:
   - '12'
 git:
-  depth: 3
+  depth: 4
 script:
   - yarn build
 deploy:
   provider: firebase
-  skip-cleanup: true
-  keep-history: true
   token:
     secure: $FIREBASE_CI
   project: "alejozepol-4d4f3"

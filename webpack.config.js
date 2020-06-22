@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 const dotEnv = require('dotenv').config();
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtraxtPlugin = require('mini-css-extract-plugin');
