@@ -15,7 +15,7 @@ deploy:
   keep-history: true
   token:
     secure: $FIREBASE_CI
-  project: "AlejoZepol"
+  project: "alejozepol-4d4f3"
   local-dir: dist/
   target-branch: master
   commit_message: "deploy del proyecto"
