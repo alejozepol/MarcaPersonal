@@ -1,5 +1,4 @@
 import React from 'react';
-import dotenv from 'dotenv';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '../container/Layout';
 import Home from '../pages/Home';
@@ -8,26 +7,17 @@ import Portfolio from '../pages/Portfolio';
 import CV from '../pages/CV';
 import '../styles/app.scss';
 
-// eslint-disable-next-line no-unused-vars
-const config = dotenv.config();
-
-const { baseURL } = process.env;
-
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/MarcaPersonal'>
       <Switch>
         <Layout>
-          <Route exact path={`${baseURL}/`} component={Home} />
-          <Route exact path={`${baseURL}/QuienSoy`} component={AboutMe} />
-          <Route exact path={`${baseURL}/sobremi`} component={AboutMe} />
-          <Route exact path={`${baseURL}/sobreMi`} component={AboutMe} />
-          <Route exact path={`${baseURL}/CV`} component={CV} />
-          <Route exact path={`${baseURL}/cv`} component={CV} />
-          <Route exact path={`${baseURL}/HV`} component={CV} />
-          <Route exact path={`${baseURL}/hv`} component={CV} />
-          <Route exact path={`${baseURL}/Portafolio`} component={Portfolio} />
-          <Route exact path={`${baseURL}/portafolio`} component={Portfolio} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/QuienSoy' component={AboutMe} />
+          <Route exact path='/sobremi' component={AboutMe} />
+          <Route exact path='/CV' component={CV} />
+          <Route exact path='/HV' component={CV} />
+          <Route exact path='/Portafolio' component={Portfolio} />
         </Layout>
       </Switch>
     </BrowserRouter>
