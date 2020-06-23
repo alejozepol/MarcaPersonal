@@ -6,17 +6,16 @@ cache:
 node_js:
   - '12'
 git:
-  depth: 4
+  depth: 3
 script:
   - yarn build
 deploy:
-  provider: firebase
+  provider: pages
   skip-cleanup: true
   keep-history: true
-  token: $FIREBASE_CI
-  project: "alejozepol-4d4f3"
-  local-dir: ./dist
-  target-branch: master
+  github-token: $GITHUB_TOKEN
+  local-dir: dist/
+  target-branch: gh-pages
   commit_message: "deploy del proyecto"
   on:
-    branch: master
+    branch: QA
