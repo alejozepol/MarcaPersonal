@@ -40,7 +40,8 @@ import unad from './src/assets/logoExperiencia/unad.jpg';
 import outsourcing from './src/assets/logoExperiencia/outsourcing.png';
 import unipanamericana from './src/assets/logoExperiencia/unipanamericana.jpg';
 import compensar from './src/assets/logoExperiencia/compensar.jpg';
-import alejozepol from './src/assets/logo.png';
+import alejozepol from './src/assets/favicon.png';
+import iconParners from './src/assets/logoExperiencia/iconParners.png';
 /* carreras */
 
 import iconSena from './src/assets/education/SENA.png';
@@ -269,7 +270,7 @@ const inicialState = {
         'Desarrollo Plataforma',
         'Desarrollo web',
       ],
-      logo: undervisa,
+      logo: iconParners,
     },
     {
       id: 1,
@@ -1125,7 +1126,7 @@ const inicialState = {
     {
       'id': 6,
       'title': 'Excel Avanzado',
-      'badge': '../assets/SENA.png',
+      'badge': iconSena,
       'url': '',
       'career': 'EXCEL',
       'diploma_link': '',
@@ -1134,7 +1135,7 @@ const inicialState = {
     {
       'id': 5,
       'title': 'Actualizacion del Sistema de seguridad social integral',
-      'badge': '../assets/SENA.png',
+      'badge': iconSena,
       'url': '',
       'career': '',
       'diploma_link': '',
@@ -1152,7 +1153,7 @@ const inicialState = {
     {
       'id': 2,
       'title': 'Contabilidad Básica I y II',
-      'badge': '../assets/SENA.png',
+      'badge': iconSena,
       'url': '',
       'career': '',
       'diploma_link': '',
@@ -1161,7 +1162,7 @@ const inicialState = {
     {
       'id': 3,
       'title': 'Calidad en el desarollo de software',
-      'badge': '../assets/SENA.png',
+      'badge': iconSena,
       'url': '',
       'career': '',
       'diploma_link': '',
@@ -1170,7 +1171,7 @@ const inicialState = {
     {
       'id': 4,
       'title': 'Modelo de calidad de software',
-      'badge': '../assets/SENA.png',
+      'badge': iconSena,
       'url': '',
       'career': '',
       'diploma_link': '',

@@ -34,7 +34,7 @@
         left: -16%;
         right: 0%;
         & > img {
-          object-fit: fill;
+          object-fit: scale-down;
           width: 100%;
           height: 100%;
           border-radius: 50%;
@@ -108,6 +108,7 @@
 @media (max-width: 1024px) {
   .CardLogoRight {
     grid-template-columns: minmax(68px, 18%) auto;
+    grid-template-rows: 199px;
   }
 }
 

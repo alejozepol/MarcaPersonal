@@ -2,6 +2,7 @@
   margin-top: 5%;
   width: 100%;
   max-width: 20em;
+  border-radius: 20px;
   height: 25em;
   background-color: #fff;
   display: grid;
@@ -10,7 +11,7 @@
   @include sombraPrimarioClaro;
   &__title {
     grid-area: title;
-    border-radius: 0% 0% 100% 100%;
+    border-radius: 20px 20px 100% 100%;
     border-bottom: 15px solid $color-contraste-claro;
     &-text {
       width: 100%;
@@ -35,7 +36,7 @@
         width: 100%;
         object-position: top;
         object-fit: cover;
-        border-radius: 0% 0% 100% 100%;
+        border-radius: 20px 20px 100% 100%;
       }
     }
   }
