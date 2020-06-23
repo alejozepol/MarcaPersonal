@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-const dotEnv = require('dotenv').config();
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtraxtPlugin = require('mini-css-extract-plugin');
@@ -61,10 +59,10 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
+      favicon: './public/favicon.png',
     }),
     new MiniCssExtraxtPlugin({
       filename: nodeEnv ? 'assets/[name].css' : 'assets/[hash].css',
     }),
   ],
-
 };
