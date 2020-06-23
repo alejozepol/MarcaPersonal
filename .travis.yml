@@ -9,6 +9,8 @@ git:
   depth: 3
 script:
   - yarn build
+env:
+  - baseURL= $BASE_URL
 deploy:
   provider: pages
   skip-cleanup: true
