@@ -1,5 +1,4 @@
 import React from 'react';
-import logoWs from '../../assets/logoWS.png';
 
 const Button = ({ type, size, onClick, name }) => {
   switch (type) {
@@ -10,12 +9,6 @@ const Button = ({ type, size, onClick, name }) => {
     case 'segundary':
       return (
         <button type='button' className={`Btn Btn-${size} Btn-${size}-segundary`} onClick={onClick}>{name}</button>
-      );
-    case 'whatsapp':
-      return (
-        <button type='button' className={`Btn Btn-${size} Btn-${size}-ws`} onClick={onClick}>
-          <img src={logoWs} alt='LogoWhatsapp' />
-        </button>
       );
     default:
       return (

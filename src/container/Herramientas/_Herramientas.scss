@@ -4,7 +4,7 @@ $animationSpeed: 35s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-5% * 50));
+    transform: translateX(calc(-3% * 40));
   }
 }
 
@@ -13,9 +13,7 @@ $animationSpeed: 35s;
   margin-top: 5%;
   text-align: center;
   color: $color-oscuro;
-  &__content{
-    @include styleScrollX;
-  }
+  @include styleScrollX;
   &__icons {
     display: -webkit-box;
     animation: scroll $animationSpeed linear;

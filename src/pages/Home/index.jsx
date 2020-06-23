@@ -1,7 +1,7 @@
 import React from 'react';
 import inicialState from '../../../inicialState';
 import IconSocialMedia from '../../components/iconSocialMedia';
-import BtnEmail from '../../container/BtnEmail';
+import Button from '../../components/Button';
 import HeroTextImg from '../../container/HeroTextImg';
 import Herramientas from '../../container/Herramientas';
 import GardenCardHorizontal from '../../container/GardenCardHorizontal';
@@ -31,7 +31,7 @@ const Home = () => (
             Consultor de nómina y RRHH, Desarrollador full Stack con tecnología JavaScript, enfocado en UI/UX.
           </p>
         </div>
-        <BtnEmail />
+        <Button type='primary' size='md' name='Trabajemos Juntos' />
       </div>
     </HeroTextImg>
     <Herramientas items={inicialState.herramientas} />
