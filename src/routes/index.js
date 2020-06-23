@@ -9,7 +9,7 @@ import '../styles/app.scss';
 
 const App = () => {
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/MarcaPersonal/'>
       <Switch>
         <Layout>
           <Route exact path='/' component={Home} />
