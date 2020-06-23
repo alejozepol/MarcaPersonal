@@ -60,7 +60,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      filename: './index.html',
+      filename: './MarcaPersonal/index.html',
     }),
     new MiniCssExtraxtPlugin({
       filename: nodeEnv ? 'assets/[name].css' : 'assets/[hash].css',
