@@ -1,6 +1,6 @@
 {
   "name": "alejozepol",
-  "version": "1.1.0",
+  "version": "2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/alejozepol/MarcaPersonal/issues"
   },
-  "homepage": "https://github.com/alejozepol/MarcaPersonal#readme",
+  "homepage": "https://alejozepol.github.io/MarcaPersonal/",
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-runtime": "^7.10.1",
