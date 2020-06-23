@@ -345,3 +345,4 @@ dist/
 
 # QA
 CNAME
+.travis.yml
