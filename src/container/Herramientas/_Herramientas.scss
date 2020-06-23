@@ -14,6 +14,7 @@ $animationSpeed: 35s;
   text-align: center;
   color: $color-oscuro;
   &__content{
+    width: 98vw;
     @include styleScrollX;
   }
   &__icons {
