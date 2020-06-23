@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroTextImg from '../../container/HeroTextImg';
 import Quote from '../../components/Quote';
+import Button from '../../components/Button';
 import foto3 from '../../assets/foto3.png';
 import inicialState from '../../../inicialState';
 import GardenCardHorizontal from '../../container/GardenCardHorizontal';
@@ -9,7 +10,6 @@ import cajaHonor from '../../assets/RRHH/cajaHonor.png';
 import vigia from '../../assets/RRHH/vigia.png';
 import equidad from '../../assets/RRHH/equidad.png';
 import bosque from '../../assets/RRHH/elBosque.png';
-import BtnEmail from '../../container/BtnEmail';
 
 const Portfolio = () => (
   <section className='Portfolio'>
@@ -18,7 +18,7 @@ const Portfolio = () => (
         direction='right'
         sentence='Si solo sabes de tu profesión ni de tu profesión sabes...'
       />
-      <BtnEmail />
+      <Button type='primary' size='md' name='Trabajemos Juntos' />
     </HeroTextImg>
     <section className='Portfolio__web'>
       <GardenCardHorizontal title='Desarrollo web' items={[...inicialState.ProjectWeb]} />

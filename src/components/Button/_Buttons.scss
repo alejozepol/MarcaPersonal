@@ -10,7 +10,6 @@
 }
 
 .Btn {
-  outline: none;
   border-radius: 30px;
   margin: 5px;
   font-weight: 600;
@@ -37,26 +36,11 @@
     &-segundary {
       @include btnSegundary;
     }
-    &-ws {
-      position: fixed;
-      width: 60px !important;
-      height: 60px !important;
-      position: fixed;
-      bottom: 2%;
-      right: 2%;
-      background-color: transparent;
-      z-index: 1024;
-      border: none;
-      & > img {
-        height: 100%;
-      }
-    }
   }
 
   box-shadow: 0 3px 6px 0 rgba(255, 225, 0, 0.51);
-  background-color: linear-gradient(to bottom, #ffe100, #feb200);
+  background-image: linear-gradient(to bottom, #ffe100, #feb200);
 }
-
 @media (max-width: 450px) {
   .Btn {
     &-sm {
