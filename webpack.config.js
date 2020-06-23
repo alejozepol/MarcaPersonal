@@ -59,7 +59,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
-      favicon: './public/favicon.ico',
+      favicon: './public/favicon.png',
     }),
     new MiniCssExtraxtPlugin({
       filename: nodeEnv ? 'assets/[name].css' : 'assets/[hash].css',
