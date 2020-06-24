@@ -346,3 +346,4 @@ dist/
 # QA
 CNAME
 .travis.yml
+routes/*
