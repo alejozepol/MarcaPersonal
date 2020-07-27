@@ -1,7 +1,7 @@
 .Hero {
   height: 70vh;
   width: 100vw;
-  overflow: auto;
+  overflow: hidden;
   &-right {
     border-radius: 0% 0% 100% 30%;
     display: flex;
