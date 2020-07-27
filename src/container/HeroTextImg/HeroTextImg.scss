@@ -1,5 +1,5 @@
 .HeroTextImg {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: grid;
   grid-template-areas: "img content";
@@ -13,11 +13,12 @@
   &__img {
     grid-area: img;
     display: flex;
+    max-width: 100vw;
     align-items: flex-end;
     & > img {
       max-height: 80%;
       height: 80%;
-      border-radius: 0 0 19% 21%;
+      border-radius: 0 0 0% 0%;
     }
   }
   &__content {
@@ -30,14 +31,10 @@
   .HeroTextImg {
     grid-template-areas: "content" "img";
     grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
     &__content {
       justify-self: center;
       width: 50%;
-    }
-    &__img {
-      & > img {
-        border-radius: 0 0 165px 199px;
-      }
     }
   }
 }
@@ -49,81 +46,6 @@
     &__content {
       justify-self: center;
       width: 80%;
-    }
-    &__img {
-      & > img {
-        border-radius: 0 0 28% 40%;
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 264px 226px;
-      }
-    }
-  }
-}
-
-@media (max-width: 450px) and (height: 731px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 264px 153px;
-      }
-    }
-  }
-}
-
-@media (max-width: 414px) and (height: 736px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 264px 165px;
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) and (height: 667px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 264px 140px;
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) and (height: 812px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 100% 29%;
-      }
-    }
-  }
-}
-
-@media (max-width: 360px) and (height: 640px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 264px 144px;
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .HeroTextImg {
-    &__img {
-      & > img {
-        border-radius: 0 0 50% 60px;
-      }
     }
   }
 }
