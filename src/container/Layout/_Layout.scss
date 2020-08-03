@@ -1,6 +1,7 @@
 .Layout {
   display: grid;
   min-height: 100vh;
+  overflow-x: hidden;
   grid-template-rows: 4em auto 15rem;
   grid-template-areas:
     "header"
