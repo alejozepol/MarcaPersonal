@@ -7,6 +7,7 @@
   background-color: #fff;
   display: grid;
   grid-template-rows: 40% 60%;
+  grid-template-columns: 100%;
   grid-template-areas: "title" "content";
   @include sombraPrimarioClaro;
   &__title {
